@@ -6,7 +6,8 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 Caso deseje atribuir uma imagem a sua persona, utilize o site https://thispersondoesnotexist.com/
 
-## Personas
+## Personas 🚹
+Abaixo são mostradas as personas que compõem o projeto.
 
 <div align="center">
 
