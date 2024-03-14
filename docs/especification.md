@@ -17,7 +17,7 @@ Abaixo são mostradas as personas que compõem o projeto.
 </div>
 
 
-## Histórias de Usuários
+## Histórias de Usuários 📝
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
@@ -34,7 +34,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Usuário do sistema 6 | Meio de comunicação com o app      | Informar sobre bugs ou infomações equivocadas                 |
 
 
-## Requisitos
+## Requisitos 📣
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
@@ -42,11 +42,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA |  
-|RF-002| A aplicação deve permitir que os usuários registrem suas despesas, incluindo a quantidade, a data e a categoria da despesa. | MÉDIA | 
-|RF-002| A aplicação deve permitir que os usuários definam um orçamento mensal. | ![Static Badge](https://img.shields.io/badge/ALTA-red) | 
-|RF-002| A aplicação deve permitir que os usuários registrem suas despesas, incluindo a quantidade, a data e a categoria da despesa. | MÉDIA | 
-|RF-002| A aplicação deve permitir que os usuários registrem suas despesas, incluindo a quantidade, a data e a categoria da despesa. | MÉDIA | 
+|RF-1| A aplicação deve permitir que o usuário gerencie suas tarefas | ![Static Badge](https://img.shields.io/badge/ALTA-red) |  
+|RF-2| A aplicação deve permitir que os usuários registrem suas despesas, incluindo a quantidade, a data e a categoria da despesa. | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
+|RF-3| A aplicação deve permitir que os usuários definam um orçamento mensal. | ![Static Badge](https://img.shields.io/badge/ALTA-red) | 
+|RF-4| A aplicação deve permitir que os usuários definam metas financeiras e acompanhem seu progresso em direção a essas metas. | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
+|RF-5| A aplicação deve permitir que os administradores ativem ou desativem contas de usuário e redefinam senhas de usuário. | ![Static Badge](https://img.shields.io/badge/BAIXA-green) | 
+|RF-6| A aplicação deve permitir que haja um canal de comunição entre usuário e administradores. |![Static Badge](https://img.shields.io/badge/ALTA-red)  | 
 
 
 
@@ -55,25 +56,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-1| O aplicativo deve ser capaz de suportar um grande número de usuários simultâneos sem degradação significativa do desempenho. |![Static Badge](https://img.shields.io/badge/ALTA-red) | 
+|RNF-2| A aplicação deve processar requisições do usuário em no máximo 3s | ![Static Badge](https://img.shields.io/badge/BAIXA-green)  |
+|RNF-3| O aplicativo deve ser fácil de usar, com uma interface de usuário intuitiva e uma experiência de usuário agradável. | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow)  |
+|RNF-4| O aplicativo deve estar disponível 24/7, com tempo de inatividade mínimo. |  ![Static Badge](https://img.shields.io/badge/ALTA-red) |
+|RNF-5| O aplicativo deve ser compatível com vários navegadores e dispositivos, incluindo desktops e dispositivos móveis. | ![Static Badge](https://img.shields.io/badge/ALTA-red)   |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
-## Restrições
+## Restrições ❌
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
@@ -81,10 +72,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
+|03| Deve-se utilizar HTML5, CSS3 e JavaScript para a aplicação        |
+|04| Deve existir um sistema de login        |
+|05| Todas etapas devem ser realizadas       |
 
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
