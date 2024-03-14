@@ -23,17 +23,16 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  |  Registrar despesas                | Acompanhar movimentção do dinheiro e gerenciar melhor as finanças. |
-|Usuário do sistema  | Definir um orçamento mensal        | Planejar finanças                      |
+|Usuário do sistema 1 |  Registrar despesas                | Acompanhar movimentção do dinheiro e gerenciar melhor as finanças. |
+|Usuário do sistema 2 | Definir um orçamento mensal        | Planejar finanças.                    |
+|Administrador do sistema | Adicionar novos recursos       | Para melhorar continuamente o aplicativo e atender às necessidades dos usuários. |
+|Usuário do sistema 3 |  Visualizar despesas               | Entender os hábitos de gastos e tomar decisões financeiras.                   |
+|Usuário do sistema 4 | Definir metas                      |   Visar o futuro e alcançar os objetivos financeiros.                   |
+|Administrador do sistema | Acompanhar feedback de usuários |  Para melhorar a experiência do usuário e fazer mudanças com base em suas necessidades e sugestões.                   |
+|Usuário do sistema 5 | Receber alertas        | Ficar atento à gastos excessivos ou atingimento de metas.                   |
+|Administrador do sistema | Criar uma interface intuitiva        | Fazer com que a visualização de dados seja clara para o usuário.                   |
+|Usuário do sistema 6 | Meio de comunicação com o app      | Informar sobre bugs ou infomações equivocadas                 |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
