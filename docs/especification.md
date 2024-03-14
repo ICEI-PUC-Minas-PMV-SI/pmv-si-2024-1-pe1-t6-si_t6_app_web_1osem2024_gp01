@@ -8,9 +8,12 @@ Caso deseje atribuir uma imagem a sua persona, utilize o site https://thisperson
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+<div align="center">
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+![Nome da imagem](https://i.imgur.com/3YdETzU.png)
+![Nome da imagem](https://i.imgur.com/BKycAVV.png)
+
+</div>
 
 > **Links Úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)
