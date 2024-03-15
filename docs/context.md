@@ -22,10 +22,11 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 > - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
+Desenvolver e fornecer uma plataforma de aplicativo financeiro inovadora e confiável que atenda às necessidades variadas de gestão financeira dos clientes, promovendo a educação financeira, facilitando a tomada de decisões informadas e promovendo a inclusão financeira.
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Aumentar a base de usuários ativos mensais em 20% nos primeiros seis meses de operação, através da implementação de estratégias de marketing digital direcionadas e da melhoria contínua da experiência do usuário, incluindo interface intuitiva, segurança robusta e funcionalidades inovadoras.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+Reduzir o tempo médio de resposta do suporte ao cliente em 30% até o final do primeiro ano, implementando um sistema de suporte integrado com respostas automatizadas para perguntas frequentes e aprimorando a eficiência das equipes de atendimento ao cliente por meio de treinamentos regulares e ferramentas de gestão de tickets.
  
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
