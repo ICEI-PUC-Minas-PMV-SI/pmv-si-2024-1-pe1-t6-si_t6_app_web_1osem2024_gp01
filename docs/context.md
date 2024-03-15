@@ -1,5 +1,5 @@
 # Introdução
-Gerenciar suas finanças nunca foi tão simples e eficiente como agora. você terá todas as ferramentas necessárias para controlar seus gastos, planejar seu orçamento e alcançar suas metas financeiras com facilidade.
+Gerenciar suas finanças nunca foi tão simples e eficiente como agora. Você terá todas as ferramentas necessárias para controlar seus gastos, planejar seu orçamento e alcançar suas metas financeiras com facilidade.
 Nosso aplicativo oferece uma visão abrangente de suas finanças, permitindo que você acompanhe seus gastos e receitas em um só lugar.
 Ajuda você a definir metas realistas e acompanhar seu progresso ao longo do tempo. Identifique áreas onde você pode economizar e otimize sua gestão financeira.
 
