@@ -1,7 +1,9 @@
 # Introdução
-Gerenciar suas finanças nunca foi tão simples e eficiente como agora. Você terá todas as ferramentas necessárias para controlar seus gastos, planejar seu orçamento e alcançar suas metas financeiras com facilidade.
-Nosso aplicativo oferece uma visão abrangente de suas finanças, permitindo que você acompanhe seus gastos e receitas em um só lugar.
-Ajuda você a definir metas realistas e acompanhar seu progresso ao longo do tempo. Identifique áreas onde você pode economizar e otimize sua gestão financeira.
+
+De acordo com uma pesquisa realizada em todas as capitais pelo Serviço de Proteção ao Crédito (SPC Brasil) e pela Confederação Nacional de Dirigentes Lojistas (CNDL), 45,8% dos entrevistados não realizam um controle sistemático do seu orçamento, sendo que 29,3% o fazem apenas ‘de cabeça’ - ou seja, recorrem a um método pouco confiável para organizar suas finanças. Tal comportamento muitas vezes é atribuído à complexidade das ferramentas de gerenciamento pessoal disponíveis.
+
+Neste contexto, surge a proposta de uma aplicação web que facilita o início do controle das finanças pessoais, auxiliando os que querem iniciar sua gestão financeira. O objetivo geral é propor uma aplicação com interface intuitiva e fácil de usar, fornecendo recursos completos para controle financeiro, como registro de despesas e receitas, definição de metas e geração de relatórios, que auxiliam na tomada de decisões e estabelecimento de metas.
+
 
 ## Problema
 
