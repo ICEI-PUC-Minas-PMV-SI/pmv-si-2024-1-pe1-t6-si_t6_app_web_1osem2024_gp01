@@ -1,12 +1,8 @@
 # Introdução
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
+IAtualmente ,com o avanço da tecnologia de forma exponencial, o dia a dia das pessoas tornou-se mais ágil e dinâmico. Sob tal ótica, essa questão não se restringe ao público adulto: 89% das crianças e dos adolescentes brasileiros são usuários de Internet (BUTCHER, 2020). Decerto, o contato com esta rede possibilitou inúmeros avanços na sociedade, principalmente no âmbito da educação, além de ser benéfica diponibilizando praticidade, acessibilidade, relacionamento e entretenimento.
 
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
-
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
-
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
+Analogamente, tais benefícios se forem utilizados de maneira indevida resultam em um malefício potencial . É o caso do uso da internet como entretenimento pelas crianças e o impacto que ela ocasiona nas fases do seu desenvolvimento , principalmente  na esfera educacional.  Uma análise útil para a questão é a que se vê em uma pesquisa feita pela Lenstore em novembro de 2021 em que  as crianças brasileiras se inserem na terceira posição do ranking mundial de crianças mais viciadas em tecnologia ou no fato da ciberdependência e o uso incorreto da internet serem fatores de risco no aparecimento de problemas como transtornos de atenção (ROSA; SOUZA, 2021), dentre outros que, por consequência , afetarão o seu desenvolvimento como dito anteriormente.
 
 ## Problema
 
