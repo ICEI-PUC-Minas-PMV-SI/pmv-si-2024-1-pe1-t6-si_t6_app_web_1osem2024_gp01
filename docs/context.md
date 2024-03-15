@@ -32,7 +32,7 @@ Reduzir o tempo médio de resposta do suporte ao cliente em 30% até o final do 
 
 ## Justificativa
 O tema "Finanças" ao qual se baseia nossa aplicação, é um dos pilares da vida humana, a saúde financeira como já descrita em outros tópicos afeta diretamente o bem-estar do indivíduo, sua tomada de decisão, controle emocional, e principalmente a saúde mental. No Brasil uma 
-Pesquisa do Instituto Locomotiva e MFM Tecnologia publicada em (07/12/2023 references.md) aponta que oito em cada dez famílias brasileiras estão endividadas e um terço têm dívidas em atraso, nos trazendo a necessidade e urgência de construir uma aplicação que possa auxiliar os úsuarios a se organizarem financeiramente, podendo impactar diretamente o futuro da população. 
+Pesquisa do Instituto Locomotiva e MFM Tecnologia publicada em Dezembro de 2023 [1] aponta que oito em cada dez famílias brasileiras estão endividadas e um terço têm dívidas em atraso, nos trazendo a necessidade e urgência de construir uma aplicação que possa auxiliar os úsuarios a se organizarem financeiramente, podendo impactar diretamente o futuro da população. 
 
 ## Público-Alvo
 
