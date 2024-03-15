@@ -7,26 +7,21 @@ Neste contexto, surge a proposta de uma aplicação web que facilita o início d
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, **não** é a hora de comentar sobre a solução/aplicação.
+No Brasil, a má adminsitração pessoal das finanças se tornou um problema comum entre os brasileiros.  Conforme dados do Instituto Brasileiro de Geografia e Estatística (IBGE), as taxas de endividamento familiar atingiram níveis preocupantes nos últimos anos, com um número significativo de pessoas lutando para equilibrar seus gastos em relação à renda.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+Entre as principais razões para essa falta de gestão financeira, destacam-se: educação financeira inadequada (46,8%), mudanças súbitas nas condições econômicas (29,1%), estilo de vida excessivamente consumista (25,4%) e falta de consciência sobre a necessidade de poupar e investir dinheiro (14,9%).
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Atualmente, há muitos brasileiros interessados em realizar uma administração financeira própria, porém não desfrutam de soluções que sejam práticas, simples e que não os assediem com anúncios excessivos. Evidenciando ainda mais a urgência no desenvolvimento de aplicações acessíveis, que possibilitarão aos brasileiros uma maior saúde financeira.
 
 ## Objetivos
-Desenvolver e fornecer uma plataforma de aplicativo financeiro inovadora e confiável que atenda às necessidades variadas de gestão financeira dos clientes, promovendo a educação financeira, facilitando a tomada de decisões informadas e promovendo a inclusão financeira.
+Desenvolver e fornecer uma plataforma gerenciamento financeiro inovadora e confiável que atenda às necessidades variadas de gestão financeira dos clientes, promovendo a educação financeira, facilitando a tomada de decisões informadas e promovendo a inclusão financeira.
 
-Aumentar a base de usuários ativos mensais em 20% nos primeiros seis meses de operação, através da implementação de estratégias de marketing digital direcionadas e da melhoria contínua da experiência do usuário, incluindo interface intuitiva, segurança robusta e funcionalidades inovadoras.
+Aumentar a base de usuários focada no público carente, através da implementação de estratégias de marketing digital com anúncios direcionados para os locais onde a maior parte desse público consome conteúdo.
 
-Reduzir o tempo médio de resposta do suporte ao cliente em 30% até o final do primeiro ano, implementando um sistema de suporte integrado com respostas automatizadas para perguntas frequentes e aprimorando a eficiência das equipes de atendimento ao cliente por meio de treinamentos regulares e ferramentas de gestão de tickets.
+Desenvolver e implementar novas ferramentas no aplicativo de finanças pessoais que permitam aos usuários centralizar sua organização financeira em apenas um lugar até o final do semestre, incorporando o feedback do cliente.
+
+Desenvolver uma estratégia para tornar a aplicação livre de anúncios, oferecendo aos clientes um período gratuito de teste da plataforma de gerenciamento de finanças. Durante este período, identificar e destacar os benefícios do aplicativo, convencendo os usuários de que se trata de um investimento essencial para sua saúde financeira. Após a fase de teste, implementar a assinatura do serviço, visando a arrecadação de receita recorrente, em um período de 3 meses.
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 O tema "Finanças" ao qual se baseia nossa aplicação, é um dos pilares da vida humana, a saúde financeira como já descrita em outros tópicos afeta diretamente o bem-estar do indivíduo, sua tomada de decisão, controle emocional, e principalmente a saúde mental. No Brasil uma 
