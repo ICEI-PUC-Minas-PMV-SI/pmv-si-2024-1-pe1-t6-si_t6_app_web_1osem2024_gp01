@@ -10,11 +10,15 @@ Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, **não** é a hora de comentar sobre a solução/aplicação.
+O problema central que nossa aplicação deve resolver é a falta de controle efetivo das despesas pessoais por parte dos usuários. Atualmente, muitas pessoas enfrentam dificuldades para gerenciar suas finanças de forma eficiente e inteligente. Isso resulta em consequências financeiras negativas, como endividamento excessivo, falta de planejamento para objetivos financeiros futuros e estresse relacionado às finanças. Os métodos tradicionais de controle financeiro, como planilhas e anotações manuais, são propensos a erros, desatualizações e demandam muito tempo e esforço por parte dos usuários. Além disso, a complexidade das finanças pessoais e o ritmo acelerado da vida moderna dificultam ainda mais a análise detalhada das despesas.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+**Contexto de Uso:**
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+A aplicação será utilizada por indivíduos de todas as faixas etárias e níveis de conhecimento financeiro, que buscam uma maneira mais eficaz e conveniente de gerenciar suas finanças pessoais. O contexto em que essa aplicação será usada é o cotidiano das pessoas, em suas casas e escritórios. O uso da aplicação não requer conhecimento avançado em finanças, sendo projetada para ser intuitiva e acessível a todos os usuários.
+
+**Tecnologias e Ambiente:**
+
+A aplicação será desenvolvida utilizando tecnologias modernas de desenvolvimento de software, como linguagens de programação web. A aplicação será acessada principalmente por meio de versão web para acesso via navegadores de desktop. O desenvolvimento seguirá as melhores práticas de design de interface do usuário e experiência do usuário (UI/UX), visando uma experiência de uso agradável e intuitiva para os usuários.
 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
