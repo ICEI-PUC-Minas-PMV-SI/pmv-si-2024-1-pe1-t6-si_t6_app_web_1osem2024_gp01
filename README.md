@@ -6,7 +6,7 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto em desenvolvimento é um sistema de controle financeiro de despesas pessoais, projetado para ajudar os usuários a gerenciar suas finanças de forma eficiente e inteligente. A aplicação busca resolver o problema da falta de controle adequado das despesas, proporcionando uma solução acessível e intuitiva que permita aos usuários acompanhar suas finanças diárias, estabelecer metas financeiras e realizar análises detalhadas para uma melhor tomada de decisão. Utilizando tecnologias modernas de desenvolvimento de software e seguindo as melhores práticas de design de interface e experiência do usuário, o projeto visa oferecer uma ferramenta abrangente e amigável para auxiliar na saúde financeira pessoal dos usuários.
 
 ## Integrantes
 
