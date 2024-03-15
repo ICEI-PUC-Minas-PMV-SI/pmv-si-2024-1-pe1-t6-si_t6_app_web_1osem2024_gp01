@@ -31,15 +31,8 @@ Reduzir o tempo médio de resposta do suporte ao cliente em 30% até o final do 
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
-
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-Lembre-se de pesquisar e utilizar números que justifiquem por que é importante que tal problema seja resolvido ou que mostrem o impacto do problema na vida das pessoas.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+O tema "Finanças" ao qual se baseia nossa aplicação, é um dos pilares da vida humana, a saúde financeira como já descrita em outros tópicos afeta diretamente o bem-estar do indivíduo, sua tomada de decisão, controle emocional, e principalmente a saúde mental. No Brasil uma 
+Pesquisa do Instituto Locomotiva e MFM Tecnologia publicada em (07/12/2023 references.md) aponta que oito em cada dez famílias brasileiras estão endividadas e um terço têm dívidas em atraso, nos trazendo a necessidade e urgência de construir uma aplicação que possa auxiliar os úsuarios a se organizarem financeiramente, podendo impactar diretamente o futuro da população. 
 
 ## Público-Alvo
 
