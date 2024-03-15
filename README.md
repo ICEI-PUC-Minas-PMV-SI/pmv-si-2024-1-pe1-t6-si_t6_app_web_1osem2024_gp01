@@ -10,7 +10,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* Nome completo do aluno 1
+* Isabelle Alves de Lima
 * Vitor de Castro Coelho
 * Igor Fernando Costa Cecilio
 * Nome completo do aluno 4
