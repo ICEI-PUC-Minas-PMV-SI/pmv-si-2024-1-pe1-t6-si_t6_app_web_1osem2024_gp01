@@ -7,7 +7,8 @@ Inclua todas as referências (livros, artigos, sites, etc) utilizadas no desenvo
 
 Exemplos de referências bibliográficas:
 
-**[1]** - _ELMASRI, Ramez; NAVATHE, Sham. **Sistemas de banco de dados**. 7. ed. São Paulo: Pearson, c2019. E-book. ISBN 9788543025001._
+**[1]** - _BOND, LETICIA; , Sham. **A cada dez brasileiros, oito estão endividados, mostra pesquisa
+Cartão de crédito é o maior responsável pela inadimplência**. 7. ed. São Paulo: AGENCIA BRASIL, c07/12/2023. JORNAL AGENCIA BRASIL._
 
 **[2]** - _COPPIN, Ben. **Inteligência artificial**. Rio de Janeiro, RJ: LTC, c2010. E-book. ISBN 978-85-216-2936-8._
 
