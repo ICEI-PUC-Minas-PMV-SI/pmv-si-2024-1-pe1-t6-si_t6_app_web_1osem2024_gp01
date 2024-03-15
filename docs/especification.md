@@ -1,10 +1,6 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
-
-Caso deseje atribuir uma imagem a sua persona, utilize o site https://thispersondoesnotexist.com/
+Na etapa de Especificações do Projeto, focaremos na definição do problema e na proposta de solução a partir da perspectiva do usuário. Esta fase é fundamental para compreender as necessidades dos usuários e traduzi-las em requisitos claros e precisos para o desenvolvimento do produto. Neste contexto, serão utilizadas diversas técnicas e ferramentas para elaborar o diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais, bem como identificar as restrições do projeto.
 
 ## Personas 🚹
 Abaixo são mostradas as personas que compõem o projeto.
@@ -23,7 +19,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema 1 |  Registrar despesas                | Acompanhar movimentção do dinheiro e gerenciar melhor as finanças. |
+|Usuário do sistema 1 |  Registrar despesas                | Acompanhar movimentação do dinheiro e gerenciar melhor as finanças. |
 |Usuário do sistema 2 | Definir um orçamento mensal        | Planejar finanças.                    |
 |Administrador do sistema | Adicionar novos recursos       | Para melhorar continuamente o aplicativo e atender às necessidades dos usuários. |
 |Usuário do sistema 3 |  Visualizar despesas               | Entender os hábitos de gastos e tomar decisões financeiras.                   |
