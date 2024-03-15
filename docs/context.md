@@ -1,12 +1,14 @@
 # Introdução
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
+Nos dias atuais, a gestão financeira pessoal é uma necessidade cada vez mais premente. Com a crescente complexidade das finanças pessoais e o aumento das opções de gastos, tornou-se vital para os indivíduos terem um controle efetivo sobre suas despesas. No entanto, a maioria das pessoas enfrenta dificuldades significativas nesse aspecto. Os métodos tradicionais de controle financeiro, como planilhas e anotações manuais, muitas vezes são desafiadores de manter e propensos a erros. Além disso, o ritmo acelerado da vida moderna dificulta a análise detalhada das finanças pessoais. 
 
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
+Nesse contexto, surge a necessidade de uma solução eficiente e acessível que ajude os usuários a gerenciar suas finanças de forma mais inteligente e eficaz.
 
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
+O problema que buscamos resolver é a falta de controle efetivo das despesas pessoais, que leva a consequências financeiras negativas, como endividamento excessivo, falta de planejamento para objetivos financeiros futuros e estresse relacionado às finanças. As ferramentas existentes muitas vezes são inadequadas, complexas ou caras demais para a maioria dos usuários. Há uma lacuna no mercado para uma solução acessível, intuitiva e eficiente que permita aos indivíduos gerenciar suas finanças de forma holística e simplificada.
 
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
+Os objetivos do nosso projeto são claros: desenvolver um sistema de controle financeiro de despesas pessoais que seja acessível, fácil de usar e altamente eficaz na gestão financeira do dia a dia. A justificativa para este projeto é baseada na necessidade urgente de uma solução que atenda às demandas dos usuários modernos, proporcionando-lhes uma maneira simples e eficiente de controlar suas finanças. Além disso, a crescente conscientização sobre a importância da saúde financeira pessoal torna este projeto altamente relevante e oportuno. Ao oferecer uma solução abrangente e amigável, estamos não apenas preenchendo uma lacuna no mercado, mas também contribuindo para o bem-estar financeiro de indivíduos e famílias em todo o mundo.
+
+Essa apresentação visa destacar a importância e a relevância do nosso projeto de sistema de controle financeiro de despesas pessoais, demonstrando como ele aborda uma necessidade crítica do mercado e oferece uma solução inovadora e eficaz para os usuários.
 
 ## Problema
 
