@@ -14,7 +14,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Vitor de Castro Coelho
 * Igor Fernando Costa Cecilio
 * Jean Andre VIeira Lima
-* Nome completo do aluno 5
+* Isabelle Alves de Lima
 
 ## Orientador
 
