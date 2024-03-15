@@ -13,7 +13,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Nome completo do aluno 1
 * Vitor de Castro Coelho
 * Igor Fernando Costa Cecilio
-* Nome completo do aluno 4
+* Jean Andre VIeira Lima
 * Nome completo do aluno 5
 
 ## Orientador
