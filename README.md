@@ -10,7 +10,7 @@ O projeto em desenvolvimento é um sistema de controle financeiro de despesas pe
 
 ## Integrantes
 
-* Nome completo do aluno 1
+* Sebastião Felipe de Oliveira Barros
 * Vitor de Castro Coelho
 * Igor Fernando Costa Cecilio
 * Jean Andre VIeira Lima
