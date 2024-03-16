@@ -35,12 +35,12 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema | Cadastrar usuarios                | Criar contas pessoais com informações básicas, como nome, e-mail e senha. |
-|Usuário do sistema | Registrar receitas        | Insirir suas fontes de renda, como salários, receitas extras, investimentos, etc.                   |
-|Usuário do sistema | Registrar despesas       | Registrar suas despesas diárias, mensais ou anuais, incluindo data, categoria (alimentação, transporte, moradia, etc.), valor e descrição.   |
-|Usuário do sistema | Visualizar despesas               | Entender os hábitos de gastos e tomar decisões financeiras.                   |
+|Usuário do sistema | Cadastrar usuários                | Criar contas pessoais com informações básicas, como nome, e-mail e senha. |
+|Usuário do sistema | Registrar receitas        | Insirir fontes de renda, como salários, receitas extras, investimentos, etc.                   |
+|Usuário do sistema | Registrar despesas       | Registrar                      despesas diárias, mensais ou anuais, incluindo data, categoria (alimentação, transporte, moradia, etc.), valor e descrição.   |
+|Usuário do sistema | Visualizar despesas               | Ter acesso a uma visão detalhada e organizada de todas as despesas registradas.                   |
 |Usuário do sistema | Definir metas                      |   Estabelecer metas financeiras, como economizar para uma viagem, comprar um bem específico, pagar dívidas, etc.                  |
-|Usuário do sistema | Emitir um relatorio      | Gerar relatórios que mostrem o histórico de despesas, receitas, saldo atual, progresso em relação às metas financeiras, entre outros.                |
+|Usuário do sistema | Emitir um relatório      | Gerar relatórios que mostrem o histórico de despesas, receitas, saldo atual, progresso em relação às metas financeiras, entre outros.                |
 
 
 ## Requisitos 📣
@@ -51,12 +51,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-1| A aplicação deve permitir que o usuário gerencie suas tarefas | ![Static Badge](https://img.shields.io/badge/ALTA-red) |  
+|RF-1| A aplicação deve permitir que o usuário visualize e gerencie suas tarefas | ![Static Badge](https://img.shields.io/badge/ALTA-red) |  
 |RF-2| A aplicação deve permitir que os usuários registrem suas despesas, incluindo a quantidade, a data e a categoria da despesa. | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
 |RF-3| A aplicação deve permitir que os usuários definam um orçamento mensal. | ![Static Badge](https://img.shields.io/badge/ALTA-red) | 
 |RF-4| A aplicação deve permitir que os usuários definam metas financeiras e acompanhem seu progresso em direção a essas metas. | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
-|RF-5| A aplicação deve permitir que os administradores ativem ou desativem contas de usuário e redefinam senhas de usuário. | ![Static Badge](https://img.shields.io/badge/BAIXA-green) | 
-|RF-6| A aplicação deve permitir que haja um canal de comunição entre usuário e administradores. |![Static Badge](https://img.shields.io/badge/ALTA-red)  | 
+|RF-4| A aplicação deve permitir que os usuários emitam um relatório e acompanhem seu progresso em relação às metas financeiras, entre outros.  | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
 
 
 
@@ -70,6 +69,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-3| O aplicativo deve ser fácil de usar, com uma interface de usuário intuitiva e uma experiência de usuário agradável. | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow)  |
 |RNF-4| O aplicativo deve estar disponível 24/7, com tempo de inatividade mínimo. |  ![Static Badge](https://img.shields.io/badge/ALTA-red) |
 |RNF-5| O aplicativo deve ser compatível com vários navegadores e dispositivos, incluindo desktops e dispositivos móveis. | ![Static Badge](https://img.shields.io/badge/ALTA-red)   |
+|RNF-5| O aplicativo deve garantir a segurança dos dados dos usuários. | ![Static Badge](https://img.shields.io/badge/ALTA-red)   |
+
 
 
 
