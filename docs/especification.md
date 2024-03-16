@@ -35,12 +35,12 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema |  Registrar despesas                | Acompanhar movimentação do dinheiro e gerenciar melhor as finanças. |
-|Usuário do sistema | Definir um orçamento mensal        | Planejar finanças.                    |
-|Usuário do sistema |  Visualizar despesas               | Entender os hábitos de gastos e tomar decisões financeiras.                   |
-|Usuário do sistema | Definir metas                      |   Visar o futuro e alcançar os objetivos financeiros.                   |
-|Usuário do sistema | Receber alertas        | Ficar atento à gastos excessivos ou atingimento de metas.                   |
-|Usuário do sistema | Meio de comunicação com o app      | Informar sobre bugs ou infomações equivocadas                 |
+|Usuário do sistema | Cadastrar usuarios                | Criar contas pessoais com informações básicas, como nome, e-mail e senha. |
+|Usuário do sistema | Registrar receitas        | Insirir suas fontes de renda, como salários, receitas extras, investimentos, etc.                   |
+|Usuário do sistema | Registrar despesas       | Registrar suas despesas diárias, mensais ou anuais, incluindo data, categoria (alimentação, transporte, moradia, etc.), valor e descrição.   |
+|Usuário do sistema | Visualizar despesas               | Entender os hábitos de gastos e tomar decisões financeiras.                   |
+|Usuário do sistema | Definir metas                      |   Estabelecer metas financeiras, como economizar para uma viagem, comprar um bem específico, pagar dívidas, etc.                  |
+|Usuário do sistema | Emitir um relatorio      | Gerar relatórios que mostrem o histórico de despesas, receitas, saldo atual, progresso em relação às metas financeiras, entre outros.                |
 
 
 ## Requisitos 📣
