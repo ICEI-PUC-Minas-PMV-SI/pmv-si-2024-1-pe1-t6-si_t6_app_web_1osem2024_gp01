@@ -36,7 +36,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Usuário do sistema | Cadastrar usuários                | Criar contas pessoais com informações básicas, como nome, e-mail e senha. |
-|Usuário do sistema | Registrar receitas        | Insirir fontes de renda, como salários, receitas extras, investimentos, etc.                   |
+|Usuário do sistema | Registrar receitas        | Inserir fontes de renda, como salários, receitas extras, investimentos, etc.                   |
 |Usuário do sistema | Registrar despesas       | Registrar                      despesas diárias, mensais ou anuais, incluindo data, categoria (alimentação, transporte, moradia, etc.), valor e descrição.   |
 |Usuário do sistema | Visualizar despesas               | Ter acesso a uma visão detalhada e organizada de todas as despesas registradas.                   |
 |Usuário do sistema | Definir metas                      |   Estabelecer metas financeiras, como economizar para uma viagem, comprar um bem específico, pagar dívidas, etc.                  |
