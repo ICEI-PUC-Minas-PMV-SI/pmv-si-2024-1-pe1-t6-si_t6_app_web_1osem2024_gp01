@@ -31,19 +31,16 @@ Abaixo são mostradas as personas que compõem o projeto.
 
 ## Histórias de Usuários 📝
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema 1 |  Registrar despesas                | Acompanhar movimentação do dinheiro e gerenciar melhor as finanças. |
-|Usuário do sistema 2 | Definir um orçamento mensal        | Planejar finanças.                    |
-|Administrador do sistema | Adicionar novos recursos       | Para melhorar continuamente o aplicativo e atender às necessidades dos usuários. |
-|Usuário do sistema 3 |  Visualizar despesas               | Entender os hábitos de gastos e tomar decisões financeiras.                   |
-|Usuário do sistema 4 | Definir metas                      |   Visar o futuro e alcançar os objetivos financeiros.                   |
-|Administrador do sistema | Acompanhar feedback de usuários |  Para melhorar a experiência do usuário e fazer mudanças com base em suas necessidades e sugestões.                   |
-|Usuário do sistema 5 | Receber alertas        | Ficar atento à gastos excessivos ou atingimento de metas.                   |
-|Administrador do sistema | Criar uma interface intuitiva        | Fazer com que a visualização de dados seja clara para o usuário.                   |
-|Usuário do sistema 6 | Meio de comunicação com o app      | Informar sobre bugs ou infomações equivocadas                 |
+|Usuário do sistema |  Registrar despesas                | Acompanhar movimentação do dinheiro e gerenciar melhor as finanças. |
+|Usuário do sistema | Definir um orçamento mensal        | Planejar finanças.                    |
+|Usuário do sistema |  Visualizar despesas               | Entender os hábitos de gastos e tomar decisões financeiras.                   |
+|Usuário do sistema | Definir metas                      |   Visar o futuro e alcançar os objetivos financeiros.                   |
+|Usuário do sistema | Receber alertas        | Ficar atento à gastos excessivos ou atingimento de metas.                   |
+|Usuário do sistema | Meio de comunicação com o app      | Informar sobre bugs ou infomações equivocadas                 |
 
 
 ## Requisitos 📣
