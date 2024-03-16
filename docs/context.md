@@ -17,20 +17,21 @@ Atualmente, muitos brasileiros estão interessados em administrar suas finanças
 
 
 ## Objetivos
-Desenvolver e fornecer uma plataforma gerenciamento financeiro inovadora e confiável que atenda às necessidades variadas de gestão financeira dos clientes, promovendo a educação financeira, facilitando a tomada de decisões informadas e promovendo a inclusão financeira.
 
-Aumentar a base de usuários focada no público carente, através da implementação de estratégias de marketing digital com anúncios direcionados para os locais onde a maior parte desse público consome conteúdo.
+Desenvolver e fornecer uma plataforma inovadora e confiável de gerenciamento financeiro que atenda às diversas necessidades dos clientes em gestão financeira, promovendo a educação financeira, facilitando a tomada de decisões informadas e fomentando a inclusão financeira.
 
-Desenvolver e implementar novas ferramentas no aplicativo de finanças pessoais que permitam aos usuários centralizar sua organização financeira em apenas um lugar até o final do semestre, incorporando o feedback do cliente.
+Ampliar a base de usuários, abrangendo todos os tipos de público, por meio de estratégias de marketing digital com anúncios direcionados para regiões onde há maior consumo de conteúdo por parte dos usuários.
 
-Desenvolver uma estratégia para tornar a aplicação livre de anúncios, oferecendo aos clientes um período gratuito de teste da plataforma de gerenciamento de finanças. Durante este período, identificar e destacar os benefícios do aplicativo, convencendo os usuários de que se trata de um investimento essencial para sua saúde financeira. Após a fase de teste, implementar a assinatura do serviço, visando a arrecadação de receita recorrente, em um período de 3 meses.
+Integrar novas ferramentas ao aplicativo de finanças pessoais para permitir que os usuários organizem suas finanças em um só lugar até o final do semestre, incorporando o feedback dos clientes.
+
+Elaborar uma estratégia para tornar o aplicativo livre de anúncios, oferecendo um período de teste gratuito aos clientes da plataforma de gerenciamento financeiro. Durante esse período, destacar os benefícios do aplicativo para convencer os usuários de sua importância para a saúde financeira. Após o período de teste, introduzir a assinatura do serviço para gerar receita recorrente em um prazo de 3 meses.
  
 
 ## Justificativa
-O tema "Finanças" ao qual se baseia nossa aplicação, é um dos pilares da vida humana, a saúde financeira como já descrita em outros tópicos afeta diretamente o bem-estar do indivíduo, sua tomada de decisão, controle emocional, e principalmente a saúde mental. No Brasil uma 
-Pesquisa do Instituto Locomotiva e MFM Tecnologia publicada em Dezembro de 2023 [1] aponta que oito em cada dez famílias brasileiras estão endividadas e um terço têm dívidas em atraso, nos trazendo a necessidade e urgência de construir uma aplicação que possa auxiliar os úsuarios a se organizarem financeiramente, podendo impactar diretamente o futuro da população. 
+
+O tema "Finanças", que serve de base para nossa aplicação, é um dos aspectos fundamentais da vida humana. A saúde financeira, como já mencionado em outras seções, influencia diretamente o bem-estar individual, a tomada de decisões, o controle emocional e, principalmente, a saúde mental. No Brasil, uma pesquisa realizada pelo Instituto Locomotiva e MFM Tecnologia e publicada em dezembro de 2023 [1] revelou que oito em cada dez famílias brasileiras estão endividadas e um terço delas possui dívidas em atraso. Isso ressalta a necessidade e a urgência de desenvolver uma aplicação que ajude os usuários a se organizarem financeiramente, podendo impactar positivamente o futuro da população.
+
 
 ## Público-Alvo
 
-O Gerency é destinado a qualquer pessoa interessada em aprimorar sua gestão financeira pessoal, desde indivíduos que estão começando a gerenciar suas finanças até profissionais financeiros experientes em busca de uma ferramenta mais eficiente e conveniente. O aplicativo atende a uma ampla variedade de usuários, incluindo estudantes, profissionais, trabalhadores autônomos, famílias e aposentados, que desejam ter controle sobre suas finanças e alcançar uma maior estabilidade financeira.
-
+O Gerency é direcionado a qualquer pessoa interessada em melhorar sua gestão financeira pessoal, desde iniciantes até profissionais experientes em finanças que buscam uma ferramenta mais eficaz e conveniente. O aplicativo atende a uma diversidade de usuários, como estudantes, profissionais, autônomos, famílias e aposentados, todos interessados em controlar suas finanças e alcançar maior estabilidade financeira.
