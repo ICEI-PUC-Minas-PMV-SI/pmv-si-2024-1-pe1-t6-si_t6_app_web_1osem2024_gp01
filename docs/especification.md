@@ -52,7 +52,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
 |RF-1| A aplicação deve permitir que o usuário visualize e gerencie suas tarefas | ![Static Badge](https://img.shields.io/badge/ALTA-red) |  
-|RF-2| A aplicação deve permitir que os usuários registrem suas despesas, incluindo a quantidade, a data e a categoria da despesa. | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
+|RF-2| A aplicação deve permitir que os usuários registrem suas despesas, incluindo a quantidade, a data e a categoria da despesa. | ![Static Badge](https://img.shields.io/badge/ALTA-red) |  
 |RF-3| A aplicação deve permitir que os usuários definam um orçamento mensal. | ![Static Badge](https://img.shields.io/badge/ALTA-red) | 
 |RF-4| A aplicação deve permitir que os usuários definam metas financeiras e acompanhem seu progresso em direção a essas metas. | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
 |RF-4| A aplicação deve permitir que os usuários emitam um relatório e acompanhem seu progresso em relação às metas financeiras, entre outros.  | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
