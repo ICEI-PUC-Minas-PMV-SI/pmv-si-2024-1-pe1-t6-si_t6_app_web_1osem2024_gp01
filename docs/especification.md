@@ -51,11 +51,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-1| A aplicação deve permitir que o usuário visualize e gerencie suas tarefas | ![Static Badge](https://img.shields.io/badge/ALTA-red) |  
-|RF-2| A aplicação deve permitir que os usuários registrem suas despesas, incluindo a quantidade, a data e a categoria da despesa. | ![Static Badge](https://img.shields.io/badge/ALTA-red) |  
-|RF-3| A aplicação deve permitir que os usuários definam um orçamento mensal. | ![Static Badge](https://img.shields.io/badge/ALTA-red) | 
-|RF-4| A aplicação deve permitir que os usuários definam metas financeiras e acompanhem seu progresso em direção a essas metas. | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
-|RF-5| A aplicação deve permitir que os usuários emitam um relatório e acompanhem seu progresso em relação às metas financeiras, entre outros.  | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
+|RF-1  | A aplicação deve permitir que o usuário visualize e gerencie suas tarefas | ![Static Badge](https://img.shields.io/badge/ALTA-red) |  
+|RF-2  | A aplicação deve permitir que os usuários registrem suas despesas, incluindo a quantidade, a data e a categoria da despesa. | ![Static Badge](https://img.shields.io/badge/ALTA-red) |  
+|RF-3  | A aplicação deve permitir que os usuários definam um orçamento mensal. | ![Static Badge](https://img.shields.io/badge/ALTA-red) | 
+|RF-4  | A aplicação deve permitir que os usuários definam metas financeiras e acompanhem seu progresso em direção a essas metas. | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
+|RF-5  | A aplicação deve permitir que os usuários emitam um relatório e acompanhem seu progresso em relação às metas financeiras, entre outros.  | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
 
 
 
@@ -64,12 +64,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-1| O aplicativo deve ser capaz de suportar um grande número de usuários simultâneos sem degradação significativa do desempenho. |![Static Badge](https://img.shields.io/badge/ALTA-red) | 
-|RNF-2| A aplicação deve processar requisições do usuário em no máximo 3s | ![Static Badge](https://img.shields.io/badge/BAIXA-green)  |
-|RNF-3| O aplicativo deve ser fácil de usar, com uma interface de usuário intuitiva e uma experiência de usuário agradável. | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow)  |
-|RNF-4| O aplicativo deve estar disponível 24/7, com tempo de inatividade mínimo. |  ![Static Badge](https://img.shields.io/badge/ALTA-red) |
-|RNF-5| O aplicativo deve ser compatível com vários navegadores e dispositivos, incluindo desktops e dispositivos móveis. | ![Static Badge](https://img.shields.io/badge/ALTA-red)   |
-|RNF-6| O aplicativo deve garantir a segurança dos dados dos usuários. | ![Static Badge](https://img.shields.io/badge/ALTA-red)   |
+|RNF-1  | O aplicativo deve ser capaz de suportar um grande número de usuários simultâneos sem degradação significativa do desempenho. |![Static Badge](https://img.shields.io/badge/ALTA-red) | 
+|RNF-2  | A aplicação deve processar requisições do usuário em no máximo 3s | ![Static Badge](https://img.shields.io/badge/BAIXA-green)  |
+|RNF-3  | O aplicativo deve ser fácil de usar, com uma interface de usuário intuitiva e uma experiência de usuário agradável. | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow)  |
+|RNF-4  | O aplicativo deve estar disponível 24/7, com tempo de inatividade mínimo. |  ![Static Badge](https://img.shields.io/badge/ALTA-red) |
+|RNF-5  | O aplicativo deve ser compatível com vários navegadores e dispositivos, incluindo desktops e dispositivos móveis. | ![Static Badge](https://img.shields.io/badge/ALTA-red)   |
+|RNF-6  | O aplicativo deve garantir a segurança dos dados dos usuários. | ![Static Badge](https://img.shields.io/badge/ALTA-red)   |
 
 
 
