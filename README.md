@@ -14,7 +14,7 @@ O projeto em desenvolvimento é um sistema de controle financeiro de despesas pe
 * Vitor de Castro Coelho
 * Igor Fernando Costa Cecilio
 * Jean Andre VIeira Lima
-* Isabelle Alves de Lima
+* Isabelle Alves de Lima 
 
 ## Orientador
 
