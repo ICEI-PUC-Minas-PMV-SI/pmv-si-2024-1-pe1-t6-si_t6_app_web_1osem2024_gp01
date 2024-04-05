@@ -19,20 +19,14 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 ## Wireframes
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface e é fundamental sempre relacionar cada wireframe com o(s) requisito(s) que ele atende.
 
-### Exemplo
+Em nosso wireframe, incluímos um menu hamburguer que oferece ao usuário a possibilidade de navegar entre diferentes páginas, como home, histórico e metas.
+Na tela inicial do Gerency, os lançamentos são exibidos, permitindo que nosso cliente navegue e interaja com eles. Ao clicar no botão de adição (+), um modal é aberto, permitindo que o usuário edite os detalhes conforme necessário.
+Além disso, nosso cliente pode acessar a tela de histórico através dos botões de saldo, receitas ou despesas individualmente.
+Os relatórios são personalizados com base no período e nos lançamentos feitos pelo usuário, oferecendo a ele um relatório que reflete suas seleções de filtro e atualizações em seu perfil.
 
-A tela inicial apresenta um menu lateral com as principais seções do portal, enquanto a navigation bar, ao topo, apresenta informações de envio de imagens ou navegação pela galeria de fotos. A área central apresenta a galeria de fotos na forma de uma grade. Nesta tela, são apresentados os seguintes requisitos
+https://www.figma.com/file/JHpi3xPZvEBBVgoMYL3Ar6/menu?type=design&node-id=0%3A1&mode=design&t=Do3s71nTgRVrCajn-1
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+https://www.figma.com/file/gdOAVHZKpOMIlJ5CfwelPC/Gerency?type=design&mode=design&t=sMeFy7pXCaZjTznP-1
 
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+https://www.figma.com/file/oZ2XzYj8LSeaIOizDblwSo/modal?type=design&node-id=0%3A1&mode=design&t=YL9NKz8nJmNrDnAX-1
