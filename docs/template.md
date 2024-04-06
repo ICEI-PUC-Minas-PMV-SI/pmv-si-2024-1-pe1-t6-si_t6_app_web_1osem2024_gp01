@@ -19,7 +19,41 @@ Esses detalhes contribuem para criar uma interface visualmente agradável e func
 
 ## Design
 
-Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
+1. **Layouts Utilizados**:
+- **Página Inicial (index.html)**: Layout com campos de usuário, senha e botões para conectar, cadastrar novo usuário e recuperar senha. A barra de navegação padrão não será exibida nesta página.
+- **Página de Registro de Novo Usuário (novousuario.html)**: Layout com campos de nome, email, senha e repetir senha, botões para cadastrar e cancelar.
+- **Página de Recuperação de Senha (recuperacaosenha.html)**: Layout com campo de email e botões para enviar e cancelar.
+- **Página de Bem-Vindo (bemvindo.html)**: Layout com barra de navegação horizontal fixa no topo, contendo opções para visualizar despesas, registrar receitas, registrar despesas, definir metas e emitir relatório. O conteúdo principal será exibido abaixo da barra de navegação.
+- **Visualizar Despesas** (viewdespesas.html): A página terá uma visão detalhada e organizada de todas as despesas registradas. Haverá um menu horizontal fixo no topo da página com as opções: Visualizar Despesas, Registrar Receitas, Registrar Despesas, Definir Metas e Emitir Relatório. O menu será em formato de tabela em uma única linha, com um espaçamento maior entre as opções para melhorar a usabilidade.
+- **Registrar Receitas** (registroreceitas.html): A página terá campos para o usuário registrar suas receitas, como nome da receita, valor, data, categoria, etc. Um botão de salvar ou enviar permitirá ao usuário confirmar o registro da receita.
+- **Registrar Despesas** (registrodespesas.html): A página terá campos para o usuário registrar suas despesas, como nome da despesa, valor, data, categoria, etc. Um botão de salvar ou enviar permitirá ao usuário confirmar o registro da despesa.
+- **Definir Metas** (metas.html): A página permitirá ao usuário definir metas financeiras, como economias mensais, objetivos de gastos, etc. Os campos incluirão descrição da meta, valor alvo, prazo, etc.
+- **Emitir Relatório** (relatorio.html): A página permitirá ao usuário gerar relatórios financeiros com base nos dados registrados, como relatório de despesas por categoria, relatório de receitas mensais, etc. Opções de filtro e personalização estarão disponíveis para o usuário criar relatórios específicos.
+
+
+2. **Logo do Sistema**:
+- O logo do sistema será colocado no canto superior esquerdo da barra de navegação em todas as páginas. Será um elemento visual que identifica o sistema de forma rápida e clara.
+
+3. **Barra de Navegação Padrão**:
+- A barra de navegação padrão será utilizada em todas as páginas, exceto na página inicial (index.html), onde não será exibida.
+- A barra de navegação conterá o logo do sistema no canto superior esquerdo e os seguintes menus:
+     - **Visualizar Despesas**: Redireciona para a página de visualização detalhada das despesas (viewdespesas.html).
+     - **Registrar Receitas**: Redireciona para a página de registro de receitas (registroreceitas.html).
+     - **Registrar Despesas**: Redireciona para a página de registro de despesas (registrodespesas.html).
+     - **Definir Metas**: Redireciona para a página de definição de metas (metas.html).
+     - **Emitir Relatório**: Redireciona para a página de emissão de relatório (relatorio.html).
+
+4. **Estilo Visual**:
+- Utiliza cores suaves e limpas para criar uma identidade visual amigável.
+- A barra de navegação terá uma cor de fundo clara para contrastar com o texto e destacar os menus.
+- Utiliza ícones simples e intuitivos para acompanhar os menus da barra de navegação, facilitando a compreensão e a navegação do usuário.
+
+5. **Responsividade**:
+- Garantir que o design seja responsivo para se adaptar a diferentes dispositivos e tamanhos de tela.
+- A barra de navegação será fixa no topo da página para facilitar o acesso aos menus em qualquer ponto da navegação.
+
+Essa especificação define os principais elementos de design, layout e navegação para o sistema de controle financeiro, proporcionando uma experiência intuitiva e eficiente para o usuário.
+
 
 
 ## Cores
