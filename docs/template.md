@@ -1,8 +1,21 @@
 # Template padrão do site
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+1. **Identidade Visual**:
+   - O fundo do corpo (`body`) foi definido como `#f8f9fa`, uma cor neutra e suave que não distrai o conteúdo principal da página.
+   - A barra de navegação (`navbar`) possui uma cor de fundo `#ffffff` para criar contraste com o restante do conteúdo e facilitar a leitura dos links.
 
-Explique as guias de estilo utilizadas no seu projeto.
+2. **Responsividade**:
+   - A barra de navegação é responsiva, expandindo os itens de menu para dispositivos de tela grande (`lg`) e exibindo um botão de menu para dispositivos menores.
+   - O conteúdo (`container`) utiliza a classe `container` do Bootstrap para limitar a largura máxima e centralizar o conteúdo, garantindo uma boa experiência de leitura em telas maiores.
+
+3. **Iconografia**:
+   - Embora não tenha incluído ícones específicos no código, é possível adicionar ícones facilmente utilizando a biblioteca de ícones do Bootstrap ou ícones personalizados. Por exemplo, um ícone de usuário pode ser adicionado ao lado do nome do site na barra de navegação.
+
+4. **Detalhes Adicionais**:
+   - A fonte padrão do Bootstrap, que é Arial, foi utilizada para garantir uma aparência consistente em diferentes navegadores.
+   - Os links na barra de navegação possuem uma cor padrão de `#000000` (preto), que ao passar o mouse (`hover`), muda para `#007bff` (azul), indicando interatividade.
+
+Esses detalhes contribuem para criar uma interface visualmente agradável e funcional, mantendo a consistência e facilitando a usabilidade do site em diferentes dispositivos e tamanhos de tela.
 
 ## Design
 
