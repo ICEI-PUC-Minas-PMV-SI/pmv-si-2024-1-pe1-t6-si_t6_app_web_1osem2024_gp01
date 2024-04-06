@@ -22,8 +22,9 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 No wireframe, foi incluído um menu hamburguer que oferece ao usuário a possibilidade de navegar entre diferentes páginas, como home, histórico e metas. Na tela inicial do Gerency, os lançamentos são exibidos, permitindo que o cliente navegue e interaja com eles. Ao clicar no botão de adição (+), um modal é aberto, permitindo que o usuário edite os detalhes conforme necessário. Além disso, o cliente pode acessar a tela de histórico através dos botões de saldo, receitas ou despesas individualmente. Os relatórios são personalizados com base no período e nos lançamentos feitos pelo usuário, oferecendo a ele um relatório que reflete suas seleções de filtro e atualizações em seu perfil.
 
-(img/git/menu.png)
+![Menu](img/git/menu.png)
 
-(img/git/home.png)
+![Home](img/git/home.png)
 
-(img/git/modal.png)
+![Modal](img/git/modal.png)
+
