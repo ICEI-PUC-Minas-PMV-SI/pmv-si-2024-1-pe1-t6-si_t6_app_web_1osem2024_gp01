@@ -58,8 +58,34 @@ Essa especificação define os principais elementos de design, layout e navegaç
 
 ## Cores
 
-Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
+A seguir, está apresentada a especificação da paleta de cores a ser utilizada, onde o verde terá maior predominância.
 
+1. **Verde Predominante**:
+   - Cor Principal: #28a745 (Verde)
+   - Utilizada em elementos de destaque, como botões principais, ícones de confirmação e mensagens de sucesso.
+
+2. **Cores Complementares**:
+   - Azul: #007bff
+   - Amarelo: #ffc107
+   - Vermelho: #dc3545
+   - Cinza: #6c757d
+   - Essas cores serão utilizadas em elementos de destaque, como botões secundários, avisos, ícones e barras de progresso.
+
+3. **Cores de Fundo**:
+   - Fundo Claro: #f8f9fa
+   - Fundo Escuro: #343a40
+   - Utilizadas em áreas de conteúdo para criar contraste e facilitar a leitura.
+
+4. **Cores de Texto**:
+   - Texto Principal: #212529
+   - Texto Secundário: #6c757d
+   - Utilizadas para garantir legibilidade e contraste adequado com o fundo.
+
+5. **Gradient**:
+   - Gradiente de Verde: de #28a745 (início) a #218838 (fim)
+   - Utilizado em áreas de destaque e fundos de elementos específicos para adicionar dinamismo ao design.
+
+Essa paleta de cores proporcionará uma experiência visual agradável e coesa, com o verde como cor principal transmitindo uma sensação de frescor e vitalidade associada à gestão financeira e ao crescimento.
 
 ## Tipografia
 
