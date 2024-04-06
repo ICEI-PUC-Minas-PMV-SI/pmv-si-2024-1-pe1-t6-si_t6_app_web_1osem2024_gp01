@@ -87,12 +87,9 @@ Especificação da paleta de cores a ser utilizada, onde o verde terá maior pre
 
 Essa paleta de cores proporcionará uma experiência visual agradável e coesa, com o verde como cor principal transmitindo uma sensação de frescor e vitalidade associada à gestão financeira e ao crescimento.
 
+
+
 ## Tipografia
-
-Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
-
-
-## Iconografia
 
 Especificação da tipografia a ser utilizada no site, incluindo as fontes e suas funções:
 
@@ -115,10 +112,32 @@ Especificação da tipografia a ser utilizada no site, incluindo as fontes e sua
 A escolha da fonte Roboto em suas diferentes variações oferece uma estética moderna, legibilidade em diversos tamanhos e consistência visual em todo o site.
 
 
-> **Links Úteis**:
->
-> -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+## Iconografia
+
+Iconografia a ser utilizada no site:
+
+1. **Ícones Principais**:
+   - Ícone de usuário: Representando a área de login, cadastro e perfil do usuário.
+   - Ícone de senha: Representando campos relacionados a senha e segurança.
+   - Ícone de email: Representando campos de email e comunicação.
+   - Ícone de gráfico ou relatório: Representando a geração de relatórios e análises financeiras.
+
+2. **Ícones de Ação**:
+   - Ícone de seta para direita: Representando ações de avançar, enviar ou confirmar.
+   - Ícone de seta para baixo: Representando ações de expandir, mostrar detalhes ou visualizar mais conteúdo.
+   - Ícone de lápis ou caneta: Representando ações de edição, alteração ou personalização.
+   - Ícone de lixeira ou delete: Representando ações de excluir, remover ou desfazer.
+
+3. **Ícones de Status**:
+   - Ícone de checkmark (marca de verificação): Representando confirmação, sucesso ou conclusão.
+   - Ícone de exclamação: Representando avisos, alertas ou informações importantes.
+   - Ícone de erro ou X: Representando erros, falhas ou ações negativas.
+
+4. **Ícones de Navegação**:
+   - Ícone de casa: Representando a página inicial ou retorno à página principal.
+   - Ícone de menu ou hambúrguer: Representando o menu de navegação em dispositivos móveis.
+   - Ícones de setas (para cima, para baixo, para esquerda, para direita): Representando navegação e rolagem em diferentes direções.
+
+A iconografia será utilizada para tornar a interface mais intuitiva, fornecer feedback visual e facilitar a compreensão das ações e funcionalidades disponíveis no site de controle financeiro.
+
+
