@@ -20,13 +20,10 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 ## Wireframes
 
 
-Em nosso wireframe, incluímos um menu hamburguer que oferece ao usuário a possibilidade de navegar entre diferentes páginas, como home, histórico e metas.
-Na tela inicial do Gerency, os lançamentos são exibidos, permitindo que nosso cliente navegue e interaja com eles. Ao clicar no botão de adição (+), um modal é aberto, permitindo que o usuário edite os detalhes conforme necessário.
-Além disso, nosso cliente pode acessar a tela de histórico através dos botões de saldo, receitas ou despesas individualmente.
-Os relatórios são personalizados com base no período e nos lançamentos feitos pelo usuário, oferecendo a ele um relatório que reflete suas seleções de filtro e atualizações em seu perfil.
+No wireframe, foi incluído um menu hamburguer que oferece ao usuário a possibilidade de navegar entre diferentes páginas, como home, histórico e metas. Na tela inicial do Gerency, os lançamentos são exibidos, permitindo que o cliente navegue e interaja com eles. Ao clicar no botão de adição (+), um modal é aberto, permitindo que o usuário edite os detalhes conforme necessário. Além disso, o cliente pode acessar a tela de histórico através dos botões de saldo, receitas ou despesas individualmente. Os relatórios são personalizados com base no período e nos lançamentos feitos pelo usuário, oferecendo a ele um relatório que reflete suas seleções de filtro e atualizações em seu perfil.
 
-https://www.figma.com/file/JHpi3xPZvEBBVgoMYL3Ar6/menu?type=design&node-id=0%3A1&mode=design&t=Do3s71nTgRVrCajn-1
+(img/git/menu.PNG)
 
-https://www.figma.com/file/gdOAVHZKpOMIlJ5CfwelPC/Gerency?type=design&mode=design&t=sMeFy7pXCaZjTznP-1
+(img/git/home.PNG)
 
-https://www.figma.com/file/oZ2XzYj8LSeaIOizDblwSo/modal?type=design&node-id=0%3A1&mode=design&t=YL9NKz8nJmNrDnAX-1
+(img/git/modal.PNG)
