@@ -30,7 +30,7 @@ https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1ose
 https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/blob/main/docs/img/NovaMeta.jpg
 
 
-
+docs/img/NovaMeta.jpg
 
 ![Menu]https://www.figma.com/file/JHpi3xPZvEBBVgoMYL3Ar6/menu?type=design&node-id=0%3A1&mode=design&t=ugTQtXuIB4Fs4txI-1
 
