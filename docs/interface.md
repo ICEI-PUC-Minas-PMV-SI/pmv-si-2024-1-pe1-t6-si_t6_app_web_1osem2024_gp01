@@ -37,18 +37,25 @@ Os relatórios são personalizados conforme o período e os lançamentos do usu�
 
 Os wireframes podem ser especificados da seguinte forma:
 
-* 		Página Inicial (Home):
-    * Incluir um menu hamburguer com as opções: Home, Histórico e Metas.
-    * Na tela inicial, exibir os lançamentos de forma organizada, permitindo interação com eles.
-    * Adicionar um botão de adição (+) para abrir um modal com opções para editar saldo, receitas, despesas ou metas.
-* 		Modal de Edição:
-    * Criar um modal que permita ao usuário editar os detalhes mencionados (saldo, receitas, despesas ou metas).
-* 		Página de Histórico:
-    * Permitir o acesso à tela de histórico através do menu ou de um botão específico dentro do card "Histórico".
-    * Na página de histórico, exibir informações detalhadas dos lançamentos passados.
-* 		Relatórios Personalizados:
-    * Implementar a funcionalidade de relatórios personalizados com base no período e nos lançamentos do usuário.
-    * Os relatórios devem refletir as seleções de filtro feitas pelo usuário e as atualizações em seu perfil.
+**Página Inicial (Home):**
+
+    - Incluir um menu hamburguer com as opções: Home, Histórico e Metas.
+    - Na tela inicial, exibir os lançamentos de forma organizada, permitindo interação com eles.
+    - Adicionar um botão de adição (+) para abrir um modal com opções para editar saldo, receitas, despesas ou metas.
+
+**Modal de Edição:**
+
+    - Criar um modal que permita ao usuário editar os detalhes mencionados (saldo, receitas, despesas ou metas).
+
+**Página de Histórico:**
+
+    - Permitir o acesso à tela de histórico através do menu ou de um botão específico dentro do card "Histórico".
+    - Na página de histórico, exibir informações detalhadas dos lançamentos passados.
+
+**Relatórios Personalizados:**
+
+    - Implementar a funcionalidade de relatórios personalizados com base no período e nos lançamentos do usuário.
+    - Os relatórios devem refletir as seleções de filtro feitas pelo usuário e as atualizações em seu perfil.
 
 **Tela de login:**
 
