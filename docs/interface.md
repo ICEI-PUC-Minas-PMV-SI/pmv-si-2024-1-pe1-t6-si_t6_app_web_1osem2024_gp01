@@ -1,9 +1,25 @@
 
 # Projeto de Interface
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
+A visão geral da interação do usuário pelas telas do sistema e do protótipo interativo é descrita com base nos requisitos funcionais, não funcionais e histórias de usuário abordados na Documentação de Especificação:
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+1. **Página Inicial (Home)**:
+   - Na tela inicial, o usuário encontra um menu hamburguer que oferece as opções principais: Home, Histórico e Metas.
+   - Os lançamentos são exibidos de forma organizada, permitindo que o usuário interaja diretamente com eles na página inicial.
+   - Um botão de adição (+) possibilita ao usuário adicionar novos lançamentos, abrindo um modal para editar saldo, receitas, despesas ou metas de forma intuitiva.
+
+2. **Modal de Edição**:
+   - O modal de edição permite ao usuário realizar alterações nos detalhes dos lançamentos de forma clara e eficiente.
+
+3. **Página de Histórico**:
+   - O acesso à tela de histórico pode ser feito através do menu ou de um botão específico na página inicial.
+   - Na tela de histórico, o usuário pode visualizar informações detalhadas dos lançamentos passados, facilitando a análise e o controle financeiro.
+
+4. **Relatórios Personalizados**:
+   - A funcionalidade de relatórios personalizados permite ao usuário gerar relatórios com base em filtros como período e tipos de lançamentos.
+   - Os relatórios refletem as seleções de filtro feitas pelo usuário, proporcionando uma visão detalhada e personalizada da sua situação financeira.
+
+A plataforma foi elaborada de forma a atender aos requisitos funcionais, garantindo a presença das funcionalidades essenciais de maneira intuitiva para o usuário. Além disso, os requisitos não funcionais, como usabilidade, performance e segurança, foram considerados para proporcionar uma experiência de uso satisfatória e segura para o usuário final. As histórias de usuário foram mapeadas nas diferentes telas e funcionalidades, garantindo que as necessidades e expectativas do usuário sejam atendidas de maneira eficaz.
 
 ## User Flow
 
@@ -34,27 +50,27 @@ Os wireframes podem ser especificados da seguinte forma:
     * Implementar a funcionalidade de relatórios personalizados com base no período e nos lançamentos do usuário.
     * Os relatórios devem refletir as seleções de filtro feitas pelo usuário e as atualizações em seu perfil.
 
-Tela de login:
+**Tela de login:**
 
 ![Exemplo de Tela de login](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/Login.jpg)
 
 
-Tela inicial do sistema:
+**Tela inicial do sistema:**
 
 ![Exemplo de Tela inicial do sistema](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/Gerency.jpg)
 
 
-Tela do menu:
+**Tela do menu:**
 
 ![Exemplo de Tela do menu](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/Menu.jpg)
 
 
-Tela do historico:
+**Tela do historico:**
 
 ![Exemplo de Tela do historico](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/Historico.jpg)
 
 
-Tela de nova meta:
+**Tela de nova meta:**
 
 ![Exemplo de Tela de nova meta](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/NovaMeta.jpg)
 
