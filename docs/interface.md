@@ -14,8 +14,29 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 ## Wireframes
 
 
-No wireframe, foi incluído um menu hamburguer que oferece ao usuário a possibilidade de navegar entre diferentes páginas, como home, histórico e metas. Na tela inicial do Gerency, os lançamentos são exibidos, permitindo que o cliente navegue e interaja com eles. Ao clicar no botão de adição (+), um modal é aberto, permitindo que o usuário edite os detalhes de saldo, receitas, despesas ou metas. Além disso, o cliente pode acessar a tela de histórico através dos botões individualmente dentro do card "Histórico". 
-Os relatórios são personalizados com base no período e nos lançamentos feitos pelo usuário, oferecendo a ele um relatório que reflete suas seleções de filtro e atualizações em seu perfil.
+No wireframe, há um menu hamburguer que permite ao usuário navegar entre diferentes páginas, como home, histórico e metas. 
+Na página inicial do Gerency, os lançamentos são exibidos, possibilitando a interação do cliente com eles. Ao clicar no botão de adição (+), um modal é aberto para que o usuário edite os detalhes de saldo, receitas, despesas ou metas. 
+Além disso, o cliente pode acessar a tela de histórico por meio dos botões dentro do card "Histórico". 
+Os relatórios são personalizados conforme o período e os lançamentos do usuário, apresentando um resumo de suas escolhas de filtro e atualizações em seu perfil.
+
+Os wireframes podem ser especificados da seguinte forma:
+
+* 		Página Inicial (Home):
+    * Incluir um menu hamburguer com as opções: Home, Histórico e Metas.
+    * Na tela inicial, exibir os lançamentos de forma organizada, permitindo interação com eles.
+    * Adicionar um botão de adição (+) para abrir um modal com opções para editar saldo, receitas, despesas ou metas.
+* 		Modal de Edição:
+    * Criar um modal que permita ao usuário editar os detalhes mencionados (saldo, receitas, despesas ou metas).
+* 		Página de Histórico:
+    * Permitir o acesso à tela de histórico através do menu ou de um botão específico dentro do card "Histórico".
+    * Na página de histórico, exibir informações detalhadas dos lançamentos passados.
+* 		Relatórios Personalizados:
+    * Implementar a funcionalidade de relatórios personalizados com base no período e nos lançamentos do usuário.
+    * Os relatórios devem refletir as seleções de filtro feitas pelo usuário e as atualizações em seu perfil.
+
+
+![Exemplo de Tela de login](docs/img/Gerency.jpg)
+
 
 
 
