@@ -35,7 +35,7 @@ Os wireframes podem ser especificados da seguinte forma:
     * Os relatórios devem refletir as seleções de filtro feitas pelo usuário e as atualizações em seu perfil.
 
 
-![Exemplo de Tela de login](docs/img/Gerency.jpg)
+![Exemplo de Tela de login](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/Gerency.jpg)
 
 
 
