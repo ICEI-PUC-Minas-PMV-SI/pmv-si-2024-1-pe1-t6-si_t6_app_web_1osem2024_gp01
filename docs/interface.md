@@ -24,6 +24,7 @@ A plataforma foi elaborada de forma a atender aos requisitos funcionais, garanti
 ## User Flow
 
 ![Exemplo de UserFlow](https://i.imgur.com/LwkyNV3.png)
+![UserFlow](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/userflownavegacao.png)
 
 
 
