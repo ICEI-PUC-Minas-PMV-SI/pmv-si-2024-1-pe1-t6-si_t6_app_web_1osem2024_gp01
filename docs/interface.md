@@ -34,15 +34,29 @@ Os wireframes podem ser especificados da seguinte forma:
     * Implementar a funcionalidade de relatórios personalizados com base no período e nos lançamentos do usuário.
     * Os relatórios devem refletir as seleções de filtro feitas pelo usuário e as atualizações em seu perfil.
 
+Tela de login:
 
-![Exemplo de Tela de login](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/Gerency.jpg)
+![Exemplo de Tela de login](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/Login.jpg)
 
 
+Tela inicial do sistema:
+
+![Exemplo de Tela inicial do sistema](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/Gerency.jpg)
 
 
-![Menu]https://www.figma.com/file/JHpi3xPZvEBBVgoMYL3Ar6/menu?type=design&node-id=0%3A1&mode=design&t=ugTQtXuIB4Fs4txI-1
+Tela do menu:
 
-![Home]https://www.figma.com/file/gdOAVHZKpOMIlJ5CfwelPC/Gerency?type=design&node-id=0%3A1&mode=design&t=41SBgfvqKgYbXGaN-1
+![Exemplo de Tela do menu](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/Menu.jpg)
 
-![Modal]https://www.figma.com/file/oZ2XzYj8LSeaIOizDblwSo/modal?type=design&mode=design&t=41SBgfvqKgYbXGaN-1
+
+Tela do historico:
+
+![Exemplo de Tela do historico](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/Historico.jpg)
+
+
+Tela de nova meta:
+
+![Exemplo de Tela de nova meta](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/NovaMeta.jpg)
+
+
 
