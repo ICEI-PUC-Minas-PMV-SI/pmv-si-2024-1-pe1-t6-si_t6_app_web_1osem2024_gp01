@@ -1,3 +1,5 @@
+
+
 *{
     padding: 0;
     margin: 0;
@@ -7,11 +9,13 @@
   }
   body{
     font-family: montserrat;
+    background-image: linear-gradient(to right bottom, #007e21, #146827, #1d5228, #213c27, #222723);
   }
   nav{
-    background-color: black;
+    background-color:none;
     height: 80px;
     width: 100%;
+    border-bottom: white  solid 2px;
   }
   label.logo{
     color: white;
@@ -23,23 +27,32 @@
   nav ul{
     float: right;
     margin-right: 20px;
+    text-decoration: none;
   }
   nav ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
+    text-decoration: none;
   }
-  nav ul li a{
+  nav ul li a {
     color: white;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+    transition: color 0.3s, background-color 0.3s; /* Adicionando transição para suavizar a mudança de cor */
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
   }
-  a.active,a:hover{
-    background-color: green;
-    transition: .5s;
+  
+  nav ul li a:hover {
+    color: rgb(51, 192, 51);
+    background-color: transparent; /* Define o fundo como transparente apenas no estado de hover */
   }
+  
+
+
   .checkbtn{
     font-size: 30px;
     color: white;
@@ -48,10 +61,60 @@
     margin-right: 40px;
     cursor: pointer;
     display: none;
+
   }
   #check{
     display: none;
   }
+
+
+  .header-content {
+    margin-top: 160px;
+    text-align: left;
+    padding-right: 20px; 
+    padding-left: 150px; 
+    
+  }
+
+  .header-title {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 102px;
+    font-weight: bold;
+    color: #ffffff; 
+  }
+
+  .header-subtitle {
+    font-family: "League Spartan", sans-serif;
+    font-size: 28px;
+    color: #ffffff; 
+    margin-top: 10px;
+  }
+
+  .login-button {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000000; 
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .login-button:hover {
+    background-color: #3f4140;
+    transition: 0.5s;
+  }
+
+
+  
+  
+
+
+
   @media (max-width: 952px){
     label.logo{
       font-size: 30px;
@@ -83,10 +146,7 @@
     nav ul li a{
       font-size: 20px;
     }
-    a:hover,a.active{
-      background: none;
-      color: #0082e6;
-    }
+
     #check:checked ~ ul{
       left: 0;
     }
@@ -99,7 +159,6 @@
 
 
   body {
-    background-image: url(../styles/img/GERENCY_INDEX.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -109,7 +168,6 @@
   /* Para telas maiores que 768px de largura */
 @media (min-width: 768px) {
   body {
-    background-image: url(../styles/img/GERENCY_INDEX.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -119,7 +177,6 @@
 /* Para telas menores que 768px de largura */
 @media (max-width: 768px) {
   body {
-    background-image: url(../styles/img/GERENCY_INDEX_mobile.png); /* Substitua 'GERENCY_INDEX_mobile.png' pelo nome do arquivo da imagem para dispositivos menores */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
