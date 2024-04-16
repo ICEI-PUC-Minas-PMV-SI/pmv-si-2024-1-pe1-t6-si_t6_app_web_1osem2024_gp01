@@ -48,10 +48,10 @@ a:hover {
 } 
 .floating-select {
     flex: 1 1 auto;
-    max-width: 20%;
+    max-width: 12%;
     width: 220px;
      top: 100px; 
-    left: 20%;
+    left: 300px;
 }
 .table {
     position: relative; 
@@ -74,4 +74,8 @@ thead{
 
 .custom-container table {
     border-radius: 5px; 
+}
+td>i{
+    font-size: 20px;
+    margin: 5px;
 }
