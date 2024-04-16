@@ -27,7 +27,7 @@
                     </button>
                     <img class="logo m-1" src="styles/img/logo.png" alt="">
                     <a class="navbar-brand ms-2 text-secondary" href="#">Gerency > <span
-                            class="text-dark">Histórico</span></a>
+                            class="text-dark">Meta</span></a>
                 </div>
                 <div class="d-flex align-items-center">
                     <div class="ms-auto me-3 text-secondary">
@@ -52,7 +52,7 @@
                                 </a>
                             </li>
                             <li class="nav-item m-3">
-                                <a href="historico.html" class="active">
+                                <a href="historico.html">
                                     <span class="me-2">
                                         <i class="bi bi-clock-history ms-3"></i>
                                     </span>
@@ -60,7 +60,7 @@
                                 </a>
                             </li>
                             <li class="nav-item m-3">
-                                <a href="meta.html">
+                                <a href="meta.html" class="active">
                                     <span class="me-2">
                                         <i class="bi bi-bookmark-check ms-3"></i>
                                     </span>
@@ -72,71 +72,110 @@
                 </div>
             </div>
         </nav>
-        <!--Selects da tabela-->
-        <div class="floating-select-container">
-            <select class="form-select form-select-sm floating-select m-2">
-                <option selected>Selecione um lançamento</option>
-                <option value="1">Despesas</option>
-                <option value="2">Receitas</option>
-            </select>
-            <select class="form-select form-select-sm floating-select m-2">
-                <option selected>Selecione um período</option>
-                <option value="1">Últimos 15 dias</option>
-                <option value="2">Últimos 30 dias</option>
-                <option value="3">Últimos 60 dias</option>
-                <option value="3">Últimos 90 dias</option>
-            </select>
-        </div>
-        <!--tabela do histórico-->
+        <!--tabela de metas-->
         <div class="container mt-4 custom-container table-responsive">
             <table id="table" class="table">
                 <thead>
                     <tr>
-                        <th class="col-sm">Descrição</th>
-                        <th class="col-sm">Valor</th>
-                        <th class="col-sm">Data</th>
-                        <th class="col-sm">Editar</th>
+                        <th class="col-sm">Todas suas metas</th>
+                        <th class="col-sm">Data de criação</th>
+                        <th class="col-sm">Gerencie</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Lazer</td>
-                        <td>R$00,00</td>
+                        <td>Investir em FII'S</td>
                         <td>00/00/00</td>
                         <td>
-                            <i class="bi bi-pencil-square"></i>
-                            <i class="bi bi-trash"></i>
+                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Visualizar meta
+                            </button>
                         </td>
                     </tr>
                     <tr>
-                        <td>Supermercado</td>
-                        <td>R$00,00</td>
+                        <td>Economizar</td>
                         <td>00/00/00</td>
                         <td>
-                            <i class="bi bi-pencil-square"></i>
-                            <i class="bi bi-trash"></i>
+                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Visualizar meta
+                            </button>
                         </td>
                     </tr>
                     <tr>
-                        <td>Shopping</td>
-                        <td>R$00,00</td>
+                        <td>Economizar</td>
                         <td>00/00/00</td>
                         <td>
-                            <i class="bi bi-pencil-square"></i>
-                            <i class="bi bi-trash"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Presentes</td>
-                        <td>R$00,00</td>
-                        <td>00/00/00</td>
-                        <td>
-                            <i class="bi bi-pencil-square"></i>
-                            <i class="bi bi-trash"></i>
+                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Visualizar meta
+                            </button>
                         </td>
                     </tr>
                 </tbody>
             </table>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Visualizar meta</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="" for="">Descrição de meta</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label text-muted">Data de criação</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label text-muted">Data de realização></label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label text-muted">Valor inicial</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label text-muted">Valor atual></label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row col-md-12">
+                            <div class="col-md-4">
+                                <button type="button" class="btn template-btn" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Editar
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="btn template-btn" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Salvar
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="btn template-btn" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Excluir
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>
