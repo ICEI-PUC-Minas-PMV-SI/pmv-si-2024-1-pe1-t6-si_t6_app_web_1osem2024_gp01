@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,65 +8,53 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="styles/index.css">
   <script src="https://kit.fontawesome.com/7bf8b4ed82.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
-  <nav>
+  <div class="navbar-wrapper">
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
       <i class="fas fa-bars"></i>
     </label>
-    <a>
-      <img src="styles/img/Gerency_semfundo_menor (1).png" alt="" style="margin-left: 70px; margin-top: 10px;">
-    </a>
-    <ul>
-      <li><a class="active" href="#">Home</a></li>
-      <li><a href="#">Minhas finanças</a></li>
-      <li><a href="#">Aprenda</a></li>
-      <li><a href="#">Comunidade</a></li>
-      <li><a href="#">Sobre nós</a></li>
+    <ul class="navbar-nav ml-auto" id="gerency">
+      <li class="">
+        <a class="nav-item">
+          <img src="styles/img/logo.png" alt="">
+          Gerency
+        </a>
+      </li>
     </ul>
-  </nav>
-
-
-  <div class="header-content">
-    <div class="header-title">Gerency</div>
-    <div class="header-subtitle">Venha conosco e dê um <b>UP</b> na sua vida financeira!</div>
-    <a href="#" class="login-button">Faça seu login</a>
-    <section style="height: 150px;"></section>
+    <ul class="mr-auto">
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">Sobre nós</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
   </div>
-  
-  <section class="icon-section">
-    <div class="icon-box">
-      <i class="material-icons-outlined"></i>
-      <p></p>
+  <div class="header-content">
+    <div class="header-title text-dark">
+      <p>Precisa de ajuda</p>
+      <p>para <span class="text-light">Gerenciar</span></p>
+      <p>seu dinheiro?</p>
     </div>
-    <div class="icon-box">
-      <i class="material-icons-outlined"></i>
-      <p>Escola</p>
+    <div class="header-subtitle">
+      <p>Venha conosco e dê um <b>UP</b></p>
+      <p>na sua vida financeira!
     </div>
-    <div class="icon-box">
-      <i class="material-icons-outlined"></i>
-      <p></p>
-    </div>
-    <div class="icon-box">
-      <i class="material-icons-outlined"></i>
-      <p>Pagamentos</p>
-    </div>
-    <div class="icon-box">
-      <i class="material-icons-outlined"></i>
-      <p>Satisfação</p>
-    </div>
-  </section>
- 
-
+    </p>
+    <a href="#" class="login-button">Faça seu login</a>
+  </div>
 </body>
+
 </html>
