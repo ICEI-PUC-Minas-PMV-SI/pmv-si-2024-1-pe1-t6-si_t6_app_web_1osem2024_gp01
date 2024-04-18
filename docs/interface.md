@@ -82,6 +82,10 @@ Os wireframes podem ser especificados da seguinte forma:
 
 ![Exemplo de Tela do historico](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/Historico.jpg)
 
+**Modal Editar lançamento:**
+
+![Exemplo de Tela do historico](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/modal_historico.jpg)
+
 
 **Tela de Metas:**
 

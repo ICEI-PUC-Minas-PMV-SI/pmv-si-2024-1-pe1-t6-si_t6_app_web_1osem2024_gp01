@@ -72,23 +72,23 @@
                 </div>
             </div>
         </nav>
-        <!--Selects da tabela-->
-        <div class="floating-select-container">
-            <select class="form-select form-select-sm floating-select m-2">
-                <option selected>Selecione um lançamento</option>
-                <option value="1">Despesas</option>
-                <option value="2">Receitas</option>
-            </select>
-            <select class="form-select form-select-sm floating-select m-2">
-                <option selected>Selecione um período</option>
-                <option value="1">Últimos 15 dias</option>
-                <option value="2">Últimos 30 dias</option>
-                <option value="3">Últimos 60 dias</option>
-                <option value="3">Últimos 90 dias</option>
-            </select>
-        </div>
         <!--tabela do histórico-->
         <div class="container mt-4 custom-container table-responsive">
+            <!--Selects da tabela-->
+            <div class="floating-select-container">
+                <select class="form-select form-select-sm floating-select m-2">
+                    <option selected>Selecione um lançamento</option>
+                    <option value="1">Despesas</option>
+                    <option value="2">Receitas</option>
+                </select>
+                <select class="form-select form-select-sm floating-select m-2">
+                    <option selected>Selecione um período</option>
+                    <option value="1">Últimos 15 dias</option>
+                    <option value="2">Últimos 30 dias</option>
+                    <option value="3">Últimos 60 dias</option>
+                    <option value="3">Últimos 90 dias</option>
+                </select>
+            </div>
             <table id="table" class="table">
                 <thead>
                     <tr>
@@ -104,8 +104,13 @@
                         <td>R$00,00</td>
                         <td>00/00/00</td>
                         <td>
-                            <i class="bi bi-pencil-square"></i>
-                            <i class="bi bi-trash"></i>
+                            <button type="button" class="btn btn-lg template-btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                             <button type="button" class="btn btn-lg template-btn">
+                                <i class="bi bi-trash"></i>
+                            </button>
                         </td>
                     </tr>
                     <tr>
@@ -113,8 +118,13 @@
                         <td>R$00,00</td>
                         <td>00/00/00</td>
                         <td>
-                            <i class="bi bi-pencil-square"></i>
-                            <i class="bi bi-trash"></i>
+                            <button type="button" class="btn btn-lg template-btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                             <button type="button" class="btn btn-lg template-btn">
+                                <i class="bi bi-trash"></i>
+                            </button>
                         </td>
                     </tr>
                     <tr>
@@ -122,8 +132,13 @@
                         <td>R$00,00</td>
                         <td>00/00/00</td>
                         <td>
-                            <i class="bi bi-pencil-square"></i>
-                            <i class="bi bi-trash"></i>
+                            <button type="button" class="btn btn-lg template-btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                             <button type="button" class="btn btn-lg template-btn">
+                                <i class="bi bi-trash"></i>
+                            </button>
                         </td>
                     </tr>
                     <tr>
@@ -131,12 +146,56 @@
                         <td>R$00,00</td>
                         <td>00/00/00</td>
                         <td>
-                            <i class="bi bi-pencil-square"></i>
-                            <i class="bi bi-trash"></i>
+                            <button type="button" class="btn btn-lg template-btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                            <button type="button" class="btn btn-lg template-btn">
+                                <i class="bi bi-trash"></i>
+                            </button>
                         </td>
                     </tr>
                 </tbody>
             </table>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar lançamento</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="" for="">Descrição</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="inputState" class="form-label text-muted">Valor</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="inputState" class="form-label text-muted">Data</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class=" row col-md-12">
+                            <button type="button" class="btn template-btn" id="template-btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>
