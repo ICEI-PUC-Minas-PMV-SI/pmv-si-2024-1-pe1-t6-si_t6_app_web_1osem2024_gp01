@@ -54,12 +54,19 @@ a:hover {
     left: 300px;
 }
 .table {
-    margin-top: 50px;
-    max-width: 70% !important;
+    margin: 0 auto;
+    max-width: 100% !important;
     position: center;
+}
+.table td,
+.table th {
+    text-align: center; 
+    vertical-align: middle;
 }
 thead{
     background-color: #F2F2F2;
+    text-align: center !important;
+    vertical-align: middle !important;
 }
 #table th:nth-child(2), #table td:nth-child(2){
     text-align: left;
@@ -77,10 +84,6 @@ thead{
 
 .custom-container table {
     border-radius: 5px; 
-}
-td>i{
-    font-size: 20px;
-    margin: 5px;
 }
 #template-btn{
     background-color: #28a745 !important;
