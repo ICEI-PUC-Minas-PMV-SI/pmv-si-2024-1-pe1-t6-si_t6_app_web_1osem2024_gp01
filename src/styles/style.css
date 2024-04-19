@@ -54,7 +54,9 @@ a:hover {
     left: 300px;
 }
 .table {
-    margin-top: 90px;
+    margin-top: 50px;
+    max-width: 70% !important;
+    position: center;
 }
 thead{
     background-color: #F2F2F2;
@@ -83,4 +85,7 @@ td>i{
 #template-btn{
     background-color: #28a745 !important;
     color: white;
+}
+button>i{
+    margin: 20px;
 }
