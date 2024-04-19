@@ -125,16 +125,21 @@ label.logo {
 }
 .sobrenos{
   position: absolute;
-  top: 120vh; 
+  top: 120vh;
   width: 100%; 
 }
 .container{
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 100px;
 }
-.sobrenos .card{
-  width: 350px;
-  margin: 8px;
+.sobrenos .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sobrenos .card {
+  flex-grow: 1;
+  margin: 20px;
 }
 
 @media (max-width: 952px) {
