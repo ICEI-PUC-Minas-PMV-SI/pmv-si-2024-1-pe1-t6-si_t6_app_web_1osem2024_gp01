@@ -13,7 +13,7 @@ body {
   padding: 0;
   height: 100vh;
   background-image: url('img/index_fundo.jpg');
-  background-color: #336740;
+  background-color:  #336740;
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
@@ -123,14 +123,22 @@ label.logo {
   background-color: #3f4140;
   transition: 0.5s;
 }
+.float-left > i{
+  font-size: 15vw;
+  color: #fff;
+  margin-left: 100px;
+}
+.float-left > p{
+  font-size: 1.5vw;
+  color: #000000;
+}
 .sobrenos{
-  position: absolute;
-  top: 120vh;
+  margin-top: 8vh;
+  margin-bottom: 15vh;
   width: 100%; 
 }
 .container{
-  margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 5vh;
 }
 .sobrenos .row {
   display: flex;
@@ -139,8 +147,15 @@ label.logo {
 
 .sobrenos .card {
   flex-grow: 1;
-  margin: 20px;
+  margin: 40px;
 }
+.bg-color{
+  background-color: #28a745 ;
+  padding: 50px;
+  border: #fff solid;
+  border-radius: 6px;
+}
+
 
 @media (max-width: 952px) {
   label.logo {
@@ -185,6 +200,7 @@ section {
   height: calc(100vh - 80px);
 }
 
+
 body {
   background-size: cover;
   background-repeat: no-repeat;
@@ -212,21 +228,15 @@ body {
   }
 }
 
-
-.sobrenos {
-  padding-bottom: 120px;
-}
-
-
-
 .footer {
   border-top: #fff solid;
-  margin-top: 1200px;
-  position: relative; 
+  position: relative;
+  bottom: 0; 
   width: 100%;
   background: #3f4140;
   border-radius: 6px;
   padding: 60px 0; 
+  max-height: 400px;
 }
 
 .footer .footer-row {
@@ -235,8 +245,8 @@ body {
   justify-content: space-between;
   gap: 3.5rem;
   padding: 0 60px; 
+  height: 100%;
 }
-
 
 .footer-row .footer-col h4 {
   color: #fff;
@@ -334,15 +344,11 @@ body {
     gap: 1rem;
   }
 
-  .footer-col form {
-    display: block;
-  }
-
   .footer-col form :where(input, button) {
-    width: 100%;
+    width: calc(100% - 20px);
   }
 
   .footer-col form button {
-    margin: 10px 0 0 0;
+    margin: 10px;
   }
 }
