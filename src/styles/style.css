@@ -1,7 +1,21 @@
+@media screen and (max-width: 1366px) {
+    .custom-container {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .custom-container {
+        width: 1400px;
+    }
+    .custom-container{
+        height: 750px !important;
+    }
+}
 body {
     background-color: #f8f9fa !important;
 }
-/*inicio do nav-bar*/
+/*inicio do nav-bar padrão de todas as telas*/
 .navbar-toggler-icon {
     font-size: 0.75rem; 
     margin-bottom: 4px;
@@ -36,7 +50,58 @@ a:hover {
     font-size: 18px;
 }
 
-/*inicio do conteudo do body*/
+/*tela home*/
+.card{
+    margin-top: 30px;
+    height: 180px;
+    font-size: 25px;
+}
+.card-body h4{
+    margin-top: 1vh;
+}
+.card .connection{
+    margin-top: 1vh;
+    width: 150px;
+    height: 40px;
+}
+
+.card-body button i{
+    font-size: 30px;
+}
+.btn{
+    width: 200px;
+    height: 38px;
+}
+.float-end{
+    width: 100px;
+    height: 70px;
+}
+.custom-select {
+    margin-top: 10px;
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+}
+.relatorio-buttons {
+    position: fixed;
+    bottom: 10px;
+    margin-bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1000;
+}
+.relatorio-buttons-container {
+    display: flex;
+    justify-content: center;
+}
+.row-buttons {
+    margin-top: 20px; 
+    justify-content: center;
+}
+.relatorio-buttons-container .btn {
+    margin: 0 5px; 
+}
+/*inicio do conteudo do body das telas meta e histórico*/
 .floating-select-container {
     display: flex;
     flex-wrap: wrap;
@@ -73,7 +138,6 @@ thead{
 }
 .custom-container {
     background-color: #ffffff;
-    height: 100%;
     border-radius: 5px; 
     height: 500px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
