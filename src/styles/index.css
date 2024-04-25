@@ -14,9 +14,9 @@ body {
   height: 100vh;
   background-image: url('img/index_fundo.jpg');
   background-color:  #336740;
-  background-size: cover;
-  background-position: center; 
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center; 
   overflow-y: scroll;
 }
 
@@ -133,11 +133,14 @@ label.logo {
   color: #000000;
 }
 .sobrenos{
-  margin-top: 8vh;
-  margin-bottom: 15vh;
-  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  margin-top: 180px;
+  padding: 20px;
 }
-.container{
+.container{ 
   margin-bottom: 5vh;
 }
 .sobrenos .row {
@@ -156,6 +159,21 @@ label.logo {
   border-radius: 6px;
 }
 
+.icon-container {
+  position: fixed;
+  clear: both;
+  margin-left: 1300px;
+  position: static;
+  color: #fff;
+  font-size: 5vw;
+  z-index: 999;
+}
+
+@media (max-width: 1400px){
+  .icon-container {
+    margin-left: 500px;
+  }
+}
 
 @media (max-width: 952px) {
   label.logo {
@@ -236,7 +254,7 @@ body {
   background: #3f4140;
   border-radius: 6px;
   padding: 60px 0; 
-  max-height: 400px;
+  height: 600px;
 }
 
 .footer .footer-row {
@@ -244,8 +262,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 3.5rem;
-  padding: 0 60px; 
-  height: 100%;
+  padding: 0 2rem; 
 }
 
 .footer-row .footer-col h4 {
@@ -253,11 +270,6 @@ body {
   font-size: 1.2rem;
   font-weight: 400;
 }
-
-.footer-col .links {
-  margin-top: 20px;
-}
-
 .footer-col .links li {
   list-style: none;
   margin-bottom: 10px;
@@ -273,9 +285,8 @@ body {
 }
 
 .footer-col p {
-  margin: 20px 0;
   color: #bfbfbf;
-  max-width: 300px;
+
 }
 
 .footer-col form {
@@ -331,6 +342,7 @@ body {
 
 @media (max-width: 768px) {
   .footer {
+    justify-content: center;
     position: relative;
     bottom: 0;
     left: 0;

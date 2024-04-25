@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Usuário</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('styles/img/bg-login.jpg');
+            background-size: cover;
+            background-position: left;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            /* Centraliza horizontalmente */
+            align-items: center;
+        }
+
+        .form-container {
+            width: 400px;
+            max-width: 90%;
+            /* Largura máxima para evitar estender muito na tela */
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h3 class="mb-4">Novo Usuário</h3>
+        <form id="signupForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+                <div id="nameError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                <div id="emailError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                <div id="passwordError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Repetir Senha</label>
+                <input type="password" class="form-control" id="confirmPassword"
+                    placeholder="Digite sua senha novamente">
+                <div id="confirmPasswordError" class="error-message"></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+            <a href="login.html" class="btn btn-secondary btn-block">Cancelar</a>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let confirmPassword = document.getElementById('confirmPassword').value;
+            let nameError = document.getElementById('nameError');
+            let emailError = document.getElementById('emailError');
+            let passwordError = document.getElementById('passwordError');
+            let confirmPasswordError = document.getElementById('confirmPasswordError');
+            nameError.innerHTML = '';
+            emailError.innerHTML = '';
+            passwordError.innerHTML = '';
+            confirmPasswordError.innerHTML = '';
+            let isValid = true;
+            if (name.trim() === '') {
+                nameError.innerHTML = 'Por favor, digite seu nome';
+                isValid = false;
+            }
+            if (email.trim() === '') {
+                emailError.innerHTML = 'Por favor, digite seu email';
+                isValid = false;
+            }
+            if (password.trim() === '') {
+                passwordError.innerHTML = 'Por favor, digite sua senha';
+                isValid = false;
+            }
+            if (confirmPassword.trim() === '') {
+                confirmPasswordError.innerHTML = 'Por favor, repita sua senha';
+                isValid = false;
+            }
+            if (password !== confirmPassword) {
+                confirmPasswordError.innerHTML = 'As senhas não coincidem';
+                isValid = false;
+            }
+            if (isValid) {
+                window.location.replace('dashboard.html'); // Redireciona para dashboard.html após a validação
+            }
+            return isValid;
+        }
+    </script>
+</body>
+
+</html>

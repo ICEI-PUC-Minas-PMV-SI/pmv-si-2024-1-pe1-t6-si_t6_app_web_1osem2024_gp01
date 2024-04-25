@@ -23,9 +23,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body  id="home">
   <!--menu-->
-  <div class="navbar-wrapper">
+  <div class="navbar-wrapper" id="voltar">
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
       <i class="fas fa-bars"></i>
@@ -39,9 +39,9 @@
       </li>
     </ul>
     <ul class="mr-auto">
-      <li><a class="active" href="#">Home</a></li>
-      <li><a href="#">Sobre nós</a></li>
-      <li><a href="#">Contato</a></li>
+      <li><a class="active" href="#" onclick="scrollToSection('home')">Home</a></li>
+      <li><a href="#" onclick="scrollToSection('sobrenos')">Sobre nós</a></li>
+      <li><a href="#" onclick="scrollToSection('contato')">Contato</a></li>
     </ul>
   </div>
   <!--conteúdo home-->
@@ -56,10 +56,10 @@
       <p>na sua vida financeira!
     </div>
     </p>
-    <a href="#" class="login-button">Faça seu login</a>
+    <a href="login.html" class="login-button">Faça seu login</a>
   </div>
   <!--conteúdo sobre nós-->
-  <div class="sobrenos">
+  <div class="sobrenos" id="sobrenos">
     <div class="container">
       <div class="row col-md-12 bg-color">
         <h1 class="text-center mb-5">Conheça a <span class="text-light">Gerency!</span></h1>
@@ -67,34 +67,36 @@
           <i class="bi bi-lightbulb"></i>
         </div>
         <div class="col-md-8 float-left">
-          <p>A <span class="text-light">Gerency</span> é um sistema de <span class="text-light">controle financeiro</span> pessoal, desenvolvido para te ajudar a gerenciar suas
-            finanças de forma eficiente e inteligente. <br>
+          <p>A <span class="text-light">Gerency</span> é um sistema de <span class="text-light">controle
+              financeiro</span> pessoal, desenvolvido para te ajudar a gerenciar suas
+            finanças de forma <span class="text-light">eficiente e inteligente.</span> <br>
             Resolvendo o problema da falta de controle, a solução oferece uma <span class="text-light">
-              interface acessível
-              e intuitiva
+              interface intuitiva
             </span> que permite você acompanhar suas finanças diárias,
-            estabelecer metas financeiras e realizar <span class="text-light">análises detalhadas</span> para uma melhor tomada de decisão. <br>
-            Essa ferramenta abrangente e amigável veio para <span class="text-light">promover a sua saúde financeira</span> pessoal.
+            estabelecer metas financeiras e realizar <span class="text-light">análises detalhadas</span> para uma melhor
+            tomada de decisão. <br>
+            Essa ferramenta abrangente e amigável veio para <span class="text-light">promover a sua saúde
+              financeira</span> pessoal.
           </p>
         </div>
       </div>
       <div class="row cards">
         <!-- Conteúdo sobre nós -->
-        <div class="card bg-transparent col-md-3 text-light">
+        <div class="card border-white bg-transparent col-md-3 text-light">
           <div class="card-body">
             <h2>Simplicidade Financeira</h2>
             <p>Simplifique sua gestão financeira conosco. Nossa aplicação oferece uma interface intuitiva, permitindo
               que você acompanhe suas finanças com facilidade.</p>
           </div>
         </div>
-        <div class="card bg-transparent col-md-3 text-light">
+        <div class="card border-white bg-transparent col-md-3 text-light">
           <div class="card-body">
             <h2>Metas Personalizadas</h2>
             <p>Trace objetivos financeiros personalizados e acompanhe seu progresso em direção ao sucesso. Seja
               economizar para uma viagem ou investir em seu futuro, estamos aqui para ajudar.</p>
           </div>
         </div>
-        <div class="card bg-transparent col-md-3 text-light">
+        <div class="card border-white bg-transparent col-md-3 text-light">
           <div class="card-body">
             <h2>Insights</h2>
             <p>Obtenha insights valiosos sobre seus hábitos financeiros. Com relatórios, você pode entender
@@ -102,12 +104,15 @@
           </div>
         </div>
       </div>
+      <div class="icon-container"onclick="scrollToSection('voltar')">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+      </div>
     </div>
-
   </div>
-  <section class="footer">
-    <div class="footer-row">
-      <div class="footer-col">
+  <!--fim do sobre nós-->
+  <section class="footer" id="contato">
+    <div class="footer-row col-md-12">
+      <div class="footer-col  col-md-3">
         <h4>Informações</h4>
         <ul class="links">
           <li><a href="#">Sobre nós</a></li>
@@ -117,7 +122,7 @@
           <li><a href="#"></a></li>
         </ul>
       </div>
-      <div class="footer-col">
+      <div class="footer-col  col-md-3">
         <h4>Suporte</h4>
         <ul class="links">
           <li><a href="#">Atendimento</a></li>
@@ -128,7 +133,7 @@
           <li><a href="#"></a></li>
         </ul>
       </div>
-      <div class="footer-col">
+      <div class="footer-col  col-md-3">
         <h4>Legal</h4>
         <ul class="links">
           <li><a href="#"></a></li>
@@ -139,7 +144,7 @@
           <li><a href="#"></a></li>
         </ul>
       </div>
-      <div class="footer-col">
+      <div class="footer-col  col-md-3">
         <h4>Newsletter</h4>
         <p>
           Assine nossa newsletter para uma dose semanal
@@ -159,9 +164,24 @@
       </div>
     </div>
   </section>
-
-
-
 </body>
+<script>
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId)
+    if (home) {
+      section.scrollIntoView({ behavior: "smooth", block: "start", inline: "start", });
+    }
+    else if (sobrenos) {
+      section.scrollIntoView({ behavior: "smooth", block: "start", inline: "start", });
+    }
+    else if (contato) {
+      section.scrollIntoView({ behavior: "smooth", block: "start", inline: "start", });
+    }
+    else if (voltar) {
+      section.scrollIntoView({ behavior: "smooth", block: "start", inline: "start", });
+    }
+  }
+
+</script>
 
 </html>
