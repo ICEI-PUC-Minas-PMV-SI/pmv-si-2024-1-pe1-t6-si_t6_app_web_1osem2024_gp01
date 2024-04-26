@@ -91,24 +91,24 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 ## Descrição das estruturas:
 
 ## Notícia
-|  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
-|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
-| Nome (id: nomeUsuario)             | Texto  | Nome completo do usuário            | João da Silva                                              |
-| Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
-| Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
-| Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
-| Id             | Numero (Inteiro)  | Identificador único da notícia            | 1                                              |
-| Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
-| Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
-| Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
-| Id             | Numero (Inteiro)  | Identificador único da notícia            | 1                                              |
-| Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
-| Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
-| Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
-| Id             | Numero (Inteiro)  | Identificador único da notícia            | 1                                              |
-| Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
-| Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
-| Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
+|  **Tela**      |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
+|:--------------: |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
+|**Cadastro de Novo Usuário:** | Nome (id: nomeUsuario)             | Texto  | Nome completo do usuário            | João da Silva                                              |
+| **Cadastro de Novo Usuário:**| mail (id: emailUsuario)         | Texto             | Endereço de email do usuário                         | joao.silva@example.com                                  |
+| **Cadastro de Novo Usuário:**| Senha (id: senhaUsuario)       | Texto             | Senha de acesso                       | senha@123                            |
+| **Cadastro de Novo Usuário:**| Confirmação de Senha (id: confirmaSenhaUsuario)  | Texto  | Confirmação da senha inserida. | senha@123                                              |
+| | Id             | Numero (Inteiro)  | Identificador único da notícia            | 1                                              |
+| | Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
+| | Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
+| | Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
+| | Id             | Numero (Inteiro)  | Identificador único da notícia            | 1                                              |
+| | Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
+| | Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
+| | Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
+| | Id             | Numero (Inteiro)  | Identificador único da notícia            | 1                                              |
+| | Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
+| | Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
+| | Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
 
 
 
