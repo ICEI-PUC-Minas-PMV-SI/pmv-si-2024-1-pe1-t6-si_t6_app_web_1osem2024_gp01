@@ -64,7 +64,9 @@ a:hover {
     width: 150px;
     height: 40px;
 }
-
+.card .gerencie{
+    margin-left: 100px;
+}
 .card-body button i{
     font-size: 30px;
 }
@@ -127,6 +129,7 @@ a:hover {
 .table th {
     text-align: center; 
     vertical-align: middle;
+    white-space: nowrap;
 }
 thead{
     background-color: #F2F2F2;
@@ -139,14 +142,14 @@ thead{
 .custom-container {
     background-color: #ffffff;
     border-radius: 5px; 
-    height: 500px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow-y: scroll;
+    overflow-y: auto;
     position: relative;
     z-index: 1;
 }
 
 .custom-container table {
+    max-width: 100%;
     border-radius: 5px; 
 }
 #template-btn{

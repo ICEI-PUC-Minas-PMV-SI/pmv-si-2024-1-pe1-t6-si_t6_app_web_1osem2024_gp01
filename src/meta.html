@@ -74,6 +74,15 @@
         </nav>
         <!--tabela de metas-->
         <div class="container mt-4 custom-container table-responsive">
+            <div class="floating mt-5">
+                <div class="row align-items-center">
+                    <div class="d-flex col-12">
+                        <input class="form-control me-2" type="search" placeholder="Pesquise sua meta"
+                            aria-label="Search">
+                        <button class="btn btn-success" type="submit">Pesquisar</button>
+                    </div>
+                </div>
+            </div>
             <table id="table" class="table mt-5">
                 <thead>
                     <tr>
@@ -215,7 +224,7 @@
                             </button>
                         </td>
                     </tr>
-                    
+
                 </tbody>
             </table>
         </div>
@@ -231,46 +240,51 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <label class="" for="">Descrição de meta</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" id="descricaoMeta">
+                                <div id="descricaoMetaError" class="error-message text-danger"></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="inputState" class="form-label text-muted">Data de criação</label>
-                                <input type="date" class="form-control">
+                                <input type="date" class="form-control" id="dataCriacaoMeta">
+                                <div id="dataCriacaoMetaError" class="error-message text-danger"></div>
                             </div>
                             <div class="col-md-6">
                                 <label for="inputState" class="form-label text-muted">Data de realização</label>
-                                <input type="date" class="form-control">
+                                <input type="date" class="form-control" id="dataRealizacaoMeta">
+                                <div id="dataRealizacaoMetaError" class="error-message text-danger"></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="inputState" class="form-label text-muted">Valor inicial</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" id="valorInicialMeta">
+                                <div id="valorInicialMetaError" class="error-message text-danger"></div>
                             </div>
                             <div class="col-md-6">
                                 <label for="inputState" class="form-label text-muted">Valor atual</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" id="valorAtualMeta">
+                                <div id="valorAtualMetaError" class="error-message text-danger"></div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <div class="row">
                             <div class="col-md-6">
-                                <button type="button" class="btn btn-primary btn-block" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button type="button" class="btn btn-primary btn-block" onclick="validateMeta()">
                                     Editar
                                 </button>
                             </div>
 
                             <div class="col-md-6">
-                                <button type="button" class="btn btn-danger btn-block" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button type="button" class="btn btn-danger btn-block">
                                     Excluir
                                 </button>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -282,6 +296,52 @@
     <script src="//cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <script src="script/index.js"></script>
+    <script>
+        function validateMeta() {
+            let descricaoMeta = document.getElementById('descricaoMeta').value;
+            let dataCriacaoMeta = document.getElementById('dataCriacaoMeta').value;
+            let dataRealizacaoMeta = document.getElementById('dataRealizacaoMeta').value;
+            let valorInicialMeta = document.getElementById('valorInicialMeta').value;
+            let valorAtualMeta = document.getElementById('valorAtualMeta').value;
+
+            let descricaoMetaError = document.getElementById('descricaoMetaError');
+            let dataCriacaoMetaError = document.getElementById('dataCriacaoMetaError');
+            let dataRealizacaoMetaError = document.getElementById('dataRealizacaoMetaError');
+            let valorInicialMetaError = document.getElementById('valorInicialMetaError');
+            let valorAtualMetaError = document.getElementById('valorAtualMetaError');
+
+            descricaoMetaError.innerHTML = '';
+            dataCriacaoMetaError.innerHTML = '';
+            dataRealizacaoMetaError.innerHTML = '';
+            valorInicialMetaError.innerHTML = '';
+            valorAtualMetaError.innerHTML = '';
+            let isValid = true;
+            if (descricaoMeta.trim() === '') {
+                descricaoMetaError.innerHTML = 'Por favor, digite uma descrição';
+                isValid = false;
+            }
+            if (dataCriacaoMeta.trim() === '') {
+                dataCriacaoMetaError.innerHTML = 'Por favor, digite a data de criação';
+                isValid = false;
+            }
+            if (dataRealizacaoMeta.trim() === '') {
+                dataRealizacaoMetaError.innerHTML = 'Por favor, digite a data que deseja realizar a meta';
+                isValid = false;
+            }
+            if (valorInicialMeta.trim() === '') {
+                valorInicialMetaError.innerHTML = 'Por favor, digite o valor inical';
+                isValid = false;
+            }
+            if (valorAtualMeta.trim() === '') {
+                valorAtualMetaError.innerHTML = 'Por favor, digite o valor atual';
+                isValid = false;
+            }
+            if (isValid) {
+                window.location.replace('meta.html');
+            }
+            return isValid;
+        }
+    </script>
 </body>
 
 </html>

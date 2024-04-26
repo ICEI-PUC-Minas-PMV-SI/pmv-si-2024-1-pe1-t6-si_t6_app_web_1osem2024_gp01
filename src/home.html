@@ -111,14 +111,16 @@
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title info">Histórico</h3>
-                            <button type="button" class="btn btn-dark btn-sm template-btn float-center connection"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Receitas
-                            </button>
-                            <button type="button" class="btn btn-dark btn-sm template-btn float-center connection"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Despesas
-                            </button>
+                            <a href="historico.html">
+                                <button type="button" class="btn btn-dark btn-sm template-btn float-center connection mt-5">
+                                    Receitas
+                                </button>
+                            </a>
+                            <a href="historico.html">
+                                <button type="button" class="btn btn-dark btn-sm template-btn float-center connection mt-5">
+                                    Despesas
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -126,17 +128,17 @@
                     <div class="card">
                         <div class="card-body ">
                             <h3 class="card-title info">Metas</h3>
-                            <div class="d-flex flex-column align-items-center">
-                                <button type="button"
-                                    class="btn btn-dark btn-sm template-btn connection" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Gerencie
-                                </button>
-                            </div>
-                            <button type="button" class="btn btn-sm template-btn float-end mb-5" data-bs-toggle="modal"
+                            <button type="button" class="btn btn-sm template-btn float-end" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">
                                 <i class="bi bi-plus-circle"></i>
                             </button>
+                            <div class="d-flex flex-column align-items-center">
+                                <a href="meta.html">
+                                    <button type="button" class="btn btn-dark btn-sm template-btn connection gerencie mt-5">
+                                        Gerencie
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,7 +148,7 @@
                     <h3 class="card-title info mt-3">Relatórios</h3>
                     <div class="card">
                         <div class="card-body">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -167,14 +169,100 @@
                     </select>
                 </div>
             </div>
-        </div>        
+        </div>
     </main>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Adicionar</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="" for="">Descrição de meta</label>
+                            <input type="text" class="form-control" id="descricao">
+                            <div id="descricaoError" class="error-message text-danger"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="inputState" class="form-label text-muted">Valor</label>
+                            <input type="text" class="form-control"  id="valor">
+                            <div id="valorError" class="error-message text-danger"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputState" class="form-label text-muted">Data</label>
+                            <input type="date" class="form-control"  id="date">
+                            <div id="dataError" class="error-message text-danger"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="inputState" class="form-label text-muted">Categoria</label>
+                            <input type="text" class="form-control"  id="categoria">
+                            <div id="categoriaError" class="error-message text-danger"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-success" onclick="validateModal()">
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="//code.jquery.com/jquery-3.7.1.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.datatables.net/2.0.3/js/dataTables.js"></script>
     <script src="//cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <script src="script/index.js"></script>
+
+    <script>
+        function validateModal() {
+            let descricao = document.getElementById('descricao').value;
+            let valor = document.getElementById('valor').value;
+            let date = document.getElementById('date').value;
+            let categoria = document.getElementById('categoria').value;
+            let descricaoError = document.getElementById('descricaoError');
+            let valorError = document.getElementById('valorError');
+            let dataError = document.getElementById('dataError');
+            let categoriaError = document.getElementById('categoriaError');
+            descricaoError.innerHTML = '';
+            valorError.innerHTML = '';
+            dataError.innerHTML = '';
+            categoriaError.innerHTML = '';
+            let isValid = true;
+            if (descricao.trim() === '') {
+                descricaoError.innerHTML = 'Por favor, digite uma descrição';
+                isValid = false;
+            }
+            if (valor.trim() === '') {
+                valorError.innerHTML = 'Por favor, digite um valor';
+                isValid = false;
+            }
+            if (date.trim() === '') {
+                dataError.innerHTML = 'Por favor, digite uma data';
+                isValid = false;
+            }
+            if (categoria.trim() === '') {
+                categoriaError.innerHTML = 'Por favor, selecione uma categoria';
+                isValid = false;
+            }
+            if (isValid) {
+                window.location.replace('home.html');
+            }
+            return isValid;
+        }
+    </script>
 </body>
 
 </html>
