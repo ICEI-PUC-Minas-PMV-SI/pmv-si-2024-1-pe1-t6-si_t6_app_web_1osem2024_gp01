@@ -43,7 +43,8 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
    - Implementação de modais de edição na página (histórico.html), onde o usuário edita seus lançamentos, exclui ou analisa de forma detalhada.
 
 8. **Página Metas - Visualização de Metas:**
-   - Implementação de uma página (meta.html) para exibir as metas financeiras do usuário, incluindo todas as metas registradas anteriormente atráves de uma tabela.
+   - Implementação de uma página (meta.html) para exibir as metas financeiras do usuário, incluindo todas as metas registradas anteriormente.
+   - Inclusão de um input para pesquisa de metas já lançadas.
    - Organização das metas dentro de uma tabela, com colunas de descrição, data e botão de visualizar meta que implementa um modal onde é possível analisar, editar e excluir a meta.
 
 - Cadastro de Novo Usuário: [https://repl.it/@rommelpuc/LoginApp](https://repl.it/@rommelpuc/LoginApp)
@@ -85,7 +86,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | RF-013 | A aplicação emiti um breve relatório com uma visão clara dos lançamentos e metas, atráves da filtragem por botões abaixo do card "Relatórios".                                                    | Ingrid          | home.html           |
 | RF-014 | A aplicação apresenta uma página que mostra de forma detalhada e organizada todas as despesas e receitas registradas, assim o usuário pode analisar e editar cada lançamento atráves de um modal. | Ingrid          | historico.html      |
 | RF-015 | A aplicação valida se todos os campos obrigatórios estão preenchidos no modal de edição de lançamento.                                                                                            | Ingrid          | historico.html           |
-| RF-016 | A aplicação apresenta uma página para que o usuário possa analisar e editar suas metas financeiras.                                                                                               | Ingrid          | meta.html           |
+| RF-016 | A aplicação apresenta uma página para que o usuário possa pesquisar, analisar e editar suas metas financeiras.                                                                                               | Ingrid          | meta.html           |
 | RF-017 | A aplicação valida se todos os campos obrigatórios estão preenchidos no modal de edição de metas.                                                                                                 | Ingrid          | meta.html           |
 
 ## Descrição das estruturas:
