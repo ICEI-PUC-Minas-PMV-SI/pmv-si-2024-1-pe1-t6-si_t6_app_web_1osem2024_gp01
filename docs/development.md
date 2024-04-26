@@ -82,10 +82,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |RF-015| A aplicação valida se todos os campos obrigatórios estão preenchidos no formulário de registro de despesas. | Aluno | registrodespesas.html |
 |RF-016| A aplicação apresenta uma página para que o usuário possa definir metas financeiras, como economias mensais ou objetivos de gastos. | Ingrid | meta.html |
 |RF-017| A aplicação valida se todos os campos obrigatórios estão preenchidos no formulário de definição de metas. | Ingrid | meta.html |
-|RF-018| A aplicação apresenta uma página para permitir que o usuário emita relatórios financeiros, incluindo informações como saldo, receitas, despesas e metas alcançadas.
- | Aluno | relatorio.html |
-|RF-019| A aplicação apresenta uma funcionalidade de histórico para que o usuário possa visualizar todas as transações financeiras registradas no sistema, incluindo detalhes e estatísticas.
- | Ingrid | historico.html |
+|RF-018| A aplicação apresenta uma página para permitir que o usuário emita relatórios financeiros, incluindo informações como saldo, receitas, despesas e metas alcançadas. | Aluno | relatorio.html |
+|RF-019| A aplicação apresenta uma funcionalidade de histórico para que o usuário possa visualizar todas as transações financeiras registradas no sistema, incluindo detalhes e estatísticas. | Ingrid | historico.html |
 
 
 
