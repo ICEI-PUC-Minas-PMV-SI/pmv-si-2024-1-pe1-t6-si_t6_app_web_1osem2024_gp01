@@ -2,23 +2,28 @@
 
 A Programação de Funcionalidades para um sistema de controle financeiro abrange uma variedade de aspectos que são essenciais para garantir a eficiência e a usabilidade da aplicação. Aqui está uma descrição geral das funcionalidades que foram implementadas no sistema Gerency:
 
-1. **Cadastro de Novo Usuário:**
+1. **Página Index - Conheça a Gerency:**
+
+   - Implementação de um home no (index.html) que exibe informações sobre a Gerency e exibe um botão de login para acesso ao sistema.
+   - Implementação de um scroll automático, atráves do clique das páginas descritas no menu de navegação para que o usuário visualize cada área da página.
+
+2. **Login de Usuário:**
+
+   - Desenvolvimento de um formulário de login (login.html) que solicita usuário (email ou nome de usuário) e senha.
+   - Validação dos campos obrigatórios (Usuário e Senha) e redirecionamento para a página (home.html) do sistema "Gerency" após o login bem-sucedido.
+
+3. **Cadastro de Novo Usuário:**
 
    - Implementação de um formulário de cadastro (novousuario.html) que exige informações como nome, email, senha, e confirmação de senha.
    - Validação dos campos para garantir que os dados inseridos sejam válidos e atendam aos critérios estabelecidos (ex: email válido, senha com mínimo de caracteres).
    - Envio de um email de confirmação após o cadastro bem-sucedido, utilizando uma função de validação JavaScript.
 
-2. **Login de Usuário:**
+4. **Recuperação de Senha:**
 
-   - Desenvolvimento de um formulário de login (index.html) que solicita usuário (email ou nome de usuário) e senha.
-   - Validação dos campos obrigatórios (Usuário e Senha) e redirecionamento para a página bemvindo.html após o login bem-sucedido.
-
-3. **Recuperação de Senha:**
-
-   - Criação de uma página (recuperacaosenha.html) com um campo obrigatório para o email do usuário que esqueceu a senha.
+   - Criação de uma página (recuperarsenha.html) com um campo obrigatório para o email do usuário que esqueceu a senha.
    - Validação do campo de email e envio de um email com instruções para a recuperação da senha.
 
-4. **Página Home:**
+5. **Página Home:**
 
    - Desenvolvimento da página (home.html) com um menu hamburguer no canto superior esquerdo contendo as opções: Home, Historico, e Metas.
    - Centralização do nome do sistema "Gerency" na página.
@@ -26,18 +31,18 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
    - Exibição de três retângulos (Saldo, Receitas, Despesas). Logo abaixo, implementação de dois retângulos com acesso a página "Histórico" filtrada por tipo de lançamento e acesso a página "Metas".
    - Como última linha da página "Home", existe um retângulo que apresenta os relatórios que podem ser filtrados por botões de lançamento.
 
-5. **Página Home - Registro de Receitas, Despesas e Metas:**
+6. **Página Home - Registro de Receitas, Despesas e Metas:**
 
    - Implementação de modais na página (home.html) para o usuário registrar suas receitas, despesas e metas atráves de botões com o ícone de "+" para adicionar novos valores.
    - Campos para data, descrição, categoria, valor, etc., com validação dos dados inseridos.
 
-6. **Página Histórico - Visualização Detalhada de Despesas e Receitas:**
+7. **Página Histórico - Visualização Detalhada de Despesas e Receitas:**
 
    - Inclusão de filtros de pesquisa para facilitar a navegação no histórico, como por período (15, 30, 60, 90 dias) e tipo de lançamento.
    - Desenvolvimento da página (histórico.html) que apresenta uma visão detalhada e organizada de todas as despesas e receitas registradas atráves de uma tabela.
    - Implementação de modais de edição na página (histórico.html), onde o usuário edita seus lançamentos, exclui ou analisa de forma detalhada.
 
-7. **Página Metas - Visualização de Metas:**
+8. **Página Metas - Visualização de Metas:**
    - Implementação de uma página (meta.html) para exibir as metas financeiras do usuário, incluindo todas as metas registradas anteriormente atráves de uma tabela.
    - Organização das metas dentro de uma tabela, com colunas de descrição, data e botão de visualizar meta que implementa um modal onde é possível analisar, editar e excluir a meta.
 
