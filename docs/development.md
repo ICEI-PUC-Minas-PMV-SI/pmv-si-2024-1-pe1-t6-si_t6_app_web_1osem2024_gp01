@@ -44,6 +44,7 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
 - Página Home: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
 - Visualização Detalhada de Despesas: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
 - Registro de Receitas e Despesas: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
+- Visualização do Histórico: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
 
 
 > **Links Úteis**:
@@ -64,8 +65,30 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 |ID    | Descrição do Requisito | Responsável | Artefato Criado |
 |------|------------------------|------------|-----------------|
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | João | index.html |
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês | Ana Paula | cadastro-noticia.html |
+|RF-001| A aplicação permite que novos usuários se cadastrem inserindo informações como nome, email, senha e confirmação de senha. | Isabelle | novousuario.html |
+|RF-002| A aplicação valida se todos os campos obrigatórios estão preenchidos no formulário de cadastro. | Isabelle | novousuario.html |
+|RF-003| A aplicação valida se o email inserido possui um formato válido. | Isabelle | novousuario.html |
+|RF-004| A aplicação permite que usuários cadastrados façam login no sistema utilizando seu email e senha. | Isabelle | login.html |
+|RF-005| A aplicação valida se os campos de email e senha estão preenchidos no formulário de login. | Isabelle | login.html |
+|RF-006| A aplicação oferece uma funcionalidade para que os usuários possam recuperar sua senha caso a esqueçam. | Isabelle | recuperarsenha.html |
+|RF-007| A aplicação valida se o campo de email está preenchido no formulário de recuperação de senha. | Isabelle | recuperarsenha.html |
+|RF-008| A aplicação apresenta um painel inicial após o login, mostrando informações como saldo, receitas e despesas. | Isabelle/Ingrid | home.html |
+|RF-009| A aplicação inclui um menu horizontal com opções de navegação para visualizar despesas, registrar receitas, registrar despesas, definir metas e emitir relatório. | Isabelle/Ingrid | home.html |
+|RF-010| A aplicação apresenta uma página que mostra uma visão detalhada e organizada de todas as despesas registradas. | Isabelle | viewdespesas.html |
+|RF-011| A aplicação apresenta um menu horizontal na página de visualização de despesas para navegação entre outras funcionalidades do sistema. | Isabelle | viewdespesas.html |
+|RF-012| A aplicação apresenta uma página para permitir que o usuário registre suas receitas no sistema. | Aluno | registroreceitas.html |
+|RF-013| A aplicação valida se todos os campos obrigatórios estão preenchidos no formulário de registro de receitas. | Aluno | registroreceitas.html |
+|RF-014| A aplicação apresenta uma página para permitir que o usuário registre suas despesas no sistema. | Aluno | registrodespesas.html |
+|RF-015| A aplicação valida se todos os campos obrigatórios estão preenchidos no formulário de registro de despesas. | Aluno | registrodespesas.html |
+|RF-016| A aplicação apresenta uma página para que o usuário possa definir metas financeiras, como economias mensais ou objetivos de gastos. | Ingrid | meta.html |
+|RF-017| A aplicação valida se todos os campos obrigatórios estão preenchidos no formulário de definição de metas. | Ingrid | meta.html |
+|RF-018| A aplicação apresenta uma página para permitir que o usuário emita relatórios financeiros, incluindo informações como saldo, receitas, despesas e metas alcançadas.
+ | Aluno | relatorio.html |
+|RF-019| A aplicação apresenta uma funcionalidade de histórico para que o usuário possa visualizar todas as transações financeiras registradas no sistema, incluindo detalhes e estatísticas.
+ | Ingrid | historico.html |
+
+
+
 
 ## Descrição das estruturas:
 
