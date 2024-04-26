@@ -31,9 +31,11 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
    - Campos para data, descrição, categoria, valor, etc., com validação dos dados inseridos.
   
 7. **Visualização do Histórico:**
-  - Implementação de uma página (historico.html) para exibir o histórico de transações financeiras do usuário, incluindo receitas e despesas registradas anteriormente.
-  - Organização das transações por data, permitindo ao usuário visualizar seu histórico de maneira cronológica.
-  - Inclusão de filtros de pesquisa para facilitar a navegação no histórico, como por período (semana, mês, ano), categoria, tipo de transação, etc.
+   - Implementação de uma página (historico.html) para exibir o histórico de transações financeiras do usuário, incluindo receitas e despesas registradas anteriormente.
+   - Organização das transações por data, permitindo ao usuário visualizar seu histórico de maneira cronológica.
+   - Inclusão de filtros de pesquisa para facilitar a navegação no histórico, como por período (semana, mês, ano), categoria, tipo de transação, etc.
+  
+
 
 
 - Cadastro de Novo Usuário: [https://repl.it/@rommelpuc/LoginApp](https://repl.it/@rommelpuc/LoginApp) 
