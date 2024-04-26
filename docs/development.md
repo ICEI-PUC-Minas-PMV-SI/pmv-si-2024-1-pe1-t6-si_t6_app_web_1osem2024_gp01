@@ -55,7 +55,7 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
 > - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
 > - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
 
-## Exemplo
+
 
 ## Requisitos Atendidos
 
@@ -90,7 +90,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 ## Descrição das estruturas:
 
-## Notícia
+
 |  **Tela**      |  **Nome do campo**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
 |:--------------: |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
 | Cadastro de Novo Usuário | Nome (id: nomeUsuario)             | Texto  | Nome completo do usuário            | João da Silva                                              |
