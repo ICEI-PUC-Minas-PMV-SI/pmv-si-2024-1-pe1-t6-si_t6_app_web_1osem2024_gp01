@@ -11,6 +11,8 @@
 }
 body {
     background-color: #f8f9fa !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 /*inicio do nav-bar padrão de todas as telas*/
 .navbar-toggler-icon {
@@ -67,6 +69,24 @@ a:hover {
 .card-body button i{
     font-size: 30px;
 }
+.relatorio{
+    overflow-y: scroll;
+    height: 350px;
+}
+.download-btn-container {
+    position: absolute;
+    bottom: 250px;
+    right: 10px;
+}
+#download-btn {
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #198754;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 .btn{
     width: 200px;
     height: 38px;
