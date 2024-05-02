@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="//cdn.datatables.net/2.0.3/css/dataTables.bootstrap5.css" rel="stylesheet">
+    <link rel="shortcut icon" href="styles/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -236,7 +237,43 @@
                     <div class="row">
                         <div class="col-md-12">
                             <label for="inputState" class="form-label text-muted">Categoria</label>
-                            <input type="text" class="form-control" id="categoria">
+                            <select class="form-control" id="categoria">
+                                <option value="0">Selecione a categoria</option>
+                                <!--Receitas-->
+                                <option value="1">Salário</option>
+                                <option value="2">Bônus</option>
+                                <option value="3">Freelance/Consultoria:</option>
+                                <option value="4">Rendimento de Investimentos:</option>
+                                <option value="5">Aluguel/Arrendamento:</option>
+                                <option value="6">Pensão/Previdência:</option>
+                                <option value="7">Comissões/Vendas:</option>
+                                <option value="8">Bolsa de Estudos/Bolsa de Pesquisa:</option>
+                                <option value="9">Prêmios/Ganhos:</option>
+                                <!--Despesas-->
+                                <option value="10">Moradia</option>
+                                <option value="11">Alimentação</option>
+                                <option value="12">Transporte</option>
+                                <option value="13">Saúde</option>
+                                <option value="14">Educação</option>
+                                <option value="15">Lazer e Entretenimento</option>
+                                <option value="16">Vestuário e Acessórios</option>
+                                <option value="17">Contas Domésticas</option>
+                                <option value="18">Seguros</option>
+                                <option value="19">Impostos e Taxas</option>
+                                <option value="20">Doações e Caridade</option>
+                                <option value="21">Dívidas e Empréstimos</option>
+                                <!--Metas-->
+                                <option value="22">Economias e Investimentos</option>
+                                <option value="23">Viagem</option>
+                                <option value="24">Fundo de Emergência</option>
+                                <option value="25">Educação Continuada</option>
+                                <option value="26">Aquisição de Bens</option>
+                                <option value="27">Aposentadoria</option>
+                                <option value="28">Fundo de Reserva</option>
+                                <option value="29">Objetivos Financeiros Específicos</option>
+                                <!--geral-->
+                                <option value="30">Outros</option>
+                            </select>
                             <div id="categoriaError" class="error-message text-danger"></div>
                         </div>
                     </div>
@@ -294,7 +331,7 @@
             if (isValid) {
                 // recuperar dados antigos ou inicializar array vazio
                 let existingData = JSON.parse(localStorage.getItem('lançamentos')) || [];
-                // Salvamento dos dados
+                // salvamento dos dados
                 const newData = {
                     descricao: descricao,
                     valor: valor,
@@ -309,7 +346,24 @@
                 updateTable(type);
                 console.log(existingData);
                 $('#adicionarLançamento').modal('hide');
+
             }
+            $('#adicionarLançamento').on('hidden.bs.modal', function () {
+                // Limpar os campos do modal
+                $('#descricao').val('');
+                $('#valor').val('');
+                $('#date').val('');
+                $('#categoria').val('');
+
+                validateAndSaveModal(modalType);
+            });
+            $('#adicionarLançamento').on('show.bs.modal', function () {
+                $('#descricaoError').html('');
+                $('#valorError').html('');
+                $('#dataError').html('');
+                $('#categoriaError').html('');
+            });
+
         }
 
         function updateTable(type) {

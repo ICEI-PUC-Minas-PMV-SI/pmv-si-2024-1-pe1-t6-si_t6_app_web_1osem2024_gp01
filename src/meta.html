@@ -12,6 +12,7 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="//cdn.datatables.net/2.0.3/css/dataTables.bootstrap5.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="styles/img/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -76,7 +77,7 @@
         <div class="container mt-4 custom-container table-responsive">
             <div class="floating mt-5">
                 <div class="row align-items-center">
-                    
+
                 </div>
             </div>
             <table id="table" class="table mt-5">
@@ -87,139 +88,7 @@
                         <th class="col-sm text-center">Gerencie</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="text-center ">Investir em FII'S</td>
-                        <td class="text-center">00/00/00</td>
-                        <td>
-                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="bi bi-eye"></i>
-                                Visualizar meta
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">Viagem para o sul</td>
-                        <td class="text-center">00/00/00</td>
-                        <td>
-                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="bi bi-eye"></i>
-                                Visualizar meta
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">Economizar</td>
-                        <td class="text-center">00/00/00</td>
-                        <td>
-                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="bi bi-eye"></i>
-                                Visualizar meta
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">Investir em FII'S</td>
-                        <td class="text-center">00/00/00</td>
-                        <td>
-                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="bi bi-eye"></i>
-                                Visualizar meta
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">Viagem para o sul</td>
-                        <td class="text-center">00/00/00</td>
-                        <td>
-                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="bi bi-eye"></i>
-                                Visualizar meta
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">Economizar</td>
-                        <td class="text-center">00/00/00</td>
-                        <td>
-                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="bi bi-eye"></i>
-                                Visualizar meta
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">Investir em FII'S</td>
-                        <td class="text-center">00/00/00</td>
-                        <td>
-                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="bi bi-eye"></i>
-                                Visualizar meta
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">Viagem para o sul</td>
-                        <td class="text-center">00/00/00</td>
-                        <td>
-                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="bi bi-eye"></i>
-                                Visualizar meta
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center ">Economizar</td>
-                        <td class="text-center">00/00/00</td>
-                        <td>
-                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="bi bi-eye"></i>
-                                Visualizar meta
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">Investir em FII'S</td>
-                        <td class="text-center">00/00/00</td>
-                        <td>
-                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="bi bi-eye"></i>
-                                Visualizar meta
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">Viagem para o sul</td>
-                        <td class="text-center">00/00/00</td>
-                        <td>
-                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="bi bi-eye"></i>
-                                Visualizar meta
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">Economizar</td>
-                        <td class="text-center">00/00/00</td>
-                        <td>
-                            <button type="button" class="btn template-btn" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="bi bi-eye"></i>
-                                Visualizar meta
-                            </button>
-                        </td>
-                    </tr>
+                <tbody id="tableBody">
 
                 </tbody>
             </table>
@@ -234,10 +103,27 @@
                     </div>
                     <div class="modal-body">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <label class="" for="">Descrição de meta</label>
                                 <input type="text" class="form-control" id="descricaoMeta">
                                 <div id="descricaoMetaError" class="error-message text-danger"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="" for="">Categoria</label>
+                                <label class="" for="">Categoria</label>
+                                <select type="text" class="form-control" id="categoriaEdit">
+                                    <option value="0">Selecione a categoria</option>
+                                    <option value="22">Economias e Investimentos</option>
+                                    <option value="23">Viagem</option>
+                                    <option value="24">Fundo de Emergência</option>
+                                    <option value="25">Educação Continuada</option>
+                                    <option value="26">Aquisição de Bens</option>
+                                    <option value="27">Aposentadoria</option>
+                                    <option value="28">Fundo de Reserva</option>
+                                    <option value="29">Objetivos Financeiros Específicos</option>
+                                    <!--geral-->
+                                    <option value="30">Outros</option>
+                                </select>
                             </div>
                         </div>
                         <div class="row">
@@ -293,6 +179,44 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <script src="script/index.js"></script>
     <script>
+
+        // atualiza a tabela com os lançamentos salvos
+        function updateTable() {
+            // recupera os lançamentos do localStorage
+            let lançamentos = JSON.parse(localStorage.getItem('lançamentos')) || [];
+            let tableBody = document.getElementById('tableBody');
+
+            // limpa a tabela antes de adicionar novos dados
+            tableBody.innerHTML = '';
+
+            // adiciona cada lançamento à tabela
+            lançamentos.forEach(function (lançamento) {
+                let newRow = document.createElement('tr');
+                // adiciona cor diferente com base no tipo de lançamento
+                if (lançamento.tipo === 'Metas') {
+                    newRow.innerHTML = `
+            <td class="text-center">${lançamento.descricao}</td>
+            <td class="text-center">${lançamento.date}</td>
+            <td>
+                <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <i class="bi bi-eye"></i>
+                                Visualizar meta
+                </button>
+            </td>
+        `;
+                }
+                tableBody.appendChild(newRow);
+            });
+        }
+
+        // chama a função updateTable quando a página for carregada
+        document.addEventListener("DOMContentLoaded", function () {
+            updateTable();
+        });
+
+
+
         function validateMeta() {
             let descricaoMeta = document.getElementById('descricaoMeta').value;
             let dataCriacaoMeta = document.getElementById('dataCriacaoMeta').value;
