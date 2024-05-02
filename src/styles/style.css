@@ -128,14 +128,12 @@ a:hover {
 }
 .form-select {
     display: inline-block;
-    margin-right: 10px;
     position: relative;
 } 
 .floating-select {
     flex: 1 1 auto;
     max-width: 20%;
      top:50px; 
-    left: 300px;
 }
 .table {
     margin: 0 auto;

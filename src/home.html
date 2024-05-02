@@ -87,7 +87,7 @@
                             <h3 class="card-title info">Receitas</h3>
                             <h4 class="text-secondary text-success value mt-4">R$ 300,00</h4>
                             <button type="button" class="btn btn-sm template-btn float-end" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                                data-bs-target="#adicionarLançamento" onclick="saveModal('Receitas')" id="adcReceita">
                                 <i class="bi bi-plus-circle"></i>
                             </button>
                         </div>
@@ -99,7 +99,7 @@
                             <h3 class="card-title info">Despesas</h3>
                             <h4 class="text-secondary text-danger value mt-4">R$ -100,00</h4>
                             <button type="button" class="btn btn-sm template-btn float-end" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                                data-bs-target="#adicionarLançamento" onclick="saveModal('Despesas')" id="adcDespesa">
                                 <i class="bi bi-plus-circle"></i>
                             </button>
                         </div>
@@ -111,15 +111,14 @@
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title info">Histórico</h3>
+                            <h4 class="text-secondary text-secondary value mt-2">Acesse o histórico filtrado.</h4>
                             <a href="historico.html">
-                                <button type="button"
-                                    class="btn btn-dark btn-sm template-btn float-center connection mt-5">
+                                <button type="button" class="btn btn-dark btn-sm template-btn float-center connection">
                                     Receitas
                                 </button>
                             </a>
                             <a href="historico.html">
-                                <button type="button"
-                                    class="btn btn-dark btn-sm template-btn float-center connection mt-5">
+                                <button type="button" class="btn btn-dark btn-sm template-btn float-center connection">
                                     Despesas
                                 </button>
                             </a>
@@ -132,13 +131,12 @@
                             <h3 class="card-title info">Metas</h3>
                             <h4 class="text-secondary text-secondary value mt-2">R$ -500,00</h4>
                             <button type="button" class="btn btn-sm template-btn float-end" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                                data-bs-target="#adicionarLançamento" onclick="saveModal('Metas')" id="adcMeta">
                                 <i class="bi bi-plus-circle"></i>
                             </button>
                             <div class="d-flex flex-column align-items-center">
                                 <a href="meta.html">
-                                    <button type="button"
-                                        class="btn btn-dark btn-sm template-btn connection gerencie">
+                                    <button type="button" class="btn btn-dark btn-sm template-btn connection gerencie">
                                         Gerencie
                                     </button>
                                 </a>
@@ -207,17 +205,18 @@
         </div>
     </main>
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="adicionarLançamento" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Adicionar</h1>
+                    <h5 class="modal-title" id="modalTitle">Adicionar Lançamento </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <label class="" for="">Descrição de meta</label>
+                            <label class="" for="">Descrição</label>
                             <input type="text" class="form-control" id="descricao">
                             <div id="descricaoError" class="error-message text-danger"></div>
                         </div>
@@ -245,7 +244,7 @@
                 <div class="modal-footer">
                     <div class="row">
                         <div class="col-md-12">
-                            <button type="button" class="btn btn-success" onclick="validateModal()">
+                            <button type="button" class="btn btn-success" onclick="validateAndSaveModal(type)">
                                 Salvar
                             </button>
                         </div>
@@ -254,30 +253,14 @@
             </div>
         </div>
     </div>
-    <script src="//code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.datatables.net/2.0.3/js/dataTables.js"></script>
     <script src="//cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.29.0/docxtemplater.js"></script>
-
     <script>
-        document.getElementById('download-btn').addEventListener('click', function () {
-            const reportContent = document.querySelector('.relatorio .card-body').innerText;
-            const blob = new Blob([reportContent], { type: 'text/plain' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'relatorio.txt';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        });
-
-
-
-        function validateModal() {
+        // validação e salvamento de dados do modal
+        function validateAndSaveModal(type) {
+            // validação dos campos do modal
             let descricao = document.getElementById('descricao').value;
             let valor = document.getElementById('valor').value;
             let date = document.getElementById('date').value;
@@ -307,12 +290,50 @@
                 categoriaError.innerHTML = 'Por favor, selecione uma categoria';
                 isValid = false;
             }
+            // se todos os campos forem válidos, salva os dados e fecha o modal
             if (isValid) {
-                window.location.replace('home.html');
+                // recuperar dados antigos ou inicializar array vazio
+                let existingData = JSON.parse(localStorage.getItem('lançamentos')) || [];
+                // Salvamento dos dados
+                const newData = {
+                    descricao: descricao,
+                    valor: valor,
+                    date: date,
+                    categoria: categoria,
+                    tipo: type
+                };
+                existingData.push(newData);
+                // salvar dados atualizados
+                localStorage.setItem('lançamentos', JSON.stringify(existingData));
+                // atualizar tabela na outra página
+                updateTable(type);
+                console.log(existingData);
+                $('#adicionarLançamento').modal('hide');
             }
-            return isValid;
         }
+
+        function updateTable(type) {
+        }
+
+        let modalType;
+
+        function saveModal(type) {
+            modalType = type;
+            var modalTitle = document.getElementById("modalTitle");
+            if (type === 'Receitas') {
+                modalTitle.innerHTML = "Adicionar Receita";
+            } else if (type === 'Despesas') {
+                modalTitle.innerHTML = "Adicionar Despesa";
+            } else if (type === 'Metas') {
+                modalTitle.innerHTML = "Adicionar Meta";
+            }
+        }
+
+        $('#adicionarLançamento').on('hidden.bs.modal', function () {
+            validateAndSaveModal(modalType);
+        });
     </script>
+
 </body>
 
 </html>
