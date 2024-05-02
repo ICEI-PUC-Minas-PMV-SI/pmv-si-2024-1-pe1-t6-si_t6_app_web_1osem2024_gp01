@@ -93,18 +93,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 |         **Tela**         |                **Nome do campo**                | **Tipo** | **Descrição**                                  | **Exemplo**            |
 | :----------------------: | :---------------------------------------------: | -------- | ---------------------------------------------- | ---------------------- |
-| Cadastro de Novo Usuário |             Nome (id: nomeUsuario)              | Texto    | Nome completo do usuário                       | João da Silva          |
-| Cadastro de Novo Usuário |             mail (id: emailUsuario)             | Texto    | Endereço de email do usuário                   | joao.silva@example.com |
-| Cadastro de Novo Usuário |            Senha (id: senhaUsuario)             | Texto    | Senha de acesso                                | senha@123              |
-| Cadastro de Novo Usuário | Confirmação de Senha (id: confirmaSenhaUsuario) | Texto    | Confirmação da senha inserida.                 | senha@123              |
+| Cadastro de Novo Usuário |            Nome: (id: Nome Usuario)              | Texto    | Nome completo do usuário                       | João da Silva          |
+| Cadastro de Novo Usuário |            Email: (id: Email Usuario)             | Texto    | Endereço de email do usuário                   | joao.silva@example.com |
+| Cadastro de Novo Usuário |            Senha: (id: Senha Usuario)             | Texto    | Senha de acesso                                | senha@123              |
+| Cadastro de Novo Usuário | Confirmação de Senha (id: Confirmação de Senha  do Usuario) | Texto    | Confirmação da senha inserida.                 | senha@123              |
 |     Login de Usuário     |             Email (id: emailLogin)              | Texto    | Endereço de email do usuário para login.       | joao.silva@example.com |
 |     Login de Usuário     |             Senha (id: senhaLogin)              | Texto    | Senha de acesso para login.                    | senha@123              |
 |   Recuperação de Senha   |          Email (id: emailRecuperacao)           | Texto    | Endereço de email do usuário para recuperação. | joao.silva@example.com |
-|           Home           |            Saldo (id: saldoUsuario)             | Numero   | Saldo financeiro do usuário.                   | R$ 1500,00             |
-|           Home           |          Receitas (id: totalReceitas)           | Numero   | Total de receitas registradas pelo usuário.    | R$ 3000,00             |
-|           Home           |          Despesas (id: totalDespesas)           | Numero   | Total de despesas registradas pelo usuário.    | R$ 2000,00             |
+|           Home           |            Saldo (id: saldoUsuario)             | Número   | Saldo financeiro do usuário.                   | R$ 1500,00             |
+|           Home           |          Receitas (id: totalReceitas)           | Número   | Total de receitas registradas pelo usuário.    | R$ 3000,00             |
+|           Home           |          Despesas (id: totalDespesas)           | Número   | Total de despesas registradas pelo usuário.    | R$ 2000,00             |
 | Visualização de Despesas |          ID da Despesa (id: idDespesa)          | Texto    | Identificação única da despesa.                | "D001"                 |
 | Visualização de Despesas |        Descrição (id: descricaoDespesa)         | Texto    | Descrição da despesa.                          | Compra de mantimentos  |
-| Visualização de Despesas |            Valor (id: valorDespesa)             | Numero   | Valor da despesa.                              | R$ 100,00              |
+| Visualização de Despesas |            Valor (id: valorDespesa)             | Número   | Valor da despesa.                              | R$ 100,00              |
 | Visualização de Despesas |             Data (id: dataDespesa)              | Texto    | Data da despesa.                               | 2024-04-15             |
 | Visualização de Despesas |        Categoria (id: categoriaDespesa)         | Texto    | Categoria da despesa.                          | Alimentação            |
