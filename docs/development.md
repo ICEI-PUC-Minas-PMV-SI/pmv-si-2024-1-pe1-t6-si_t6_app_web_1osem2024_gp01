@@ -7,14 +7,14 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
    - Implementação de um home no (index.html) que exibe informações sobre a Gerency e exibe um botão de login para acesso ao sistema.
    - Implementação de um scroll automático, atráves do clique das páginas descritas no menu de navegação para que o usuário visualize cada área da página.
 
-   (https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/index.png)
+   ![Página Index:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/index.png)
 
 2. **Login de Usuário:**
 
    - Desenvolvimento de um formulário de login (login.html) que solicita usuário (email ou nome de usuário) e senha.
    - Validação dos campos obrigatórios (Usuário e Senha) e redirecionamento para a página (home.html) do sistema "Gerency" após o login bem-sucedido.
 
-   (https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/login.png)
+   ![Login de Usuário:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/login.png)
 
 
 3. **Cadastro de Novo Usuário:**
@@ -23,14 +23,14 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
    - Validação dos campos para garantir que os dados inseridos sejam válidos e atendam aos critérios estabelecidos (ex: email válido, senha com mínimo de caracteres).
    - Envio de um email de confirmação após o cadastro bem-sucedido, utilizando uma função de validação JavaScript.
    
-   (https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/novouser.png)
+    ![Cadastro de Novo Usuário:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/novouser.png)
 
 4. **Recuperação de Senha:**
 
    - Criação de uma página (recuperarsenha.html) com um campo obrigatório para o email do usuário que esqueceu a senha.
    - Validação do campo de email e envio de um email com instruções para a recuperação da senha.
 
-   (https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/recuperarsenha.png)
+   ![Recuperação de Senha:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/recuperarsenha.png)
 
 5. **Página Home:**
 
@@ -39,19 +39,18 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
    - Inclusão de um ícone de usuário logado no canto superior direito.
    - Exibição de três retângulos (Saldo, Receitas, Despesas). Logo abaixo, implementação de dois retângulos com acesso a página "Histórico" e acesso a página "Metas".
    - Como última linha da página "Home", existe um retângulo que apresenta os relatórios que podem ser filtrados por botões de lançamento.
+   
+   ![Página Home:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/home.png)
 
    
-   (https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/home.png)
-
-   
-   (https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/home2.png)
+   ![Página Home:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/home2.png)
 
 6. **Página Home - Registro de Receitas, Despesas e Metas:**
 
    - Implementação de modais na página (home.html) para o usuário registrar suas receitas, despesas e metas atráves de botões com o ícone de "+" para adicionar novos valores.
    - Campos para data, descrição, categoria, valor, etc., com validação dos dados inseridos.
 
-   (https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/home_modal.png)
+   ![Página Home:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/home_modal.png)
 
 7. **Página Histórico - Visualização Detalhada de Despesas e Receitas:**
 
@@ -59,14 +58,14 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
    - Desenvolvimento da página (histórico.html) que apresenta uma visão detalhada e organizada de todas as despesas e receitas registradas atráves de uma tabela.
    - Implementação de modais de edição na página (histórico.html), onde o usuário edita seus lançamentos, exclui ou analisa de forma detalhada.
 
-      (https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/historico.png)
+   ![Página Histórico:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/historico.png)
 
 8. **Página Metas - Visualização de Metas:**
    - Implementação de uma página (meta.html) para exibir as metas financeiras do usuário, incluindo todas as metas registradas anteriormente.
    - Inclusão de um input para pesquisa de metas já lançadas.
    - Organização das metas dentro de uma tabela, com colunas de descrição, data e botão de visualizar meta que implementa um modal onde é possível analisar, editar e excluir a meta.
 
-      (https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/meta.png)
+   ![Página Meta:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/meta.png)
 
 - Cadastro de Novo Usuário: [https://repl.it/@rommelpuc/LoginApp](https://repl.it/@rommelpuc/LoginApp)
 - Login de Usuário: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
