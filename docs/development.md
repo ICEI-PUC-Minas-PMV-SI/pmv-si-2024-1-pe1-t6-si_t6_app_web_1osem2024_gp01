@@ -28,7 +28,7 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
    - Desenvolvimento da página (home.html) com um menu hamburguer no canto superior esquerdo contendo as opções: Home, Historico, e Metas.
    - Centralização do nome do sistema "Gerency" na página.
    - Inclusão de um ícone de usuário logado no canto superior direito.
-   - Exibição de três retângulos (Saldo, Receitas, Despesas). Logo abaixo, implementação de dois retângulos com acesso a página "Histórico" filtrada por tipo de lançamento e acesso a página "Metas".
+   - Exibição de três retângulos (Saldo, Receitas, Despesas). Logo abaixo, implementação de dois retângulos com acesso a página "Histórico" e acesso a página "Metas".
    - Como última linha da página "Home", existe um retângulo que apresenta os relatórios que podem ser filtrados por botões de lançamento.
 
 6. **Página Home - Registro de Receitas, Despesas e Metas:**
@@ -51,9 +51,8 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
 - Login de Usuário: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
 - Recuperação de Senha: [https://repl.it/@rommelpuc/LoginApp](https://repl.it/@rommelpuc/LoginApp)
 - Página Home: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
-- Visualização Detalhada de Despesas: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
-- Registro de Receitas e Despesas: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
 - Visualização do Histórico: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
+- - Visualização do Metas: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
 
 > **Links Úteis**:
 >
