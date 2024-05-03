@@ -292,6 +292,22 @@
     <script src="//cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
     <script>
 
+        document.getElementById('download-btn').addEventListener('click', function () {
+            var relatorioContent = document.getElementById('relatorio').innerText; // Use innerText em vez de innerHTML
+
+            var blob = new Blob([relatorioContent], { type: 'text/plain' }); // Use 'text/plain' como tipo MIME para texto simples
+
+            var url = URL.createObjectURL(blob);
+
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = 'relatorio.txt'; // Mude a extensão do arquivo para .txt
+            a.click();
+
+            // Limpe o URL do objeto após o download
+            URL.revokeObjectURL(url);
+        });
+
         function validateAndSaveModal(type) {
             // validação dos campos do modal
             let descricao = document.getElementById('descricao').value;
