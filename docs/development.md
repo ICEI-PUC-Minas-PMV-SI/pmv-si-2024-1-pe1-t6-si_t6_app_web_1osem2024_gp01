@@ -95,7 +95,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | :----------------------: | :---------------------------------------------: | -------- | ---------------------------------------------- | ---------------------- |
 | Cadastro de Novo Usuário |            Nome: (id: nomeUsuario)             | Texto    | Nome completo do usuário                     | João da Silva          |
 | Cadastro de Novo Usuário |            Email: (id: emailUsuario)           | Texto    | Endereço de email do usuário                 | joao.silva@example.com |
-| Cadastro de Novo Usuário |            Senha: (id: "senhaUsuario)           | Texto    | Senha de acesso                              | senha@123              |
+| Cadastro de Novo Usuário |            Senha: (id: senhaUsuario)           | Texto    | Senha de acesso                              | senha@123              |
 | Cadastro de Novo Usuário | Confirmação de Senha do Usuario (id: cofirmaSenhaUsuario) | Texto    | Confirmação da senha inserida.    | senha@123              |
 |     Login de Usuário     |             Email (id: emailLogin)              | Texto    | Endereço de email do usuário para login.     | joao.silva@example.com |
 |     Login de Usuário     |             Senha (id: senhaLogin)              | Texto    | Senha de acesso para login.                  | senha@123              |
