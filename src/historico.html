@@ -77,12 +77,13 @@
         <div class="container mt-4 custom-container table-responsive">
             <!--Selects da tabela-->
             <div class="floating-select-container">
-                <select class="form-select form-select-sm floating-select m-2">
+                <select class="form-select form-select-sm floating-select m-2" id="selectLancamento"
+                    onchange="updateTable()">
                     <option selected>Selecione um lançamento</option>
                     <option value="1">Despesas</option>
                     <option value="2">Receitas</option>
                 </select>
-                <select class="form-select form-select-sm floating-select m-2">
+                <select class="form-select form-select-sm floating-select m-2" id="selectPeriodo">
                     <option selected>Selecione um período</option>
                     <option value="1">Últimos 15 dias</option>
                     <option value="2">Últimos 30 dias</option>
@@ -190,50 +191,60 @@
     <script>
         // atualiza a tabela com os lançamentos salvos
         function updateTable() {
+            // recupera o valor selecionado no select de tipo de lançamento
+            let tipoSelecionado = document.getElementById('selectLancamento').value;
             // recupera os lançamentos do localStorage
-            let lançamentos = JSON.parse(localStorage.getItem('lançamentos')) || [];
+            let data = JSON.parse(localStorage.getItem('lançamentos')) || [];
+
+            // Filtrar os dados com base no tipo selecionado
+            let filteredData;
+            if (tipoSelecionado === '1') {
+                filteredData = data.filter(item => item.tipo === 'Despesas');
+            } else if (tipoSelecionado === '2') {
+                filteredData = data.filter(item => item.tipo === 'Receitas');
+            } else {
+                filteredData = data;
+            }
+
+            // constrói o HTML da tabela
             let tableBody = document.getElementById('tableBody');
+            let html = '';
 
-            // limpa a tabela antes de adicionar novos dados
-            tableBody.innerHTML = '';
+            // filtra os dados para incluir apenas os lançamentos do tipo 'Receitas' e 'Despesas'
 
-            // adiciona cada lançamento à tabela
-            lançamentos.forEach(function (lançamento) {
-                let newRow = document.createElement('tr');
-                // adiciona cor diferente com base no tipo de lançamento
-                if (lançamento.tipo === 'Despesas') {
-                    newRow.innerHTML = `
-            <td class="text-center text-danger">${lançamento.descricao}</td>
-            <td class="text-center text-danger">${lançamento.valor}</td>
-            <td class="text-center text-danger">${lançamento.date}</td>
-            <td>
-                <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    <i class="bi bi-pencil-square"></i>
-                </button>
-            </td>
-        `;
-                } else if (lançamento.tipo === 'Receitas') {
-                    newRow.innerHTML = `
-            <td class="text-center text-success">${lançamento.descricao}</td>
-            <td class="text-center text-success">${lançamento.valor}</td>
-            <td class="text-center text-success">${lançamento.date}</td>
-            <td>
-                <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    <i class="bi bi-pencil-square"></i>
-                </button>
-            </td>
-        `;
+            filteredData.forEach(item => {
+                html += `<tr>`;
+                if (item.tipo === 'Receitas') {
+                    html += `<td class="text-center text-success">${item.descricao}</td>`;
+                    html += `<td class="text-center text-success">${item.valor}</td>`;
+                    html += `<td class="text-center text-success">${item.date}</td>`;
+                    html += `<td class="text-center text-success">
+                        <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                    </td>`;
+                } else if (item.tipo === 'Despesas') {
+                    html += `<td class="text-center text-danger">${item.descricao}</td>`;
+                    html += `<td class="text-center text-danger">${item.valor}</td>`;
+                    html += `<td class="text-center text-danger">${item.date}</td>`;
+                    html += `<td class="text-center text-danger">
+                        <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                    </td>`;
                 }
-                tableBody.appendChild(newRow);
+                html += `</tr>`;
             });
+
+            // Atualizar o conteúdo da tabela na página
+            tableBody.innerHTML = html;
         }
 
-        // chama a função updateTable quando a página for carregada
+        // Chamar a função para atualizar a tabela ao carregar a página
         document.addEventListener("DOMContentLoaded", function () {
             updateTable();
         });
+
 
         //validação em edição
         function validateEdit() {

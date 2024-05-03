@@ -78,7 +78,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title info">Saldo</h3>
-                            <h4 class="text-secondary value mt-4">R$ -200,00</h4>
+                            <h4 class="text-secondary value mt-4" id="saldo">R$ ------</h4>
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title info">Receitas</h3>
-                            <h4 class="text-secondary text-success value mt-4">R$ 300,00</h4>
+                            <h4 class="text-secondary text-success value mt-4" id="totalReceitas">R$ ------</h4>
                             <button type="button" class="btn btn-sm template-btn float-end" data-bs-toggle="modal"
                                 data-bs-target="#adicionarLançamento" onclick="saveModal('Receitas')" id="adcReceita">
                                 <i class="bi bi-plus-circle"></i>
@@ -98,7 +98,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title info">Despesas</h3>
-                            <h4 class="text-secondary text-danger value mt-4">R$ -100,00</h4>
+                            <h4 class="text-secondary text-danger value mt-4" id="totalDespesas">R$ ------</h4>
                             <button type="button" class="btn btn-sm template-btn float-end" data-bs-toggle="modal"
                                 data-bs-target="#adicionarLançamento" onclick="saveModal('Despesas')" id="adcDespesa">
                                 <i class="bi bi-plus-circle"></i>
@@ -112,15 +112,11 @@
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title info">Histórico</h3>
-                            <h4 class="text-secondary text-secondary value mt-2">Acesse o histórico filtrado.</h4>
+                            <h4 class="text-secondary text-secondary value mt-2">Gerencie seu histórico.</h4>
                             <a href="historico.html">
-                                <button type="button" class="btn btn-dark btn-sm template-btn float-center connection">
-                                    Receitas
-                                </button>
-                            </a>
-                            <a href="historico.html">
-                                <button type="button" class="btn btn-dark btn-sm template-btn float-center connection">
-                                    Despesas
+                                <button type="button" class="btn btn-dark btn-sm template-btn float-center connection"
+                                    id="gerencieHistorico">
+                                    Gerencie
                                 </button>
                             </a>
                         </div>
@@ -130,7 +126,7 @@
                     <div class="card">
                         <div class="card-body ">
                             <h3 class="card-title info">Metas</h3>
-                            <h4 class="text-secondary text-secondary value mt-2">R$ -500,00</h4>
+                            <h4 class="text-secondary text-secondary value mt-2" id="totalMetas">R$ -500,00</h4>
                             <button type="button" class="btn btn-sm template-btn float-end" data-bs-toggle="modal"
                                 data-bs-target="#adicionarLançamento" onclick="saveModal('Metas')" id="adcMeta">
                                 <i class="bi bi-plus-circle"></i>
@@ -150,7 +146,7 @@
                 <div class="col ">
                     <h3 class="card-title info mt-3">Relatórios</h3>
                     <div class="card relatorio">
-                        <div class="card-body text-start p-5">
+                        <div class="card-body text-start p-5" id="relatorio">
                             <h2>Relatório Financeiro: Últimos 7 dias</h2>
                             <h3>Período: 01/05/2024 - 08/04/2024</h3>
                             <!--Resumo-->
@@ -295,11 +291,13 @@
     <script src="//cdn.datatables.net/2.0.3/js/dataTables.js"></script>
     <script src="//cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
     <script>
-        // validação e salvamento de dados do modal
+
         function validateAndSaveModal(type) {
             // validação dos campos do modal
             let descricao = document.getElementById('descricao').value;
-            let valor = document.getElementById('valor').value;
+            let valorString = document.getElementById('valor').value;
+            // Substituir vírgula por ponto
+            let valor = parseFloat(valorString.replace(',', '.'));
             let date = document.getElementById('date').value;
             let categoria = document.getElementById('categoria').value;
             let descricaoError = document.getElementById('descricaoError');
@@ -315,8 +313,8 @@
                 descricaoError.innerHTML = 'Por favor, digite uma descrição';
                 isValid = false;
             }
-            if (valor.trim() === '') {
-                valorError.innerHTML = 'Por favor, digite um valor';
+            if (isNaN(valor) || valorString.trim() === '') {
+                valorError.innerHTML = 'Por favor, digite um valor numérico';
                 isValid = false;
             }
             if (date.trim() === '') {
@@ -344,9 +342,15 @@
                 localStorage.setItem('lançamentos', JSON.stringify(existingData));
                 // atualizar tabela na outra página
                 updateTable(type);
+                // Atualizar saldo
+                saldo();
+                receita();
+                // Atualizar despesas
+                despesa();
+                // Atualizar metas
+                meta();
                 console.log(existingData);
                 $('#adicionarLançamento').modal('hide');
-
             }
             $('#adicionarLançamento').on('hidden.bs.modal', function () {
                 // Limpar os campos do modal
@@ -354,7 +358,6 @@
                 $('#valor').val('');
                 $('#date').val('');
                 $('#categoria').val('');
-
                 validateAndSaveModal(modalType);
             });
             $('#adicionarLançamento').on('show.bs.modal', function () {
@@ -363,8 +366,8 @@
                 $('#dataError').html('');
                 $('#categoriaError').html('');
             });
-
         }
+
 
         function updateTable(type) {
         }
@@ -386,6 +389,101 @@
         $('#adicionarLançamento').on('hidden.bs.modal', function () {
             validateAndSaveModal(modalType);
         });
+
+        //card de saldo
+        function saldo() {
+            let lancamentos = JSON.parse(localStorage.getItem('lançamentos')) || [];
+            let totalReceitas = 0;
+            let totalDespesas = 0;
+            let totalMetas = 0;
+
+            lancamentos.forEach(function (lancamento) {
+                if (lancamento.tipo === 'Receitas') {
+                    totalReceitas += parseFloat(lancamento.valor);
+                } else if (lancamento.tipo === 'Despesas') {
+                    totalDespesas += parseFloat(lancamento.valor);
+                } else if (lancamento.tipo === 'Metas') {
+                    totalMetas += parseFloat(lancamento.valor);
+                }
+            });
+            // calcular saldo
+            let saldo = totalReceitas - totalDespesas - totalMetas;
+
+            let saldoFormatado = saldo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            // Atualizar o elemento HTML que exibe o saldo
+            document.getElementById('saldo').innerHTML = saldoFormatado;
+        }
+        window.addEventListener('load', function () {
+            saldo();
+        });
+
+        //card de receita
+        function receita() {
+            let lancamentos = JSON.parse(localStorage.getItem('lançamentos')) || [];
+            let totalReceitas = 0;
+
+            lancamentos.forEach(function (lancamento) {
+                if (lancamento.tipo === 'Receitas') {
+                    totalReceitas += parseFloat(lancamento.valor);
+                }
+            });
+            // calcular saldo
+            let receita = totalReceitas;
+
+            let receitaFormatada = receita.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+            // Atualizar o elemento HTML que exibe o saldo
+            document.getElementById('totalReceitas').innerHTML = receitaFormatada;
+        }
+        window.addEventListener('load', function () {
+            receita();
+        });
+
+        //card de despesa
+        function despesa() {
+            let lancamentos = JSON.parse(localStorage.getItem('lançamentos')) || [];
+            let totalDespesas = 0;
+
+            lancamentos.forEach(function (lancamento) {
+                if (lancamento.tipo === 'Despesas') {
+                    totalDespesas += parseFloat(lancamento.valor);
+                }
+            });
+            // calcular saldo
+            let despesa = totalDespesas;
+
+            let despesaFormatada = despesa.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+            // Atualizar o elemento HTML que exibe o saldo
+            document.getElementById('totalDespesas').innerHTML = despesaFormatada;
+        }
+        window.addEventListener('load', function () {
+            despesa();
+        });
+
+        //card de meta
+        function meta() {
+            let lancamentos = JSON.parse(localStorage.getItem('lançamentos')) || [];
+            let totalMetas = 0;
+
+            lancamentos.forEach(function (lancamento) {
+                if (lancamento.tipo === 'Metas') {
+                    totalMetas += parseFloat(lancamento.valor);
+                }
+            });
+            // calcular saldo
+            let meta = totalMetas;
+
+            let metaFormatada = meta.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+            // Atualizar o elemento HTML que exibe o saldo
+            document.getElementById('totalMetas').innerHTML = metaFormatada;
+        }
+        window.addEventListener('load', function () {
+            meta();
+        });
+
+
     </script>
 
 </body>

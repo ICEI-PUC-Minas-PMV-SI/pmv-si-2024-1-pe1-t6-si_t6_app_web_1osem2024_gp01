@@ -35,16 +35,18 @@
 <body>
     <div class="login-container">
         <h3 class="mb-4">Bem-vindo(a) a <span class="text-success">Gerency!</span></h3>
-        <form id="loginForm">
+        <form id="loginForm" onsubmit="return validateForm()">
             <div class="form-group">
                 <label for="username">Usuário (email ou nome de usuário)</label>
                 <input type="text" class="form-control" id="username" placeholder="Digite seu usuário">
+                <div id="emailError" class="error-message text-danger"></div>
             </div>
             <div class="form-group">
                 <label for="password">Senha</label>
                 <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                <div id="passwordError" class="error-message text-danger"></div>
             </div>
-            <a href="home.html" class="btn btn-success btn-block">Conectar</a>
+            <button type="submit" class="btn btn-success btn-block">Conectar</button>
             <a href="novousuario.html" class="btn text-success btn-link btn-block">Cadastrar novo usuário</a>
             <a href="recuperarsenha.html" class="btn text-success btn-link btn-block">Recuperação de senha</a>
         </form>
@@ -52,6 +54,27 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function validateForm() {
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+            let emailError = document.getElementById('emailError');
+            let passwordError = document.getElementById('passwordError');
+            let isValid = true;
+            if (username.trim() === '') {
+                emailError.innerHTML = 'Por favor, digite seu email';
+                isValid = false;
+            }
+            if (password.trim() === '') {
+                passwordError.innerHTML = 'Por favor, digite sua senha';
+                isValid = false;
+            }
+            if (isValid) {
+                window.location.replace('home.html'); // Redireciona para dashboard.html após a validação
+            }
+            return false;
+        }
+    </script>
 </body>
 
 </html>
