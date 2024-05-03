@@ -93,18 +93,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 |         **Tela**         |                **Nome do campo**                | **Tipo** | **Descrição**                                  | **Exemplo**            |
 | :----------------------: | :---------------------------------------------: | -------- | ---------------------------------------------- | ---------------------- |
-| Cadastro de Novo Usuário |            Nome: (id: "nomeUsuário")             | Texto    | Nome completo do usuário                     | João da Silva          |
-| Cadastro de Novo Usuário |            Email: (id: "emailUsuário")           | Texto    | Endereço de email do usuário                 | joao.silva@example.com |
-| Cadastro de Novo Usuário |            Senha: (id: "senhaUsuário")           | Texto    | Senha de acesso                              | senha@123              |
-| Cadastro de Novo Usuário | Confirmação de Senha do Usuário (id: cofirmaSenhaUsuario) | Texto    | Confirmação da senha inserida.    | senha@123              |
+| Cadastro de Novo Usuário |            Nome: (id: nomeUsuario)             | Texto    | Nome completo do usuário                     | João da Silva          |
+| Cadastro de Novo Usuário |            Email: (id: emailUsuario)           | Texto    | Endereço de email do usuário                 | joao.silva@example.com |
+| Cadastro de Novo Usuário |            Senha: (id: "senhaUsuario)           | Texto    | Senha de acesso                              | senha@123              |
+| Cadastro de Novo Usuário | Confirmação de Senha do Usuario (id: cofirmaSenhaUsuario) | Texto    | Confirmação da senha inserida.    | senha@123              |
 |     Login de Usuário     |             Email (id: emailLogin)              | Texto    | Endereço de email do usuário para login.     | joao.silva@example.com |
 |     Login de Usuário     |             Senha (id: senhaLogin)              | Texto    | Senha de acesso para login.                  | senha@123              |
 |   Recuperação de Senha   |          Email (id: emaileecuperacao)           | Texto    | Endereço de email do usuário para recuperação. | joao.silva@example.com |
 |           Home           |            Saldo (id: saldousuario)             | Número   | Saldo financeiro do usuário.                   | R$ 1500,00             |
 |           Home           |          Receitas (id: totalreceitas)           | Número   | Total de receitas registradas pelo usuário.    | R$ 3000,00             |
-|           Home           |          Despesas (id: totaldespesas")           | Número   | Total de despesas registradas pelo usuário.    | R$ 2000,00             |
+|           Home           |          Despesas (id: totaldespesas)           | Número   | Total de despesas registradas pelo usuário.    | R$ 2000,00             |
 | Visualização de Despesas |          ID da Despesa (id: despesa)            | Texto    | Identificação única da despesa.                | "A1B2C3"                 |
-| Visualização de Despesas |        Descrição (id: descricaodespesa")         | Texto    | Descrição da despesa.                          | Compra de mantimentos  |
+| Visualização de Despesas |        Descrição (id: descricaodespesa)         | Texto    | Descrição da despesa.                          | Compra de mantimentos  |
 | Visualização de Despesas |            Valor (id: valordespesa)             | Número   | Valor da despesa.                              | R$ 100,00              |
 | Visualização de Despesas |             Data (id: datadespesa)              | Texto    | Data da despesa.                               | 2024-04-15             |
 | Visualização de Despesas |        Categoria (id: categoriadespesa)         | Texto    | Categoria da despesa.                          | Alimentação            |
