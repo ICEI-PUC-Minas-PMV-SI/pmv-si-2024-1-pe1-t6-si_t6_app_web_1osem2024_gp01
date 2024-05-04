@@ -67,7 +67,7 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
 
    ![Página Meta:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/meta.png)
 
-- Cadastro de Novo Usuário: [https://repl.it/@rommelpuc/LoginApp](https://repl.it/@rommelpuc/LoginApp)
+- Cadastro de Novo Usuário: [https://repl.it/gerency.cadastro.html](https://8bdf608d-45a9-4071-96b7-c69e100d5936-00-14lantgg8vwge.janeway.replit.dev/novousuario.html)
 - Login de Usuário: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
 - Recuperação de Senha: [https://repl.it/@rommelpuc/LoginApp](https://repl.it/@rommelpuc/LoginApp)
 - Página Home: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
