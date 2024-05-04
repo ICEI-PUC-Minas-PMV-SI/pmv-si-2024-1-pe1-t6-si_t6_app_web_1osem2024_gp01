@@ -67,12 +67,12 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
 
    ![Página Meta:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/meta.png)
 
-- Cadastro de Novo Usuário: [https://repl.it/gerency.cadastro.html](https://8bdf608d-45a9-4071-96b7-c69e100d5936-00-14lantgg8vwge.janeway.replit.dev/novousuario.html)
-- Login de Usuário: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
-- Recuperação de Senha: [https://repl.it/@rommelpuc/LoginApp](https://repl.it/@rommelpuc/LoginApp)
-- Página Home: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
-- Visualização do Histórico: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
-- - Visualização do Metas: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
+- Cadastro de Novo Usuário: [gerency.cadastro](https://8bdf608d-45a9-4071-96b7-c69e100d5936-00-14lantgg8vwge.janeway.replit.dev/novousuario.html)
+- Login de Usuário: [gerency.login](https://8bdf608d-45a9-4071-96b7-c69e100d5936-00-14lantgg8vwge.janeway.replit.dev/login.html)
+- Recuperação de Senha: [gerency.Recuperacao](https://8bdf608d-45a9-4071-96b7-c69e100d5936-00-14lantgg8vwge.janeway.replit.dev/recuperarsenha.html)
+- Página Home: [gerency.home](https://8bdf608d-45a9-4071-96b7-c69e100d5936-00-14lantgg8vwge.janeway.replit.dev/home.html)
+- Visualização do Histórico: [gerency.historico](https://8bdf608d-45a9-4071-96b7-c69e100d5936-00-14lantgg8vwge.janeway.replit.dev/historico.html)
+- - Visualização do Metas: [gerency.Metas](https://8bdf608d-45a9-4071-96b7-c69e100d5936-00-14lantgg8vwge.janeway.replit.dev/meta.html)
 
 > **Links Úteis**:
 >
