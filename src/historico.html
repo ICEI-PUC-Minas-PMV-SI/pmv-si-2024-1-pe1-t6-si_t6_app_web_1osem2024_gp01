@@ -188,99 +188,83 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="script/index.js"></script>
     <script>
-        // atualiza a tabela com os lançamentos salvos
-        function updateTable() {
-            // recupera o valor selecionado no select de tipo de lançamento
-            let tipoSelecionado = document.getElementById('selectLancamento').value;
-            // recupera os lançamentos do localStorage
-            let data = JSON.parse(localStorage.getItem('lançamentos')) || [];
+       
+document.getElementById('selectPeriodo').addEventListener('change', function() {
+    updateTable(); 
+});
 
-            // Filtrar os dados com base no tipo selecionado
-            let filteredData;
-            if (tipoSelecionado === '1') {
-                filteredData = data.filter(item => item.tipo === 'Despesas');
-            } else if (tipoSelecionado === '2') {
-                filteredData = data.filter(item => item.tipo === 'Receitas');
-            } else {
-                filteredData = data;
+
+function updateTable() {
+    
+    let tipoSelecionado = document.getElementById('selectLancamento').value;
+    
+    let data = JSON.parse(localStorage.getItem('lançamentos')) || [];
+    
+    let periodoSelecionado = document.getElementById('selectPeriodo').value;
+
+    
+    let filteredData;
+    if (tipoSelecionado === '1') {
+        filteredData = data.filter(item => item.tipo === 'Despesas');
+    } else if (tipoSelecionado === '2') {
+        filteredData = data.filter(item => item.tipo === 'Receitas');
+    } else {
+        filteredData = data;
+    }
+
+
+    let currentDate = new Date(); // Data atual
+    let selectedDate = new Date(); // Data selecionada pelo usuário
+    if (periodoSelecionado === '1') {
+        selectedDate.setDate(currentDate.getDate() - 15); // Últimos 15 dias
+    } else if (periodoSelecionado === '2') {
+        selectedDate.setDate(currentDate.getDate() - 30); // Últimos 30 dias
+    } else if (periodoSelecionado === '3') {
+        selectedDate.setDate(currentDate.getDate() - 60); // Últimos 60 dias
+    } else if (periodoSelecionado === '4') {
+        selectedDate.setDate(currentDate.getDate() - 90); // Últimos 90 dias
+    }
+
+
+    let tableBody = document.getElementById('tableBody');
+    let html = '';
+
+    // Filtrar e construir a tabela com os dados válidos
+    filteredData.forEach(item => {
+        let itemDate = new Date(item.date);
+        if (itemDate >= selectedDate) { 
+            html += `<tr>`;
+            if (item.tipo === 'Receitas') {
+                html += `<td class="text-center text-success">${item.descricao}</td>`;
+                html += `<td class="text-center text-success">${item.valor}</td>`;
+                html += `<td class="text-center text-success">${item.date}</td>`;
+                html += `<td class="text-center text-success">
+                    <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="bi bi-pencil-square"></i>
+                    </button>
+                </td>`;
+            } else if (item.tipo === 'Despesas') {
+                html += `<td class="text-center text-danger">${item.descricao}</td>`;
+                html += `<td class="text-center text-danger">${item.valor}</td>`;
+                html += `<td class="text-center text-danger">${item.date}</td>`;
+                html += `<td class="text-center text-danger">
+                    <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="bi bi-pencil-square"></i>
+                    </button>
+                </td>`;
             }
-
-            // constrói o HTML da tabela
-            let tableBody = document.getElementById('tableBody');
-            let html = '';
-
-            // filtra os dados para incluir apenas os lançamentos do tipo 'Receitas' e 'Despesas'
-
-            filteredData.forEach(item => {
-                html += `<tr>`;
-                if (item.tipo === 'Receitas') {
-                    html += `<td class="text-center text-success">${item.descricao}</td>`;
-                    html += `<td class="text-center text-success">${item.valor}</td>`;
-                    html += `<td class="text-center text-success">${item.date}</td>`;
-                    html += `<td class="text-center text-success">
-                        <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bi bi-pencil-square"></i>
-                        </button>
-                    </td>`;
-                } else if (item.tipo === 'Despesas') {
-                    html += `<td class="text-center text-danger">${item.descricao}</td>`;
-                    html += `<td class="text-center text-danger">${item.valor}</td>`;
-                    html += `<td class="text-center text-danger">${item.date}</td>`;
-                    html += `<td class="text-center text-danger">
-                        <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bi bi-pencil-square"></i>
-                        </button>
-                    </td>`;
-                }
-                html += `</tr>`;
-            });
-
-            // Atualizar o conteúdo da tabela na página
-            tableBody.innerHTML = html;
+            html += `</tr>`;
         }
+    });
 
-        // Chamar a função para atualizar a tabela ao carregar a página
-        document.addEventListener("DOMContentLoaded", function () {
-            updateTable();
-        });
+    // Atualizar o conteúdo da tabela na página
+    tableBody.innerHTML = html;
+}
 
-
-        //validação em edição
-        function validateEdit() {
-            let descricaoEdit = document.getElementById('descricaoEdit').value;
-            let categoriaEdit = document.getElementById('categoriaEdit').value;
-            let valorEdit = document.getElementById('valorEdit').value;
-            let dateEdit = document.getElementById('dateEdit').value;
-            let descricaoEditError = document.getElementById('descricaoEditError');
-            let categoriaEditError = document.getElementById('categoriaEditError');
-            let valorEditError = document.getElementById('valorEditError');
-            let dataEditError = document.getElementById('dataEditError');
-            descricaoEditError.innerHTML = '';
-            categoriaEditError.innerHTML = '';
-            valorEditError.innerHTML = '';
-            dataEditError.innerHTML = '';
-            let isValid = true;
-            if (descricaoEdit.trim() === '') {
-                descricaoEditError.innerHTML = 'Por favor, digite uma descrição';
-                isValid = false;
-            }
-            if (categoriaEdit.trim() === '') {
-                categoriaEditError.innerHTML = 'Por favor, selecione uma categoria';
-                isValid = false;
-            }
-            if (valorEdit.trim() === '') {
-                valorEditError.innerHTML = 'Por favor, digite um valor';
-                isValid = false;
-            }
-            if (dateEdit.trim() === '') {
-                dataEditError.innerHTML = 'Por favor, digite uma data';
-                isValid = false;
-            }
-            if (isValid) {
-                window.location.replace('historico.html');
-            }
-            return isValid;
-        }
+// Chamar a função para atualizar a tabela ao carregar a página
+document.addEventListener("DOMContentLoaded", function() {
+    updateTable();
+});
     </script>
 </body>
 
