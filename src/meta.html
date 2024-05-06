@@ -201,16 +201,17 @@
                 html += `</tr>`;
             });
 
-            // Destruir a tabela DataTables existente
-            $('#table').DataTable().destroy();
-
-            // Atualizar o corpo da tabela com os novos dados
-            tableBody.html(html);
-
-            // Recriar a tabela DataTables
-            $('#table').DataTable();
+            if (!$.fn.DataTable.isDataTable('#table')) {
+               
+                tableBody.html(html);
+                $('#table').DataTable();
+            } else {
+               
+                let table = $('#table').DataTable();
+                table.clear().draw();
+                table.rows.add($(html)).draw();
+            }
         }
-
         // Chamar a função para atualizar a tabela ao carregar a página
         window.onload = function () {
             updateTable('Metas');
