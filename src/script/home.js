@@ -213,33 +213,21 @@ window.addEventListener("load", function () {
   meta();
 });
 
-//relatorio// Adiciona evento de clique a todos os botões com classe 'lancamento'
-document.querySelectorAll('.lancamento').forEach(function(button) {
-    button.addEventListener('click', function() {
-        // Verifica se um período foi selecionado
-        if (document.getElementById('periodoRelatorio').value === "") {
-            // Se nenhum período foi selecionado, exibe a mensagem vermelha
-            document.getElementById('periodoMensagem').classList.remove('hide');
-        } else {
-            // Caso contrário, oculta a mensagem
-            document.getElementById('periodoMensagem').classList.add('hide');
-        }
-        // Limpa a classe 'text-primary' de todos os botões
-        limparEstiloBotoes();
-        // Adiciona a classe 'text-primary' apenas ao botão clicado
-        this.classList.add('text-primary');
-        // Exibe os dados do card body apenas se uma opção válida foi selecionada no select
-        exibirDadosCardBody();
-    });
+
+//script do relatorio
+document.querySelectorAll(".lancamento").forEach(function (button) {
+  button.addEventListener("click", function () {
+    if (document.getElementById("periodoRelatorio").value === "") {
+      document.getElementById("periodoMensagem").classList.remove("hide");
+    } else {
+      document.getElementById("periodoMensagem").classList.add("hide");
+    }
+    limparEstiloBotoes();
+    exibirDadosCardBody();
+  });
 });
-
-
-// Função para limpar a classe 'text-primary' de todos os botões
 function limparEstiloBotoes() {
   document.getElementById("lancamento1").classList.remove("text-primary");
-  document.getElementById("lancamento2").classList.remove("text-primary");
-  document.getElementById("lancamento3").classList.remove("text-primary");
-  document.getElementById("lancamento4").classList.remove("text-primary");
 }
 function exibirDadosCardBody() {
   if (document.getElementById("periodoRelatorio").value !== "") {
@@ -250,38 +238,10 @@ function exibirDadosCardBody() {
 }
 document.getElementById("lancamento1").addEventListener("click", function () {
   limparEstiloBotoes();
-  this.classList.add("text-primary");
   exibirDadosCardBody();
   escolhaLancamento("Saldo");
-
 });
 
-document.getElementById("lancamento2").addEventListener("click", function () {
-  limparEstiloBotoes();
-  this.classList.add("text-primary");
-  exibirDadosCardBody();
-  escolhaLancamento("Receita");
-  document.getElementById("receitaRelatorio").classList.add("text-primary");
-});
-
-document.getElementById("lancamento3").addEventListener("click", function () {
-  limparEstiloBotoes();
-  this.classList.add("text-primary");
-  exibirDadosCardBody();
-  escolhaLancamento("Despesa");
-  document.getElementById("despesaRelatorio").classList.add("text-primary");
-});
-
-document.getElementById("lancamento4").addEventListener("click", function () {
-  // Remove a classe 'text-primary' de todos os botões
-  limparEstiloBotoes();
-  // Adiciona a classe 'text-primary' apenas ao botão clicado
-  this.classList.add("text-primary");
-  // Exibe os dados do card body apenas se uma opção válida foi selecionada no select
-  exibirDadosCardBody();
-  escolhaLancamento("Meta");
-  document.getElementById("metaRelatorio").classList.add("text-primary");
-});
 
 function escolhaLancamento(lancamento) {
   document.getElementById("lancamentoEscolhido").innerHTML =
@@ -369,7 +329,7 @@ function relatorio() {
         style: "currency",
         currency: "BRL",
       });
-      
+
       receitaRelatorio.innerHTML = receitaMovimentacao.toLocaleString("pt-BR", {
         style: "currency",
         currency: "BRL",
