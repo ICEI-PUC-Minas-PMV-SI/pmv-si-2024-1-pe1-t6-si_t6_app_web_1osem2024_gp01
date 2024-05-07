@@ -25,13 +25,13 @@ Nesta seção o grupo deverá documentar os testes de software que verificam a c
 Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
 
-**Caso de Teste** | **CT01 - Criar conta parte 1**
+**Caso de Teste** | **CT01 - Validar o conteúdo e a funcionalidade do botão de login na página inicial (index.html) da Gerency.**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse o endereço www.teste.com.br <br> 2) Clique em criar conta <br> 2) Preencha todos os campos do formulário <br> 3) Clique no botão "Continuar".
-**Requisitos associados** | RF-001
-**Resultado esperado** | Prosseguir para a parte 2 do cadastro
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
-**Resultado obtido** | Sucesso
+**Procedimento**  | 1) Acesse a página inicial (index.html) do sistema Gerency. <br> 2) Verifique se as informações sobre a Gerency estão corretamente exibidas no home, como nome, slogan e descrição breve do sistema. <br> 3) Procure pelo botão de login na página. <br> 4) Clique no botão de login.
+**Requisitos associados** | RF-007 / Implementação de um home (index.html) que exibe informações sobre a Gerency e exibe um botão de login para acesso ao sistema.
+**Resultado esperado** | - As informações sobre a Gerency, como nome, slogan e descrição breve, devem estar corretamente apresentadas e formatadas na página inicial. <br>  - O botão de login deve ser visível e clicável, permitindo que o usuário acesse o sistema ao clicar nele.
+**Dados de entrada** | - Acesso à página inicial (index.html) da Gerency. <br> - Clique no botão de login.
+**Resultado obtido** | Sucesso. <br> - As informações sobre a Gerency estão corretamente exibidas e formatadas na página inicial. <br> - O botão de login é visível e clicável, direcionando o usuário para a página de login ao ser clicado.
 
 **Caso de Teste** | **CT02 - Criar conta parte 2**
  :--------------: | ------------
