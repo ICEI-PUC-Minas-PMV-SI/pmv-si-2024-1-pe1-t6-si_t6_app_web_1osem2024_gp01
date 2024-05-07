@@ -41,6 +41,24 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | - Acesso à página inicial (index.html) da Gerency. <br> - Clique em cada página do menu de navegação: Home, Sobre nós, Contato.
 **Resultado obtido** | Sucesso. <br> - O scroll automático é ativado corretamente ao clicar nas páginas do menu de navegação. <br> - Ao clicar em cada página, o usuário é direcionado para a área correspondente da página, facilitando a visualização das diferentes seções do sistema.
 
+**Caso de Teste** | **CT03 - Validar a funcionalidade do formulário de login (login.html) na Gerency.**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página de login (login.html) da Gerency. <br> 2) Insira um usuário válido (email ou nome de usuário) e senha correta nos campos correspondentes. <br> 3) Clique no botão "Conectar" para realizar o login. <br> 4) Verifique se o sistema aceita as credenciais corretas e redireciona o usuário para a página bemvindo.html após o login. <br> 5) Tente realizar o login novamente, desta vez inserindo um usuário inválido ou uma senha incorreta. <br> 6) Verifique se o sistema exibe uma mensagem de erro adequada quando as credenciais são inválidas.
+**Requisitos associados** | RF-007
+**Resultado esperado** | - O sistema deve permitir o login com credenciais válidas, redirecionando o usuário para a página bemvindo.html. <br> - Caso as credenciais sejam inválidas, o sistema deve exibir uma mensagem de erro apropriada ao usuário.
+**Dados de entrada** | - Usuário (email ou nome de usuário) e senha válidos para login. <br> - Usuário (email ou nome de usuário) e senha inválidos para login.
+**Resultado obtido** | Sucesso. <br> - O login é realizado com sucesso quando as credenciais são válidas, e o usuário é redirecionado para a página bemvindo.html. <br> - Ao inserir credenciais inválidas, o sistema exibe uma mensagem de erro indicando que as credenciais são inválidas.
+
+**Caso de Teste** | **CT04 - Validar os campos obrigatórios (Usuário e Senha) e o redirecionamento para a página (home.html) após o login bem-sucedido no sistema "Gerency".**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página de login (login.html) do sistema Gerency. <br> 2) Deixe os campos de usuário e senha em branco e tente realizar o login. <br> 3) Verifique se o sistema exibe mensagens de erro indicando que os campos são obrigatórios. <br> 4) Insira um usuário válido (email ou nome de usuário) e uma senha correta nos campos correspondentes. <br> 5) Clique no botão "Conectar" para realizar o login. <br> 6) Verifique se o sistema redireciona o usuário para a página home.html após o login bem-sucedido.
+**Requisitos associados** | RF-007
+**Resultado esperado** | - O sistema deve exibir mensagens de erro indicando que os campos de usuário e senha são obrigatórios caso eles estejam em branco. <br> - Após inserir credenciais válidas e clicar em "Conectar", o sistema deve redirecionar o usuário para a página home.html.
+**Dados de entrada** | - Campos de usuário e senha em branco. <br> - Usuário (email ou nome de usuário) e senha válidos para login.
+**Resultado obtido** | Sucesso. <br> - O sistema exibe mensagens de erro quando os campos obrigatórios não são preenchidos. <br> - Após o login bem-sucedido, o sistema redireciona o usuário para a página home.html conforme esperado.
+
+
+
 
 ## Registro dos Testes de Software
 
