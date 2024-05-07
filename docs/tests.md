@@ -81,6 +81,22 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | - Nome válido. <br> - Email válido. <br> - Senha válida. <br> - Confirmação de senha que coincide com a senha.
 **Resultado obtido** | Sucesso. <br> - O sistema exibe a mensagem de confirmação após o cadastro bem-sucedido. <br> - Um email de confirmação é enviado para o endereço de email fornecido durante o cadastro.
 
+**Caso de Teste** | **CT08 - Validar a recuperação de senha no sistema "Gerency".**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página de recuperação de senha (recuperarsenha.html) do sistema Gerency. <br> 2) Preencha o campo de email com o endereço de email associado à conta do usuário que deseja recuperar a senha. <br> 3) Clique no botão "Recuperar Senha" para submeter o formulário. <br> 4) Verifique se o sistema exibe uma mensagem informando que um email de recuperação de senha foi enviado para o endereço de email fornecido.
+**Requisitos associados** | RF-006 / Recuperação de Senha
+**Resultado esperado** | - O sistema deve enviar automaticamente um email de recuperação de senha para o endereço de email fornecido pelo usuário.
+**Dados de entrada** | - Endereço de email válido associado à conta do usuário.
+**Resultado obtido** | Sucesso. <br> - O sistema exibe uma mensagem informando que um email de recuperação de senha foi enviado para o endereço de email fornecido.
+
+**Caso de Teste** | **CT09 - Validar o campo de email e envio de email para recuperação de senha.**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página de recuperação de senha (recuperarsenha.html) do sistema Gerency. <br> 2) Deixe o campo de email em branco e tente enviar o formulário clicando no botão "Recuperar Senha". <br> 3) Verifique se o sistema exibe uma mensagem de erro informando que o campo de email é obrigatório. <br> 4) Insira um endereço de email válido associado à conta do usuário que deseja recuperar a senha. <br> 5) Clique no botão "Recuperar Senha" para submeter o formulário. <br> 6) Verifique se o sistema exibe uma mensagem informando que um email de recuperação de senha foi enviado para o endereço de email fornecido.
+**Requisitos associados** | RF-006 / Recuperação de Senha
+**Resultado esperado** | - O sistema deve validar o campo de email e enviar automaticamente um email de recuperação de senha para o endereço de email fornecido pelo usuário.
+**Dados de entrada** | - Endereço de email válido associado à conta do usuário.
+**Resultado obtido** | Sucesso. <br> - O sistema valida corretamente o campo de email, exibindo uma mensagem de erro se estiver em branco, e envia um email de recuperação de senha para o endereço de email fornecido pelo usuário.
+
 
 ## Registro dos Testes de Software
 
