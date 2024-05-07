@@ -153,28 +153,20 @@
                             <h3 id="lancamentoEscolhido" class="mb-3">Resumo Financeiro:
                             </h3>
                             <p>Há <span id="diaRelatorio">7</span> dias, <span id="lancamentoRelatorio">seu saldo</span>
-                                era de <span class="text-primary" id="saldoInicial">R$ 100,00</span>. Neste momento
-                                seu saldo atinge <span id="saldoAtual"class="text-primary">R$ -200,00</span></p>
+                                era de <span class="text-primary" id="saldoInicial">R$ 100,00</span>. Neste momento atinge <span id="saldoAtual" class="text-primary">R$ -200,00</span></p>
                             <!--analise  de movimentações-->
                             <br>
                             <h3 class="mb-3">Análise de Movimentação</h3>
-                            <p>Receitas: R$ 300,00</p>
-                            <p>Despesas: R$ -100,00</p>
-                            <p>Metas: R$ -500,00</p>
-                            <br>
-                            <!--analise detalhada-->
-                            <h3 class="mb-3">Análise Detalhada:</h3>
-                            <p class="text-primary">Saldo Inicial: R$ 100,00</p>
-                            <p>Receita Adicional: R$ 300,00</p>
-                            <p>Despesa: R$ -100,00</p>
-                            <p>Reserva para Metas: R$ -500,00</p>
-                            <p class="text-primary">Saldo Final: R$ -200,00</p>
+                            <p>Receitas: R$ <span id="receitaRelatorio">300,00</span></p>
+                            <p>Despesas: R$ <span id="despesaRelatorio">-100,00</span></p>
+                            <p>Metas: R$ <span id="metaRelatorio">-500,00</span></p>
                             <br>
                             <!--Conclusão-->
                             <h3 class="mb-3">Conclusão</h3>
-                            <p>Nesta data seu saldo se apresenta negativo. É importante observar que suas receitas não
-                                cobrem suas despesas e metas. Será necessário buscar mais controle sobre suas finanças.
-                                Cogite buscar novas formas de renda e economizar mais nos próximos dias.
+                            <p>Nesta data seu saldo se apresenta <span id="positivoNegativo">negativo</span>. É
+                                importante observar que suas receitas <span id="semNao">não</span>
+                                cobrem suas despesas e metas. <span id="frasePositivo">Será necessário buscar mais controle sobre suas finanças.</span>
+                                <span id="conclusaoPositiva">Cogite buscar novas formas de renda e economizar mais nos próximos dias.</span>
                             </p>
                             <div class="download-btn-container">
                                 <button id="download-btn"><i class="bi bi-cloud-arrow-down"></i></button>
@@ -224,8 +216,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="inputState" class="form-label text-muted">Valor</label>
-                            <input type="text" class="form-control" id="valor" placeholder="Exemplo: 500">
+                            <label for="inputState" class="form-label text-muted">Valor R$</label>
+                            <input type="text" class="form-control" id="valor" placeholder="500,00">
                             <div id="valorError" class="error-message text-danger"></div>
                         </div>
                         <div class="col-md-6">
@@ -437,7 +429,6 @@
             saldo();
         });
 
-        //card de receita
         function receita() {
             let lancamentos = JSON.parse(localStorage.getItem('lançamentos')) || [];
             let totalReceitas = 0;
@@ -448,18 +439,17 @@
                 }
             });
 
+            let receitaFormatada = totalReceitas.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-            // calcular saldo
-            let receita = totalReceitas;
-
-            let receitaFormatada = receita.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-
-            // Atualizar o elemento HTML que exibe o saldo
             document.getElementById('totalReceitas').innerHTML = receitaFormatada;
+
+            return totalReceitas;
         }
+
         window.addEventListener('load', function () {
             receita();
         });
+
 
         //card de despesa
         function despesa() {
@@ -471,16 +461,16 @@
                     totalDespesas += parseFloat(lancamento.valor);
                 }
             });
-            // calcular saldo
-            let despesa = totalDespesas;
 
-            let despesaFormatada = despesa.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            let despesaFormatada = totalDespesas.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-            // Atualizar o elemento HTML que exibe o saldo
             document.getElementById('totalDespesas').innerHTML = despesaFormatada;
+
+            return totalDespesas;
         }
         window.addEventListener('load', function () {
             despesa();
+            return totalDespesa;
         });
 
         //card de meta
@@ -493,12 +483,12 @@
                     totalMetas += parseFloat(lancamento.valor);
                 }
             });
-            let meta = totalMetas;
 
-            let metaFormatada = meta.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            let metaFormatada = totalMetas.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-            // Atualizar o elemento HTML que exibe o saldo
             document.getElementById('totalMetas').innerHTML = metaFormatada;
+
+            return totalMetas;
         }
         window.addEventListener('load', function () {
             meta();
@@ -522,6 +512,11 @@
             document.getElementById('lancamentoRelatorio').innerHTML = "o(a) " + lancamento;
         }
         function relatorio() {
+            let receitaMovimentacao = receita();
+            let despesaMovimentacao = despesa();
+            let metaMovimentacao = meta();
+
+
             // Select de periodo
             let periodoRelatorio = document.getElementById('periodoRelatorio').value;
             let relatorioTitle = document.getElementById('relatorioTitle');
@@ -530,6 +525,30 @@
             let diaRelatorio = document.getElementById('diaRelatorio');
             let saldoInicial = document.getElementById('saldoInicial');
             let saldoAtual = document.getElementById('saldoAtual');
+            let receitaRelatorio = document.getElementById('receitaRelatorio');
+            let despesaRelatorio = document.getElementById('despesaRelatorio');
+            let metaRelatorio = document.getElementById('metaRelatorio');
+            let positivoNegativo = document.getElementById('positivoNegativo');
+            let semNao = document.getElementById('semNao');
+            let frasePositivo = document.getElementById('frasePositivo');
+            let conclusaoPositiva = document.getElementById('conclusaoPositiva');
+
+            // calcular o saldo
+            let saldo = calcularSaldoAtual(periodoRelatorio);
+
+            let saldoFormatado;
+            let saldoTexto;
+            if (saldo >= 0) {
+                saldoFormatado = saldo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+                saldoTexto = 'positivo';
+                semNao.innerHTML = "";
+                frasePositivo.innerHTML = "Continue desta forma, em busca de um custo de vida positivo.";
+                conclusaoPositiva.innerHTML = "Mantenha uma gestão financeira responsável e sempre explore oportunidades.";
+            } else {
+                saldoFormatado = (-saldo).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+                saldoTexto = 'negativo';
+            }
+            document.getElementById('positivoNegativo').innerText = saldoTexto;
 
             // Formatando data
             function formatDate(date) {
@@ -559,7 +578,10 @@
                     relatorioPeriodo.innerHTML = `Período: ${dataInicio} - ${dataFim}`;
                     diaRelatorio.innerHTML = "7"
                     saldoInicial.innerHTML = calcularSaldoInicial(7);
-                    saldoAtual.innerHTML = calcularSaldoAtual(7);
+                    saldoAtual.innerHTML = calcularSaldoAtual(7).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+                    receitaRelatorio.innerHTML = receitaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+                    despesaRelatorio.innerHTML = despesaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+                    metaRelatorio.innerHTML = metaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
                     break;
                 case 2:
                     relatorioTitle.innerHTML = "Relatório Financeiro: Últimos 15 dias"
@@ -568,7 +590,10 @@
                     relatorioPeriodo.innerHTML = `Período: ${dataInicio} - ${dataFim}`;
                     diaRelatorio.innerHTML = "15"
                     saldoInicial.innerHTML = calcularSaldoInicial(15);
-                    saldoAtual.innerHTML = calcularSaldoAtual(15);
+                    saldoAtual.innerHTML = calcularSaldoAtual(15).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+                    receitaRelatorio.innerHTML = receitaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+                    despesaRelatorio.innerHTML = despesaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+                    metaRelatorio.innerHTML = metaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
                     break;
                 case 3:
                     relatorioTitle.innerHTML = "Relatório Financeiro: Últimos 30 dias"
@@ -577,7 +602,10 @@
                     relatorioPeriodo.innerHTML = `Período: ${dataInicio} - ${dataFim}`;
                     diaRelatorio.innerHTML = "30"
                     saldoInicial.innerHTML = calcularSaldoInicial(30);
-                    saldoAtual.innerHTML = calcularSaldoAtual(30);
+                    saldoAtual.innerHTML = calcularSaldoAtual(30).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+                    receitaRelatorio.innerHTML = receitaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+                    despesaRelatorio.innerHTML = despesaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+                    metaRelatorio.innerHTML = metaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
                     break;
                 case 4:
                     relatorioTitle.innerHTML = "Relatório Financeiro: Últimos 60 dias"
@@ -586,7 +614,10 @@
                     relatorioPeriodo.innerHTML = `Período: ${dataInicio} - ${dataFim}`;
                     diaRelatorio.innerHTML = "60"
                     saldoInicial.innerHTML = calcularSaldoInicial(60);
-                    saldoAtual.innerHTML = calcularSaldoAtual(60);
+                    saldoAtual.innerHTML = calcularSaldoAtual(60).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+                    receitaRelatorio.innerHTML = receitaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+                    despesaRelatorio.innerHTML = despesaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+                    metaRelatorio.innerHTML = metaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
                     break;
                 case 5:
                     relatorioTitle.innerHTML = "Relatório Financeiro: Últimos 90 dias"
@@ -594,8 +625,11 @@
                     var dataFim = formatDate(new Date());
                     relatorioPeriodo.innerHTML = `Período: ${dataInicio} - ${dataFim}`;
                     diaRelatorio.innerHTML = "90"
-                    saldoInicial.innerHTML = calcularSaldoInicial(90);
+                    saldoInicial.innerHTML = calcularSaldoInicial(90).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
                     saldoAtual.innerHTML = calcularSaldoAtual(90);
+                    receitaRelatorio.innerHTML = receitaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+                    despesaRelatorio.innerHTML = despesaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+                    metaRelatorio.innerHTML = metaMovimentacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
                     break;
                 default:
             }
@@ -643,11 +677,9 @@
                 });
 
                 let saldo = totalReceitas - totalDespesas - totalMetas;
-                return saldo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+                return saldo;
             }
         }
-
-
     </script>
 
 </body>
