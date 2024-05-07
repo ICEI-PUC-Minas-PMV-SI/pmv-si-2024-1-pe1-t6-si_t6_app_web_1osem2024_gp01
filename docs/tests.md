@@ -39,9 +39,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Requisitos associados** | RF-007
 **Resultado esperado** | - Ao clicar em uma das páginas do menu de navegação (Home, Sobre nós, Contato), o scroll automático deve ser ativado. <br> - O scroll automático deve levar o usuário para a área correspondente da página, permitindo que ele visualize cada seção de forma clara e intuitiva.
 **Dados de entrada** | - Acesso à página inicial (index.html) da Gerency. <br> - Clique em cada página do menu de navegação: Home, Sobre nós, Contato.
-
-**Resultado obtido** | Sucesso. <br> - O scroll automático é ativado corretamente ao clicar nas páginas do menu de navegação.
-- Ao clicar em cada página, o usuário é direcionado para a área correspondente da página, facilitando a visualização das diferentes seções do sistema.
+**Resultado obtido** | Sucesso. <br> - O scroll automático é ativado corretamente ao clicar nas páginas do menu de navegação. <br> - Ao clicar em cada página, o usuário é direcionado para a área correspondente da página, facilitando a visualização das diferentes seções do sistema.
 
 
 ## Registro dos Testes de Software
