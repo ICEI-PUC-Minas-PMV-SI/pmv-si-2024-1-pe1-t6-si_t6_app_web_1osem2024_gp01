@@ -146,14 +146,15 @@
                 <div class="col ">
                     <h3 class="card-title info mt-3">Relatórios</h3>
                     <div class="card relatorio">
-                        <div class="card-body text-start p-5" id="relatorio">
+                        <div class="card-body hide text-start p-5" id="relatorio">
                             <h2 id="relatorioTitle">Relatório Financeiro:</h2>
                             <h3 id="relatorioPeriodo">Período:</h3>
                             <!--Resumo-->
                             <h3 id="lancamentoEscolhido" class="mb-3">Resumo Financeiro:
                             </h3>
-                            <p>Há <span id="diaRelatorio">7</span> dias, <span id="lancamentoRelatorio">seu saldo</span>
-                                era de <span class="text-primary" id="saldoInicial">R$ 100,00</span>. Neste momento atinge <span id="saldoAtual" class="text-primary">R$ -200,00</span></p>
+                            <p>Há <span id="diaRelatorio">7</span> dias, seu saldo
+                                era de <span class="text-primary" id="saldoInicial">R$ 100,00</span>. Neste momento
+                                atinge <span id="saldoAtual" class="text-primary">R$ -200,00</span></p>
                             <!--analise  de movimentações-->
                             <br>
                             <h3 class="mb-3">Análise de Movimentação</h3>
@@ -165,8 +166,10 @@
                             <h3 class="mb-3">Conclusão</h3>
                             <p>Nesta data seu saldo se apresenta <span id="positivoNegativo">negativo</span>. É
                                 importante observar que suas receitas <span id="semNao">não</span>
-                                cobrem suas despesas e metas. <span id="frasePositivo">Será necessário buscar mais controle sobre suas finanças.</span>
-                                <span id="conclusaoPositiva">Cogite buscar novas formas de renda e economizar mais nos próximos dias.</span>
+                                cobrem suas despesas e metas. <span id="frasePositivo">Será necessário buscar mais
+                                    controle sobre suas finanças.</span>
+                                <span id="conclusaoPositiva">Cogite buscar novas formas de renda e economizar mais nos
+                                    próximos dias.</span>
                             </p>
                             <div class="download-btn-container">
                                 <button id="download-btn"><i class="bi bi-cloud-arrow-down"></i></button>
@@ -496,20 +499,76 @@
 
         //relatorio
         document.getElementById('lancamento1').addEventListener('click', function () {
+            // Remove a classe 'text-primary' de todos os botões
+            limparEstiloBotoes();
+            // Adiciona a classe 'text-primary' apenas ao botão clicado
+            this.classList.add('text-primary');
+            // Exibe os dados do card body apenas se uma opção válida foi selecionada no select
+            exibirDadosCardBody();
+        });
+
+        document.getElementById('lancamento2').addEventListener('click', function () {
+            // Remove a classe 'text-primary' de todos os botões
+            limparEstiloBotoes();
+            // Adiciona a classe 'text-primary' apenas ao botão clicado
+            this.classList.add('text-primary');
+            // Exibe os dados do card body apenas se uma opção válida foi selecionada no select
+            exibirDadosCardBody();
+        });
+
+        document.getElementById('lancamento3').addEventListener('click', function () {
+            // Remove a classe 'text-primary' de todos os botões
+            limparEstiloBotoes();
+            // Adiciona a classe 'text-primary' apenas ao botão clicado
+            this.classList.add('text-primary');
+            // Exibe os dados do card body apenas se uma opção válida foi selecionada no select
+            exibirDadosCardBody();
+        });
+
+        document.getElementById('lancamento4').addEventListener('click', function () {
+            // Remove a classe 'text-primary' de todos os botões
+            limparEstiloBotoes();
+            // Adiciona a classe 'text-primary' apenas ao botão clicado
+            this.classList.add('text-primary');
+            // Exibe os dados do card body apenas se uma opção válida foi selecionada no select
+            exibirDadosCardBody();
+        });
+
+        // Função para limpar a classe 'text-primary' de todos os botões
+        function limparEstiloBotoes() {
+            document.getElementById('lancamento1').classList.remove('text-primary');
+            document.getElementById('lancamento2').classList.remove('text-primary');
+            document.getElementById('lancamento3').classList.remove('text-primary');
+            document.getElementById('lancamento4').classList.remove('text-primary');
+        }
+
+        // Função para exibir os dados do card body apenas se uma opção válida foi selecionada no select
+        function exibirDadosCardBody() {
+            if (document.getElementById('periodoRelatorio').value !== "") {
+                document.getElementById('relatorio').classList.remove('hide');
+                // Coloque aqui o código para preencher os dados do card body
+            } else {
+                document.getElementById('relatorio').classList.add('hide');
+            }
+        }
+
+        document.getElementById('lancamento1').addEventListener('click', function () {
             escolhaLancamento("Saldo");
         });
         document.getElementById('lancamento2').addEventListener('click', function () {
             escolhaLancamento("Receita");
+            document.getElementById('receitaRelatorio').classList.add('text-primary');
         });
         document.getElementById('lancamento3').addEventListener('click', function () {
             escolhaLancamento("Despesa");
+            document.getElementById('despesaRelatorio').classList.add('text-primary');
         });
         document.getElementById('lancamento4').addEventListener('click', function () {
             escolhaLancamento("Meta");
+            document.getElementById('metaRelatorio').classList.add('text-primary');
         });
         function escolhaLancamento(lancamento) {
             document.getElementById('lancamentoEscolhido').innerHTML = "Resumo Financeiro: " + lancamento;
-            document.getElementById('lancamentoRelatorio').innerHTML = "o(a) " + lancamento;
         }
         function relatorio() {
             let receitaMovimentacao = receita();

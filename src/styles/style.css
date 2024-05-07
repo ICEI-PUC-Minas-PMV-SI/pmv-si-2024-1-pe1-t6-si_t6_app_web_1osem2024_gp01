@@ -9,75 +9,96 @@
         width: 1400px;
     }
 }
+
 body {
     background-color: #f8f9fa !important;
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
+.hide {
+    display: none;
+}
+
 /*inicio do nav-bar padrão de todas as telas*/
 .navbar-toggler-icon {
-    font-size: 0.75rem; 
+    font-size: 0.75rem;
     margin-bottom: 4px;
 }
+
 nav.navbar {
     background-color: #ffffff !important;
     z-index: 2;
     position: relative;
     box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.151);
 }
-.nav-link{
+
+.nav-link {
     margin-left: 2vh;
 }
+
 a {
     text-decoration: none;
     font-size: 20px;
     color: #000000;
 }
+
 a:hover {
     color: #007bff;
 }
-.active{
+
+.active {
     color: #007bff;
 }
-#user{
+
+#user {
     font-size: 25px;
 }
-.logo{
+
+.logo {
     width: 35px;
 }
-.navbar-brand{
+
+.navbar-brand {
     font-size: 18px;
 }
 
 /*tela home*/
-.card{
+.card {
     margin-top: 30px;
     height: 180px;
     font-size: 25px;
 }
-.card-body h4{
+
+.card-body h4 {
     margin-top: 1vh;
 }
-.card .connection{
+
+.card .connection {
     margin-top: 1vh;
     width: 150px;
     height: 40px;
 }
-.card .gerencie{
+
+.card .gerencie {
     margin-left: 100px;
 }
-.card-body button i{
+
+.card-body button i {
     font-size: 30px;
 }
-.relatorio{
+
+.relatorio {
     overflow-y: scroll;
     height: 350px;
 }
+
 .download-btn-container {
     position: absolute;
     bottom: 250px;
     right: 10px;
 }
+
 #download-btn {
     right: 20px;
     padding: 10px 20px;
@@ -86,21 +107,25 @@ a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-.btn{
+}
+
+.btn {
     width: 200px;
     height: 38px;
 }
-.float-end{
+
+.float-end {
     width: 100px;
     height: 70px;
 }
+
 .custom-select {
     margin-top: 10px;
     appearance: none;
-    -webkit-appearance: none; 
+    -webkit-appearance: none;
     -moz-appearance: none;
 }
+
 .relatorio-buttons {
     position: fixed;
     bottom: 10px;
@@ -109,68 +134,83 @@ a:hover {
     transform: translate(-50%);
     z-index: 1000;
 }
+
 .relatorio-buttons-container {
     display: flex;
     justify-content: center;
 }
+
 .row-buttons {
-    margin-top: 20px; 
+    margin-top: 20px;
     justify-content: center;
 }
+
 .relatorio-buttons-container .btn {
-    margin: 0 5px; 
+    margin: 0 5px;
 }
+
 /*inicio do conteudo do body das telas meta e histórico*/
 .floating-select-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .form-select {
     display: inline-block;
     position: relative;
-} 
+}
+
 .floating-select {
     flex: 1 1 auto;
     max-width: 20%;
-     top:50px; 
+    top: 50px;
 }
+
 .table {
     margin: 0 auto;
     max-width: 100% !important;
     position: center;
 }
+
 .table td,
 .table th {
-    text-align: center; 
+    text-align: center;
     vertical-align: middle;
     white-space: nowrap;
 }
-thead{
+
+thead {
     background-color: #F2F2F2;
     text-align: center !important;
     vertical-align: middle !important;
 }
-#table th:nth-child(2), #table td:nth-child(2){
+
+#table th:nth-child(2),
+#table td:nth-child(2) {
     text-align: left;
 }
+
 .custom-container {
     background-color: #ffffff;
-    border-radius: 5px; 
+    border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 1;
     padding-bottom: 10px;
     margin-bottom: 30px;
 }
+
 .custom-container table {
     max-width: 100%;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
-#template-btn{
+
+#template-btn {
     background-color: #28a745 !important;
     color: white;
 }
-button>i{
+
+button>i {
     margin: 20px;
 }
