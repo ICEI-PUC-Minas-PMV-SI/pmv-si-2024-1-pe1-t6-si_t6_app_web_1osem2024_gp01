@@ -67,17 +67,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT06 - Validar os campos no formulário de cadastro de novo usuário no sistema "Gerency".**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse a página de cadastro de novo usuário (novousuario.html) do sistema Gerency.
-2) Insira um nome válido no campo "Nome" (ex: João da Silva).
-3) Insira um email válido no campo "Email" (ex: joao.silva@email.com).
-4) Insira uma senha com menos de 6 caracteres no campo "Senha" (ex: 12345).
-5) Insira uma confirmação de senha que não coincida com a senha no campo "Confirmação de Senha" (ex: 54321).
-6) Clique no botão "Cadastrar" para submeter o formulário.
-7) Verifique se o sistema exibe mensagens de erro indicando que os dados inseridos são inválidos conforme os critérios estabelecidos.
-8) Insira uma senha com 6 caracteres ou mais no campo "Senha" (ex: 123456).
-9) Insira a mesma senha no campo "Confirmação de Senha" (123456).
-10) Clique no botão "Cadastrar" para submeter o formulário novamente.
-11) Verifique se o sistema permite o cadastro do novo usuário após preencher corretamente todos os campos.
+**Procedimento**  | 1) Acesse a página de cadastro de novo usuário (novousuario.html) do sistema Gerency. <br> 2) Insira um nome válido no campo "Nome" (ex: João da Silva). <br> 3) Insira um email válido no campo "Email" (ex: joao.silva@email.com). <br> 4) Insira uma senha com menos de 6 caracteres no campo "Senha" (ex: 12345). <br> 5) Insira uma confirmação de senha que não coincida com a senha no campo "Confirmação de Senha" (ex: 54321). <br> 6) Clique no botão "Cadastrar" para submeter o formulário. <br> 7) Verifique se o sistema exibe mensagens de erro indicando que os dados inseridos são inválidos conforme os critérios estabelecidos. <br> 8) Insira uma senha com 6 caracteres ou mais no campo "Senha" (ex: 123456). <br> 9) Insira a mesma senha no campo "Confirmação de Senha" (123456). <br> 10) Clique no botão "Cadastrar" para submeter o formulário novamente. <br> 11) Verifique se o sistema permite o cadastro do novo usuário após preencher corretamente todos os campos.
 **Requisitos associados** | RF-006 / Cadastro de Novo Usuário
 **Resultado esperado** | - O sistema deve exibir mensagens de erro indicando que os dados inseridos são inválidos se não atenderem aos critérios estabelecidos. <br> - Após preencher corretamente todos os campos conforme os critérios, o sistema deve permitir o cadastro do novo usuário.
 **Dados de entrada** | - Nome válido. <br> - Email válido. <br> - Senha com menos de 6 caracteres. <br> - Confirmação de senha que não coincide com a senha. <br> - Senha com 6 caracteres ou mais. <br> - Confirmação de senha que coincide com a senha.
