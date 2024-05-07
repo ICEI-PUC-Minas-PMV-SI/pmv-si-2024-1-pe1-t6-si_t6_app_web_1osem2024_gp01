@@ -28,7 +28,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Caso de Teste** | **CT01 - Validar o conteúdo e a funcionalidade do botão de login na página inicial (index.html) da Gerency.**
  :--------------: | ------------
 **Procedimento**  | 1) Acesse a página inicial (index.html) do sistema Gerency. <br> 2) Verifique se as informações sobre a Gerency estão corretamente exibidas no home, como nome, slogan e descrição breve do sistema. <br> 3) Procure pelo botão de login na página. <br> 4) Clique no botão de login.
-**Requisitos associados** | RF-007
+**Requisitos associados** | RF-007 / Página Index - Conheça a Gerency
 **Resultado esperado** | - As informações sobre a Gerency, como nome, slogan e descrição breve, devem estar corretamente apresentadas e formatadas na página inicial. <br>  - O botão de login deve ser visível e clicável, permitindo que o usuário acesse o sistema ao clicar nele.
 **Dados de entrada** | - Acesso à página inicial (index.html) da Gerency. <br> - Clique no botão de login.
 **Resultado obtido** | Sucesso. <br> - As informações sobre a Gerency estão corretamente exibidas e formatadas na página inicial. <br> - O botão de login é visível e clicável, direcionando o usuário para a página de login ao ser clicado.
@@ -36,7 +36,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Caso de Teste** | **CT02 - Validar o scroll automático ao clicar nas páginas do menu de navegação na Gerency.**
  :--------------: | ------------
 **Procedimento**  | 1) Acesse a página inicial (index.html) da Gerency. <br> 2) Observe o menu de navegação no topo da página. <br> 3) Clique em cada uma das páginas do menu de navegação: Home, Sobre nós, Contato. <br> 4) Verifique se o scroll automático ocorre ao clicar em cada página do menu, levando o usuário para a área correspondente da página.
-**Requisitos associados** | RF-007
+**Requisitos associados** | RF-007 / Página Index - Conheça a Gerency
 **Resultado esperado** | - Ao clicar em uma das páginas do menu de navegação (Home, Sobre nós, Contato), o scroll automático deve ser ativado. <br> - O scroll automático deve levar o usuário para a área correspondente da página, permitindo que ele visualize cada seção de forma clara e intuitiva.
 **Dados de entrada** | - Acesso à página inicial (index.html) da Gerency. <br> - Clique em cada página do menu de navegação: Home, Sobre nós, Contato.
 **Resultado obtido** | Sucesso. <br> - O scroll automático é ativado corretamente ao clicar nas páginas do menu de navegação. <br> - Ao clicar em cada página, o usuário é direcionado para a área correspondente da página, facilitando a visualização das diferentes seções do sistema.
@@ -44,7 +44,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Caso de Teste** | **CT03 - Validar a funcionalidade do formulário de login (login.html) na Gerency.**
  :--------------: | ------------
 **Procedimento**  | 1) Acesse a página de login (login.html) da Gerency. <br> 2) Insira um usuário válido (email ou nome de usuário) e senha correta nos campos correspondentes. <br> 3) Clique no botão "Conectar" para realizar o login. <br> 4) Verifique se o sistema aceita as credenciais corretas e redireciona o usuário para a página bemvindo.html após o login. <br> 5) Tente realizar o login novamente, desta vez inserindo um usuário inválido ou uma senha incorreta. <br> 6) Verifique se o sistema exibe uma mensagem de erro adequada quando as credenciais são inválidas.
-**Requisitos associados** | RF-007
+**Requisitos associados** | RF-007 / Login de Usuário
 **Resultado esperado** | - O sistema deve permitir o login com credenciais válidas, redirecionando o usuário para a página bemvindo.html. <br> - Caso as credenciais sejam inválidas, o sistema deve exibir uma mensagem de erro apropriada ao usuário.
 **Dados de entrada** | - Usuário (email ou nome de usuário) e senha válidos para login. <br> - Usuário (email ou nome de usuário) e senha inválidos para login.
 **Resultado obtido** | Sucesso. <br> - O login é realizado com sucesso quando as credenciais são válidas, e o usuário é redirecionado para a página bemvindo.html. <br> - Ao inserir credenciais inválidas, o sistema exibe uma mensagem de erro indicando que as credenciais são inválidas.
@@ -52,12 +52,44 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Caso de Teste** | **CT04 - Validar os campos obrigatórios (Usuário e Senha) e o redirecionamento para a página (home.html) após o login bem-sucedido no sistema "Gerency".**
  :--------------: | ------------
 **Procedimento**  | 1) Acesse a página de login (login.html) do sistema Gerency. <br> 2) Deixe os campos de usuário e senha em branco e tente realizar o login. <br> 3) Verifique se o sistema exibe mensagens de erro indicando que os campos são obrigatórios. <br> 4) Insira um usuário válido (email ou nome de usuário) e uma senha correta nos campos correspondentes. <br> 5) Clique no botão "Conectar" para realizar o login. <br> 6) Verifique se o sistema redireciona o usuário para a página home.html após o login bem-sucedido.
-**Requisitos associados** | RF-007
+**Requisitos associados** | RF-007 / Login de Usuário
 **Resultado esperado** | - O sistema deve exibir mensagens de erro indicando que os campos de usuário e senha são obrigatórios caso eles estejam em branco. <br> - Após inserir credenciais válidas e clicar em "Conectar", o sistema deve redirecionar o usuário para a página home.html.
 **Dados de entrada** | - Campos de usuário e senha em branco. <br> - Usuário (email ou nome de usuário) e senha válidos para login.
 **Resultado obtido** | Sucesso. <br> - O sistema exibe mensagens de erro quando os campos obrigatórios não são preenchidos. <br> - Após o login bem-sucedido, o sistema redireciona o usuário para a página home.html conforme esperado.
 
+**Caso de Teste** | **CT05 - Validar o cadastro de novo usuário no sistema "Gerency".**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página de cadastro de novo usuário (novousuario.html) do sistema Gerency. <br> 2) Deixe os campos de nome, email, senha e confirmação de senha em branco e tente realizar o cadastro. <br> 3) Verifique se o sistema exibe mensagens de erro indicando que os campos são obrigatórios. <br> 4) Preencha todos os campos com informações válidas, exceto a confirmação de senha. <br> 5) Verifique se o sistema exibe uma mensagem de erro indicando que a confirmação de senha é necessária. <br> 6) Preencha todos os campos com informações válidas, incluindo a confirmação de senha, mas com senhas diferentes. <br> 7) Verifique se o sistema exibe uma mensagem de erro indicando que as senhas não coincidem. <br> 8) Preencha todos os campos com informações válidas, incluindo a confirmação de senha correta. <br> 9) Clique no botão "Cadastrar" para realizar o cadastro. <br> 10) Verifique se o sistema redireciona o usuário para a página de login (login.html) após o cadastro bem-sucedido.
+**Requisitos associados** | RF-006 / Cadastro de Novo Usuário
+**Resultado esperado** | - O sistema deve exibir mensagens de erro indicando que os campos de cadastro são obrigatórios se estiverem em branco. <br> - Após preencher corretamente todos os campos e clicar em "Cadastrar", o sistema deve redirecionar o usuário para a página de login.
+**Dados de entrada** | - Campos de cadastro (nome, email, senha e confirmação de senha) em branco. <br> - Campos de cadastro preenchidos com informações válidas, mas sem a confirmação de senha. <br> - Campos de cadastro preenchidos com informações válidas, incluindo a confirmação de senha incorreta. <br> - Campos de cadastro preenchidos com informações válidas, incluindo a confirmação de senha correta.
+**Resultado obtido** | Sucesso. <br> - O sistema exibe mensagens de erro quando os campos obrigatórios não são preenchidos e quando a confirmação de senha não coincide. <br> - Após o cadastro bem-sucedido, o sistema redireciona o usuário para a página de login conforme esperado.
 
+**Caso de Teste** | **CT06 - Validar os campos no formulário de cadastro de novo usuário no sistema "Gerency".**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página de cadastro de novo usuário (novousuario.html) do sistema Gerency.
+2) Insira um nome válido no campo "Nome" (ex: João da Silva).
+3) Insira um email válido no campo "Email" (ex: joao.silva@email.com).
+4) Insira uma senha com menos de 6 caracteres no campo "Senha" (ex: 12345).
+5) Insira uma confirmação de senha que não coincida com a senha no campo "Confirmação de Senha" (ex: 54321).
+6) Clique no botão "Cadastrar" para submeter o formulário.
+7) Verifique se o sistema exibe mensagens de erro indicando que os dados inseridos são inválidos conforme os critérios estabelecidos.
+8) Insira uma senha com 6 caracteres ou mais no campo "Senha" (ex: 123456).
+9) Insira a mesma senha no campo "Confirmação de Senha" (123456).
+10) Clique no botão "Cadastrar" para submeter o formulário novamente.
+11) Verifique se o sistema permite o cadastro do novo usuário após preencher corretamente todos os campos.
+**Requisitos associados** | RF-006 / Cadastro de Novo Usuário
+**Resultado esperado** | - O sistema deve exibir mensagens de erro indicando que os dados inseridos são inválidos se não atenderem aos critérios estabelecidos. <br> - Após preencher corretamente todos os campos conforme os critérios, o sistema deve permitir o cadastro do novo usuário.
+**Dados de entrada** | - Nome válido. <br> - Email válido. <br> - Senha com menos de 6 caracteres. <br> - Confirmação de senha que não coincide com a senha. <br> - Senha com 6 caracteres ou mais. <br> - Confirmação de senha que coincide com a senha.
+**Resultado obtido** | Sucesso. <br> - O sistema exibe mensagens de erro quando os dados inseridos não atendem aos critérios estabelecidos. <br> - Após preencher corretamente todos os campos conforme os critérios, o sistema permite o cadastro do novo usuário conforme esperado.
+
+**Caso de Teste** | **CT07 - Validar o envio de email de confirmação após o cadastro de novo usuário no sistema "Gerency".**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página de cadastro de novo usuário (novousuario.html) do sistema Gerency. <br> 2) Preencha todos os campos obrigatórios do formulário corretamente (nome, email, senha, confirmação de senha). <br> 3) Clique no botão "Cadastrar" para submeter o formulário. <br> 4) Verifique se o sistema exibe uma mensagem de confirmação informando que o cadastro foi realizado com sucesso. <br> 5) Verifique se o sistema envia automaticamente um email de confirmação para o endereço de email fornecido durante o cadastro.
+**Requisitos associados** | RF-006 / Cadastro de Novo Usuário
+**Resultado esperado** | - O sistema deve exibir uma mensagem de confirmação após o cadastro bem-sucedido. <br> - O sistema deve enviar automaticamente um email de confirmação para o endereço de email fornecido durante o cadastro.
+**Dados de entrada** | - Nome válido. <br> - Email válido. <br> - Senha válida. <br> - Confirmação de senha que coincide com a senha.
+**Resultado obtido** | Sucesso. <br> - O sistema exibe a mensagem de confirmação após o cadastro bem-sucedido. <br> - Um email de confirmação é enviado para o endereço de email fornecido durante o cadastro.
 
 
 ## Registro dos Testes de Software
