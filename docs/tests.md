@@ -28,18 +28,21 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Caso de Teste** | **CT01 - Validar o conteúdo e a funcionalidade do botão de login na página inicial (index.html) da Gerency.**
  :--------------: | ------------
 **Procedimento**  | 1) Acesse a página inicial (index.html) do sistema Gerency. <br> 2) Verifique se as informações sobre a Gerency estão corretamente exibidas no home, como nome, slogan e descrição breve do sistema. <br> 3) Procure pelo botão de login na página. <br> 4) Clique no botão de login.
-**Requisitos associados** | RF-007 / Implementação de um home (index.html) que exibe informações sobre a Gerency e exibe um botão de login para acesso ao sistema.
+**Requisitos associados** | RF-007
 **Resultado esperado** | - As informações sobre a Gerency, como nome, slogan e descrição breve, devem estar corretamente apresentadas e formatadas na página inicial. <br>  - O botão de login deve ser visível e clicável, permitindo que o usuário acesse o sistema ao clicar nele.
 **Dados de entrada** | - Acesso à página inicial (index.html) da Gerency. <br> - Clique no botão de login.
 **Resultado obtido** | Sucesso. <br> - As informações sobre a Gerency estão corretamente exibidas e formatadas na página inicial. <br> - O botão de login é visível e clicável, direcionando o usuário para a página de login ao ser clicado.
 
-**Caso de Teste** | **CT02 - Criar conta parte 2**
+**Caso de Teste** | **CT02 - Validar o scroll automático ao clicar nas páginas do menu de navegação na Gerency.**
  :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
-**Resultado obtido** | Sucesso
+**Procedimento**  | 1) Acesse a página inicial (index.html) da Gerency. <br> 2) Observe o menu de navegação no topo da página. <br> 3) Clique em cada uma das páginas do menu de navegação: Home, Sobre nós, Contato.
+**Requisitos associados** | RF-007
+**Resultado esperado** | - Ao clicar em uma das páginas do menu de navegação (Home, Sobre nós, Contato), o scroll automático deve ser ativado. <br> - O scroll automático deve levar o usuário para a área correspondente da página, permitindo que ele visualize cada seção de forma clara e intuitiva.
+**Dados de entrada** | - Acesso à página inicial (index.html) da Gerency. <br> - Clique em cada página do menu de navegação: Home, Sobre nós, Contato.
+
+**Resultado obtido** | Sucesso. <br> - O scroll automático é ativado corretamente ao clicar nas páginas do menu de navegação.
+- Ao clicar em cada página, o usuário é direcionado para a área correspondente da página, facilitando a visualização das diferentes seções do sistema.
+
 
 ## Registro dos Testes de Software
 
