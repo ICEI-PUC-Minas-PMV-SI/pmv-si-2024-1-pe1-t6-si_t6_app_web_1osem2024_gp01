@@ -35,7 +35,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT02 - Validar o scroll automático ao clicar nas páginas do menu de navegação na Gerency.**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial (index.html) da Gerency. <br> 2) Observe o menu de navegação no topo da página. <br> 3) Clique em cada uma das páginas do menu de navegação: Home, Sobre nós, Contato.
+**Procedimento**  | 1) Acesse a página inicial (index.html) da Gerency. <br> 2) Observe o menu de navegação no topo da página. <br> 3) Clique em cada uma das páginas do menu de navegação: Home, Sobre nós, Contato. <br> 4) Verifique se o scroll automático ocorre ao clicar em cada página do menu, levando o usuário para a área correspondente da página.
 **Requisitos associados** | RF-007
 **Resultado esperado** | - Ao clicar em uma das páginas do menu de navegação (Home, Sobre nós, Contato), o scroll automático deve ser ativado. <br> - O scroll automático deve levar o usuário para a área correspondente da página, permitindo que ele visualize cada seção de forma clara e intuitiva.
 **Dados de entrada** | - Acesso à página inicial (index.html) da Gerency. <br> - Clique em cada página do menu de navegação: Home, Sobre nós, Contato.
