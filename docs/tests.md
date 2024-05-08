@@ -161,45 +161,45 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | - Valor da meta, categoria, data limite, descrição (opcional).
 **Resultado obtido** | Sucesso. <br> - O botão "+" de metas abriu o modal. <br> - O modal de metas possui campos adequados para inserção de informações. <br> - A nova meta foi salva corretamente após preenchimento e submissão do formulário.
 
-**Caso de Teste** | **CT18 - **
+**Caso de Teste** | **CT18 - Validar a visualização detalhada de despesas na página Histórico.**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
-**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
-**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
-**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
-**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+**Procedimento**  | 1) Acesse a página Histórico (histórico.html) do sistema Gerency. <br> 2) Verifique se as despesas registradas estão apresentadas em uma tabela organizada. <br> 3) Confira se cada despesa está detalhada com informações como data, descrição, categoria e valor. <br> 4) Verifique se é possível filtrar as despesas por período ou categoria.
+**Requisitos associados** | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas
+**Resultado esperado** | - As despesas registradas estão apresentadas de forma organizada em uma tabela na página Histórico. <br> - Cada despesa é detalhada com informações como data, descrição, categoria e valor. <br> - É possível filtrar as despesas por período ou categoria utilizando os recursos fornecidos na página.
+**Dados de entrada** | - N/A (Verificação visual na página Histórico).
+**Resultado obtido** | Sucesso. <br> - As despesas estão apresentadas de forma organizada na tabela. <br> - Cada despesa possui as informações detalhadas conforme esperado. <br> - Os filtros de período e categoria funcionam corretamente.
 
-**Caso de Teste** | **CT19 - **
+**Caso de Teste** | **CT19 - Validar a visualização detalhada de receitas na página Histórico.**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
-**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
-**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
-**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
-**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+**Procedimento**  | 1) Acesse a página Histórico (histórico.html) do sistema Gerency. <br> 2) Verifique se as receitas registradas estão apresentadas em uma tabela organizada. <br> 3) Confira se cada receita está detalhada com informações como data, descrição, categoria e valor. <br> 4) Verifique se é possível filtrar as receitas por período ou categoria.
+**Requisitos associados** | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas
+**Resultado esperado** | - As receitas registradas estão apresentadas de forma organizada em uma tabela na página Histórico. <br> - Cada receita é detalhada com informações como data, descrição, categoria e valor. <br> - É possível filtrar as receitas por período ou categoria utilizando os recursos fornecidos na página.
+**Dados de entrada** | - N/A (Verificação visual na página Histórico).
+**Resultado obtido** | Sucesso. <br> - As receitas estão apresentadas de forma organizada na tabela. <br> - Cada receita possui as informações detalhadas conforme esperado. <br> - Os filtros de período e categoria funcionam corretamente.
 
-**Caso de Teste** | **CT20 - **
+**Caso de Teste** | **CT20 - Validar os filtros de pesquisa na página Histórico.**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
-**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
-**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
-**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
-**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+**Procedimento**  |1) Acesse a página Histórico (histórico.html) do sistema Gerency. <br> 2) Localize os filtros de pesquisa disponíveis na página, como por período (15, 30, 60, 90 dias) e tipo de lançamento (despesas, receitas). <br> 3) Selecione diferentes opções de filtro para verificar a funcionalidade. <br> 4) Verifique se as despesas e receitas exibidas na página são atualizadas conforme os filtros selecionados.
+**Requisitos associados** | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas
+**Resultado esperado** | - Os filtros de pesquisa por período e tipo de lançamento estão disponíveis e funcionais. <br> - Ao selecionar um período específico (15, 30, 60, 90 dias) e tipo de lançamento (despesas, receitas), as informações na página são atualizadas de acordo. <br> - As despesas e receitas exibidas na página refletem os filtros selecionados.
+**Dados de entrada** | - N/A (Verificação visual na página Histórico).
+**Resultado obtido** | Sucesso. <br> - Os filtros de pesquisa estão presentes e funcionando corretamente. <br> - As informações na página são atualizadas conforme os filtros selecionados, exibindo despesas e receitas de acordo com o período e tipo de lançamento escolhidos.
 
-**Caso de Teste** | **CT21 - **
+**Caso de Teste** | **CT21 - Validar os botões de navegação de página na página Histórico.**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
-**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
-**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
-**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
-**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+**Procedimento**  | 1) Acesse a página Histórico (histórico.html) do sistema Gerency. <br> 2) Verifique a presença dos botões de navegação de página, incluindo Primeiro, Anterior, Próximo e Último. <br> 3) Se houver mais de uma página de despesas ou receitas, clique nos botões de navegação para avançar e retroceder entre as páginas. <br> 4) Observe se as informações exibidas na página são atualizadas corretamente ao navegar entre as páginas.
+**Requisitos associados** | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas
+**Resultado esperado** | - Os botões de navegação (Primeiro, Anterior, Próximo, Último) estão presentes e funcionais. <br> - Ao clicar nos botões de navegação, as informações na página são atualizadas corretamente para exibir as despesas e receitas da página correspondente. <br> - Os botões de navegação funcionam de forma intuitiva e sem erros, permitindo uma navegação eficiente entre as páginas de despesas e receitas.
+**Dados de entrada** | - N/A (Verificação visual na página Histórico).
+**Resultado obtido** | Sucesso. <br> - Os botões de navegação estão presentes e funcionando conforme o esperado. <br> - As informações na página são atualizadas corretamente ao navegar entre as páginas, mantendo a consistência na visualização das despesas e receitas.
 
-**Caso de Teste** | **CT22 - **
+**Caso de Teste** | **CT22 - Validar o campo de busca na página Histórico.**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
-**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
-**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
-**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
-**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+**Procedimento**  | 1) Acesse a página Histórico (histórico.html) do sistema Gerency. <br> 2) Localize o campo de busca na parte superior da página. <br> 3) Insira um termo de busca válido, como uma descrição de despesa ou receita existente no histórico. <br> 4) Pressione Enter ou clique no botão de busca. <br> 5) Verifique se os resultados da busca são exibidos corretamente na tabela de despesas e receitas.
+**Requisitos associados** | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas
+**Resultado esperado** | - O campo de busca está visível e funcional na página Histórico. <br> - Ao realizar uma busca com um termo válido, os resultados correspondentes são exibidos na tabela de despesas e receitas. <br> - A busca é realizada de forma eficiente, retornando resultados precisos de acordo com o termo inserido.
+**Dados de entrada** | - Termo de busca válido (ex: "Aluguel", "Salário", "Mercado").
+**Resultado obtido** | Sucesso. <br> - Os resultados da busca são exibidos corretamente na tabela de despesas e receitas. <br> - A busca retorna resultados precisos de acordo com o termo inserido, demonstrando o funcionamento adequado do campo de busca na página Histórico.
 
 **Caso de Teste** | **CT23 - **
  :--------------: | ------------
