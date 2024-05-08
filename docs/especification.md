@@ -58,6 +58,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-5  | A aplicação deve permitir que os usuários emitam um relatório e acompanhem seu progresso em relação às metas financeiras, entre outros.  | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
 |RF-6  | A aplicação deve permitir que os usuários se cadastrem no sistema, criando sua conta pessoal com possibilidade de recuperar senha. |  ![Static Badge](https://img.shields.io/badge/ALTA-red)| 
 |RF-7  | A aplicação deve exibir informações sobre a Gerency e um botão de login para acesso ao sistema.  | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
+|RF-8  | A aplicação deve exibir informações sobre o histórico de receitas e despesas.  | ![Static Badge](https://img.shields.io/badge/M%C3%89DIA-yellow) | 
 
 
 
