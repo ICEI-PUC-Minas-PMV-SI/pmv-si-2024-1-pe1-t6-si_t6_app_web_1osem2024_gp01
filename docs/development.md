@@ -56,7 +56,6 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
 
    - Inclusão de filtros de pesquisa para facilitar a navegação no histórico, como por período (15, 30, 60, 90 dias) e tipo de lançamento.
    - Desenvolvimento da página (histórico.html) que apresenta uma visão detalhada e organizada de todas as despesas e receitas registradas atráves de uma tabela.
-   - Implementação de modais de edição na página (histórico.html), onde o usuário edita seus lançamentos, exclui ou analisa de forma detalhada.
 
    ![Página Histórico:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/historico.png)
 
