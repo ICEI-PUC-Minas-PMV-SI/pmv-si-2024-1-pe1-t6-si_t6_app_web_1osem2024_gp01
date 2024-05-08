@@ -97,6 +97,127 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | - Endereço de email válido associado à conta do usuário.
 **Resultado obtido** | Sucesso. <br> - O sistema valida corretamente o campo de email, exibindo uma mensagem de erro se estiver em branco, e envia um email de recuperação de senha para o endereço de email fornecido pelo usuário.
 
+**Caso de Teste** | **CT10 - Validar o menu hamburguer na página Home.**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Verifique se o menu hamburguer está presente no canto superior esquerdo da página. <br> 3) Clique no ícone do menu hamburguer para expandir as opções do menu. <br> 4) Verifique se as opções do menu são: Home, Historico e Metas. <br> 5) Clique em cada uma das opções do menu e verifique se são redirecionadas para as páginas correspondentes.
+**Requisitos associados** | RF-001 / Página Home
+**Resultado esperado** | - O menu hamburguer deve estar presente e funcional na página Home, contendo as opções mencionadas e redirecionando corretamente para as respectivas páginas.
+**Dados de entrada** | - Clique no ícone do menu hamburguer e em cada uma das opções do menu.
+**Resultado obtido** | Sucesso. <br> - O menu hamburguer está presente na página Home, contendo as opções mencionadas e redirecionando corretamente para as respectivas páginas ao serem clicadas.
+
+**Caso de Teste** | **CT11 - Validar a centralização do nome do sistema "Gerency" na página Home.**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Verifique se o nome do sistema "Gerency" está centralizado na página.
+**Requisitos associados** | RF-001 / Página Home
+**Resultado esperado** | - O nome do sistema "Gerency" deve estar centralizado na página Home, proporcionando uma apresentação visualmente equilibrada.
+**Dados de entrada** | - N/A
+**Resultado obtido** | Sucesso. <br> - O nome do sistema "Gerency" está centralizado na página Home, atendendo ao requisito de design especificado.
+
+**Caso de Teste** | **CT12 - Validar o ícone de usuário logado no canto superior direito da página Home.**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Verifique se há um ícone representando o usuário logado no canto superior direito da página.
+**Requisitos associados** | RF-001 / Página Home
+**Resultado esperado** | - Deve haver um ícone representando o usuário logado no canto superior direito da página Home, indicando que o usuário está autenticado no sistema.
+**Dados de entrada** | - N/A
+**Resultado obtido** | Sucesso. <br> - O ícone de usuário logado está presente no canto superior direito da página Home, conforme o requisito especificado.
+
+**Caso de Teste** | **CT13 - Validar a exibição dos retângulos (Saldo, Receitas, Despesas) e dos botões de acesso às páginas Histórico e Metas na página Home.**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Verifique se há três retângulos visíveis na página, representando Saldo, Receitas e Despesas. <br> 3) Verifique se há botões de acesso à página Histórico e à página Metas logo abaixo dos retângulos.
+**Requisitos associados** | RF-001 / Página Home
+**Resultado esperado** | - Devem estar visíveis três retângulos na página Home, representando Saldo, Receitas e Despesas. <br> - Deve haver dois botões de acesso, um para a página Histórico e outro para a página Metas, logo abaixo dos retângulos.
+**Dados de entrada** | - N/A
+**Resultado obtido** | Sucesso. <br> - Os três retângulos (Saldo, Receitas, Despesas) estão visíveis na página Home. <br> - Os botões de acesso à página Histórico e à página Metas estão implementados e funcionais.
+
+**Caso de Teste** | **CT14 - Validar a funcionalidade de filtragem dos relatórios por meio dos botões de lançamento na página Home.**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Desça até o final da página para encontrar o retângulo com os relatórios. <br> 3) Verifique se existem botões de lançamento para filtrar os relatórios por diferentes períodos (ex: diário, semanal, mensal). <br> 4) Clique em um dos botões de lançamento para aplicar o filtro nos relatórios.
+**Requisitos associados** | RF-001 / Página Home
+**Resultado esperado** | - Devem existir botões de lançamento para filtrar os relatórios por diferentes períodos. <br> - Ao clicar em um dos botões de lançamento, os relatórios devem ser filtrados de acordo com o período selecionado.
+**Dados de entrada** | - N/A
+**Resultado obtido** | Sucesso. <br> - Os botões de lançamento para filtragem dos relatórios estão presentes. <br> - Ao clicar em um botão de lançamento, os relatórios são filtrados conforme o período selecionado.
+
+**Caso de Teste** | **CT15 - Validar o funcionamento do modal para registro de receitas na página Home.**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
+**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
+**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
+**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
+**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+
+**Caso de Teste** | **CT16 - Validar o funcionamento do modal para registro de despesas na página Home.**
+ :--------------: | ------------
+**Procedimento**  |1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova despesa. <br> 3) O modal para registro de despesas deve abrir. <br> 4) Preencha os campos necessários, como valor da despesa, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova despesa.
+**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
+**Resultado esperado** | - O botão "+" de despesas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova despesa. <br> - Após preenchimento e submissão do formulário, a nova despesa deve ser salva corretamente.
+**Dados de entrada** | - Valor da despesa, categoria, data, descrição (opcional).
+**Resultado obtido** | Sucesso. <br> - O botão "+" de despesas abriu o modal. <br> - O modal de despesas possui campos adequados para inserção de informações. <br> - A nova despesa foi salva corretamente após preenchimento e submissão do formulário.
+
+**Caso de Teste** | **CT17 - Validar o funcionamento do modal para registro de metas na página Home.**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova meta. <br> 3) O modal para registro de metas deve abrir. <br> 4) Preencha os campos necessários, como valor da meta, categoria, data limite e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova meta.
+**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
+**Resultado esperado** | - O botão "+" de metas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova meta. <br> - Após preenchimento e submissão do formulário, a nova meta deve ser salva corretamente.
+**Dados de entrada** | - Valor da meta, categoria, data limite, descrição (opcional).
+**Resultado obtido** | Sucesso. <br> - O botão "+" de metas abriu o modal. <br> - O modal de metas possui campos adequados para inserção de informações. <br> - A nova meta foi salva corretamente após preenchimento e submissão do formulário.
+
+**Caso de Teste** | **CT18 - **
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
+**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
+**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
+**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
+**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+
+**Caso de Teste** | **CT19 - **
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
+**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
+**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
+**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
+**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+
+**Caso de Teste** | **CT20 - **
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
+**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
+**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
+**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
+**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+
+**Caso de Teste** | **CT21 - **
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
+**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
+**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
+**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
+**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+
+**Caso de Teste** | **CT22 - **
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
+**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
+**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
+**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
+**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+
+**Caso de Teste** | **CT23 - **
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
+**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
+**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
+**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
+**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+
+**Caso de Teste** | **CT24 - **
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
+**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
+**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
+**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
+**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+
+
 
 ## Registro dos Testes de Software
 
