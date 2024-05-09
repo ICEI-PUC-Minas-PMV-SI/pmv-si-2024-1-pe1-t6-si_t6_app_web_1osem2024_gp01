@@ -233,16 +233,130 @@ A documentação dos testes é dividida nas seguintes seções:
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*CT01 - Criar conta parte 1*                                         |
+|*Caso de Teste*                                 |*CT01 - Validar o conteúdo e a funcionalidade do botão de login na página inicial (index.html) da Gerency.*                                         |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
+|Requisito Associado | RF-007 / Página Index - Conheça a Gerency|
 |Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
 
-|*Caso de Teste*                                 |*CT02 - Criar conta parte 2*                                        |
+|*Caso de Teste*                                 |*CT02 - Validar o scroll automático ao clicar nas páginas do menu de navegação na Gerency.*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
+|Requisito Associado | RF-007 / Página Index - Conheça a Gerency|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
 
+|*Caso de Teste*                                 |*CT03 - Validar a funcionalidade do formulário de login (login.html) na Gerency.*                                        |
+|---|---|
+|Requisito Associado | RF-007 / Login de Usuário|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT04 - Validar os campos obrigatórios (Usuário e Senha) e o redirecionamento para a página (home.html) após o login bem-sucedido no sistema "Gerency".*                                        |
+|---|---|
+|Requisito Associado | RF-007 / Login de Usuário|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT05 - Validar o cadastro de novo usuário no sistema "Gerency".*                                        |
+|---|---|
+|Requisito Associado | RF-006 / Cadastro de Novo Usuário|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT06 - Validar os campos no formulário de cadastro de novo usuário no sistema "Gerency".*                                        |
+|---|---|
+|Requisito Associado | RF-006 / Cadastro de Novo Usuário|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT07 - Validar o envio de email de confirmação após o cadastro de novo usuário no sistema "Gerency".*                                        |
+|---|---|
+|Requisito Associado | RF-006 / Cadastro de Novo Usuário|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT08 - Validar a recuperação de senha no sistema "Gerency".*                                        |
+|---|---|
+|Requisito Associado | RF-006 / Recuperação de Senha|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT09 - Validar o campo de email e envio de email para recuperação de senha.*                                        |
+|---|---|
+|Requisito Associado | RF-006 / Recuperação de Senha|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT10 - Validar o menu hamburguer na página Home.*                                        |
+|---|---|
+|Requisito Associado | RF-001 / Página Home|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT11 - Validar a centralização do nome do sistema "Gerency" na página Home.*                                        |
+|---|---|
+|Requisito Associado | RF-001 / Página Home|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT12 - Validar o ícone de usuário logado no canto superior direito da página Home.*                                        |
+|---|---|
+|Requisito Associado | RF-001 / Página Home|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT13 - Validar a exibição dos retângulos (Saldo, Receitas, Despesas) e dos botões de acesso às páginas Histórico e Metas na página Home.*                                        |
+|---|---|
+|Requisito Associado | RF-001 / Página Home|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT14 - Validar a funcionalidade de filtragem dos relatórios por meio dos botões de lançamento na página Home.*                                        |
+|---|---|
+|Requisito Associado | RF-001 / Página Home|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT15 - Validar o funcionamento do modal para registro de receitas na página Home.*                                        |
+|---|---|
+|Requisito Associado | RF-002 / Página Home - Registro de Receitas, Despesas e Metas|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT16 - Validar o funcionamento do modal para registro de despesas na página Home.*                                        |
+|---|---|
+|Requisito Associado | RF-002 / Página Home - Registro de Receitas, Despesas e Metas|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT17 - Validar o funcionamento do modal para registro de metas na página Home.*                                        |
+|---|---|
+|Requisito Associado | RF-002 / Página Home - Registro de Receitas, Despesas e Metas|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT18 - Validar a visualização detalhada de despesas na página Histórico.*                                        |
+|---|---|
+|Requisito Associado | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT19 - Validar a visualização detalhada de receitas na página Histórico.*                                        |
+|---|---|
+|Requisito Associado | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT20 - Validar os filtros de pesquisa na página Histórico.*                                        |
+|---|---|
+|Requisito Associado | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT21 - Validar os botões de navegação de página na página Histórico.*                                        |
+|---|---|
+|Requisito Associado | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT22 - Validar o campo de busca na página Histórico.*                                        |
+|---|---|
+|Requisito Associado | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT23 - Validar a visualização de metas na página Metas.*                                        |
+|---|---|
+|Requisito Associado | RF-004 / Página Metas - Visualização de Metas|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT24 - Validar a pesquisa de metas na página Metas.*                                        |
+|---|---|
+|Requisito Associado | RF-004 / Página Metas - Visualização de Metas|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+|*Caso de Teste*                                 |*CT25 - Validar a organização das metas em uma tabela na página Metas.*                                        |
+|---|---|
+|Requisito Associado | RF-004 / Página Metas - Visualização de Metas|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
 
 ## Avaliação dos Testes de Software
 
@@ -336,13 +450,8 @@ Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,0
 
 ## Avaliação dos Testes de Usabilidade
 
-Tomando como base os resultados obtidos, foi possível verificar que a aplicação web apresenta bons resultados quanto à taxa de sucesso na interação dos usuários, tendo em vista que os cenários propostos foram concluídos com sucesso.
+Com base nos resultados obtidos, verificou-se que a aplicação web apresenta uma taxa de sucesso satisfatória na interação dos usuários, pois os cenários propostos foram concluídos com êxito. Além disso, os usuários demonstraram uma alta satisfação subjetiva durante a execução dos cenários propostos, refletida nas avaliações médias que variaram entre 4 (bom) e 5 (ótimo).
 
-Além disso, a aplicação obteve também uma elevada satisfação subjetiva dos usuários no momento que realizavam os cenários propostos. Prova são as médias das avaliações em cada um dos cenários, que variou entre 4 (bom) e 5 (ótimo).
-
-Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc.
-
-Contudo, tendo em vista que a diferença foi relevante (por exemplo, 113 segundos — média usuários — contra 25 segundos — especialista — no cenário três), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
-
+No entanto, observou-se uma diferença significativa entre a média de tempo dos usuários e a do especialista/desenvolvedor em todos os cenários. Essa discrepância é esperada devido ao conhecimento prévio do desenvolvedor sobre a interface da aplicação, o posicionamento dos elementos e a lógica de organização das páginas. Contudo, a diferença relevante, por exemplo, 113 segundos para os usuários versus 25 segundos para o especialista no cenário três, aliada aos comentários de alguns usuários, indica oportunidades de melhoria na usabilidade da aplicação.
 
 
