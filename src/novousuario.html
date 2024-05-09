@@ -7,6 +7,7 @@
     <title>Novo Usuário</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="styles/img/logo.png" type="image/x-icon">
+    <script src="../src/script/novousuario.js"></script>
     <style>
         body {
             background-image: url('styles/img/bg-login.jpg');
@@ -44,70 +45,34 @@
         <form id="signupForm" onsubmit="return validateForm()">
             <div class="form-group">
                 <label for="name">Nome</label>
-                <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome" autocomplete="name">
                 <div id="nameError" class="error-message"></div>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" autocomplete="email">
                 <div id="emailError" class="error-message"></div>
             </div>
             <div class="form-group">
                 <label for="password">Senha</label>
-                <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" autocomplete="new-password">
                 <div id="passwordError" class="error-message"></div>
             </div>
             <div class="form-group">
                 <label for="confirmPassword">Repetir Senha</label>
-                <input type="password" class="form-control" id="confirmPassword"
-                    placeholder="Digite sua senha novamente">
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Digite sua senha novamente" autocomplete="new-password">
                 <div id="confirmPasswordError" class="error-message"></div>
             </div>
+            
             <button type="submit" class="btn btn-success btn-block">Cadastrar</button>
             <a href="login.html" class="btn btn-secondary btn-block">Cancelar</a>
         </form>
+        <div class="text-center mt-3">
+            <a href="login.html" class="btn btn-secondary btn-block" >Fazer Login</a>
+        </div>
     </div>
-    <script>
-        function validateForm() {
-            let name = document.getElementById('name').value;
-            let email = document.getElementById('email').value;
-            let password = document.getElementById('password').value;
-            let confirmPassword = document.getElementById('confirmPassword').value;
-            let nameError = document.getElementById('nameError');
-            let emailError = document.getElementById('emailError');
-            let passwordError = document.getElementById('passwordError');
-            let confirmPasswordError = document.getElementById('confirmPasswordError');
-            nameError.innerHTML = '';
-            emailError.innerHTML = '';
-            passwordError.innerHTML = '';
-            confirmPasswordError.innerHTML = '';
-            let isValid = true;
-            if (name.trim() === '') {
-                nameError.innerHTML = 'Por favor, digite seu nome';
-                isValid = false;
-            }
-            if (email.trim() === '') {
-                emailError.innerHTML = 'Por favor, digite seu email';
-                isValid = false;
-            }
-            if (password.trim() === '') {
-                passwordError.innerHTML = 'Por favor, digite sua senha';
-                isValid = false;
-            }
-            if (confirmPassword.trim() === '') {
-                confirmPasswordError.innerHTML = 'Por favor, repita sua senha';
-                isValid = false;
-            }
-            if (password !== confirmPassword) {
-                confirmPasswordError.innerHTML = 'As senhas não coincidem';
-                isValid = false;
-            }
-            if (isValid) {
-                window.location.replace('dashboard.html'); // Redireciona para dashboard.html após a validação
-            }
-            return isValid;
-        }
-    </script>
+    
+    
 </body>
 
 </html>
