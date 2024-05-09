@@ -201,21 +201,29 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | - Termo de busca válido (ex: "Aluguel", "Salário", "Mercado").
 **Resultado obtido** | Sucesso. <br> - Os resultados da busca são exibidos corretamente na tabela de despesas e receitas. <br> - A busca retorna resultados precisos de acordo com o termo inserido, demonstrando o funcionamento adequado do campo de busca na página Histórico.
 
-**Caso de Teste** | **CT23 - **
+**Caso de Teste** | **CT23 - Validar a visualização de metas na página Metas.**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
-**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
-**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
-**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
-**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+**Procedimento**  | 1) Acesse a página Metas (meta.html) do sistema Gerency. <br> 2) Verifique se todas as metas financeiras registradas pelo usuário estão sendo exibidas corretamente. <br> 3) Analise se as informações de cada meta estão completas e legíveis, incluindo descrição, valor da meta, data de início e prazo para realização. <br> 4) Certifique-se de que as metas estão organizadas de forma clara e fácil de entender para o usuário.
+**Requisitos associados** | RF-004 / Página Metas - Visualização de Metas
+**Resultado esperado** | - Todas as metas financeiras do usuário estão sendo exibidas corretamente na página Metas. <br> - Cada meta apresenta informações completas, incluindo descrição, valor da meta, data de início e prazo para realização. <br> - As metas estão organizadas de forma clara e intuitiva para facilitar a compreensão do usuário.
+**Dados de entrada** | - N/A
+**Resultado obtido** | Sucesso. <br> - As metas financeiras estão sendo exibidas corretamente na página Metas, com todas as informações necessárias para o usuário acompanhar e gerenciar suas metas financeiras de forma eficiente.
 
-**Caso de Teste** | **CT24 - **
+**Caso de Teste** | **CT24 - Validar a pesquisa de metas na página Metas.**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse a página Home (home.html) do sistema Gerency. <br> 2) Localize e clique no botão com o ícone "+" para adicionar uma nova receita. <br> 3) O modal para registro de receitas deve abrir. <br> 4) Preencha os campos necessários, como valor da receita, categoria, data e descrição (opcional). <br> 5) Submeta o formulário no modal para salvar a nova receita.
-**Requisitos associados** | RF-002 / Página Home - Registro de Receitas, Despesas e Metas
-**Resultado esperado** | - O botão "+" de receitas abre o modal correspondente. <br> - O modal possui campos para inserção das informações da nova receita. <br> - Após preenchimento e submissão do formulário, a nova receita deve ser salva corretamente.
-**Dados de entrada** | - Valor da receita, categoria, data, descrição (opcional).
-**Resultado obtido** | Sucesso. <br> - O botão "+" de receitas abriu o modal. <br> - O modal de receitas possui campos adequados para inserção de informações. <br> - A nova receita foi salva corretamente após preenchimento e submissão do formulário.
+**Procedimento**  | 1) Acesse a página Metas (meta.html) do sistema Gerency. <br> 2) Localize o campo de pesquisa de metas. <br> 3) Insira um termo de pesquisa válido que corresponda a uma meta já lançada pelo usuário. <br> 4) Pressione o botão de pesquisa ou utilize a tecla Enter para realizar a busca. <br> 5) Verifique se a meta correspondente ao termo de pesquisa é exibida corretamente na lista de metas.
+**Requisitos associados** | RF-004 / Página Metas - Visualização de Metas
+**Resultado esperado** | - O campo de pesquisa de metas está funcionando corretamente e é possível inserir um termo de pesquisa válido. <br> - Ao realizar a pesquisa, a meta correspondente ao termo de pesquisa é exibida na lista de metas, se existir. <br> - Caso não haja correspondências, a lista de metas permanece inalterada.
+**Dados de entrada** | - Termo de pesquisa válido que corresponda a uma meta já lançada pelo usuário.
+**Resultado obtido** | Sucesso. <br> - O campo de pesquisa de metas funciona corretamente, exibindo a meta correspondente ao termo de pesquisa inserido. Caso não haja correspondência, a lista de metas permanece inalterada.
+
+**Caso de Teste** | **CT25 - Validar a organização das metas em uma tabela na página Metas.**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a página Metas (meta.html) do sistema Gerency. <br> 2) Verifique a organização das metas dentro da tabela. <br> 3) Confira se cada meta está representada em uma linha da tabela, contendo as colunas de descrição, data de criação e um botão para visualizar a meta. <br> 4) Clique no botão "Visualizar Meta" de uma das metas para abrir o modal correspondente.
+**Requisitos associados** | RF-004 / Página Metas - Visualização de Metas
+**Resultado esperado** | - As metas devem estar organizadas de forma clara e legível dentro da tabela, com uma linha para cada meta. <br> - Cada linha da tabela deve conter as informações relevantes da meta, como descrição, data de criação e um botão para visualizar a meta. <br> - Ao clicar no botão "Visualizar Meta", um modal deve ser aberto, permitindo analisar, editar e excluir a meta selecionada.
+**Dados de entrada** | - N/A
+**Resultado obtido** | Sucesso. <br> - As metas estão organizadas corretamente dentro da tabela, com todas as informações necessárias visíveis. <br> - Ao clicar no botão "Visualizar Meta", o modal correspondente é aberto, permitindo realizar as ações de análise, edição e exclusão da meta selecionada.
 
 
 
