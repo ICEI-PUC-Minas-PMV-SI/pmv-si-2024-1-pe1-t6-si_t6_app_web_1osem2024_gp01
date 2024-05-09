@@ -1,11 +1,17 @@
 # Testes
 
-Neste projeto serão realizados dois tipos de testes:
+No projeto em questão, serão conduzidos dois tipos de testes:
 
- - O **Teste de Software**, que utiliza uma abordadem de caixa preta, e tem por objetivo verificar a conformidade do software com os requisitos funcionais e não funcionais do sistema.
- - O **Teste de Usabilidade**, que busca avaliar a qualidade do uso do sistema por um usuário do público alvo. 
+1. **Teste de Software (Caixa Preta):**
+   - **Abordagem:** Caixa Preta
+   - **Objetivo:** Verificar a conformidade do software com os requisitos funcionais e não funcionais do sistema.
+   - **Descrição:** Este tipo de teste foca na validação externa do sistema, sem acessar diretamente seu código-fonte. Os testes são realizados com base nos requisitos especificados, verificando se as funcionalidades estão de acordo com o esperado e se os aspectos não funcionais, como desempenho e segurança, são atendidos.
 
-Se quiser conhecer um pouco mais sobre os tipos de teste de software, leia o documento [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/).
+2. **Teste de Usabilidade:**
+   - **Objetivo:** Avaliar a qualidade do uso do sistema por um usuário do público-alvo.
+   - **Descrição:** O teste de usabilidade visa identificar a facilidade de uso, eficiência e satisfação do usuário ao interagir com o sistema. São considerados aspectos como a navegabilidade, clareza das informações, intuitividade das interfaces e a experiência geral do usuário ao realizar tarefas no sistema.
+
+Ambos os tipos de testes são essenciais para garantir a qualidade e a adequação do sistema às necessidades e expectativas dos usuários finais.
 
 A documentação dos testes é dividida nas seguintes seções:
 
