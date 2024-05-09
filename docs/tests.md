@@ -250,7 +250,7 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 
 ## Testes de unidade automatizados (Opcional)
 
-Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia 0 documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
+Para este projeto, decidimos não realizar testes automatizados de unidade. Entendemos que, para este escopo e objetivo específicos, o foco está na validação manual das funcionalidades e na experiência do usuário ao interagir com o sistema. Acreditamos que a abordagem de testes manuais será suficiente para garantir a qualidade e a conformidade com os requisitos estabelecidos.
 
 # Testes de Usabilidade
 
