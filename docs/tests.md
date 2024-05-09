@@ -233,27 +233,27 @@ A documentação dos testes é dividida nas seguintes seções:
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*CT01 - Validar o conteúdo e a funcionalidade do botão de login na página inicial (index.html) da Gerency.*                                         |
+|*Caso de Teste*                                 |*CT01 - Validar o conteúdo e a funcionalidade do botão de login na página inicial (index.html) da Gerency.*                                              |
 |---|---|
 |Requisito Associado | RF-007 / Página Index - Conheça a Gerency|
 |Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
 
-|*Caso de Teste*                                 |*CT02 - Validar o scroll automático ao clicar nas páginas do menu de navegação na Gerency.*                                        |
+|*Caso de Teste*                                 |*CT02 - Validar o scroll automático ao clicar nas páginas do menu de navegação na Gerency.*                                                              |
 |---|---|
 |Requisito Associado | RF-007 / Página Index - Conheça a Gerency|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
 
-|*Caso de Teste*                                 |*CT03 - Validar a funcionalidade do formulário de login (login.html) na Gerency.*                                        |
+|*Caso de Teste*                                 |*CT03 - Validar a funcionalidade do formulário de login (login.html) na Gerency.*                                                                        |
+|---|---|
+|Requisito Associado | RF-007 / Login de Usuário|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar                                                                      | 
+
+|*Caso de Teste*                                 |*CT04 - Validar os campos obrigatórios (Usuário e Senha) e o redirecionamento para a página (home.html) após o login bem-sucedido no sistema "Gerency".* |
 |---|---|
 |Requisito Associado | RF-007 / Login de Usuário|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
 
-|*Caso de Teste*                                 |*CT04 - Validar os campos obrigatórios (Usuário e Senha) e o redirecionamento para a página (home.html) após o login bem-sucedido no sistema "Gerency".*                                        |
-|---|---|
-|Requisito Associado | RF-007 / Login de Usuário|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
-
-|*Caso de Teste*                                 |*CT05 - Validar o cadastro de novo usuário no sistema "Gerency".*                                        |
+|*Caso de Teste*                                 |*CT05 - Validar o cadastro de novo usuário no sistema "Gerency".*      |
 |---|---|
 |Requisito Associado | RF-006 / Cadastro de Novo Usuário|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
