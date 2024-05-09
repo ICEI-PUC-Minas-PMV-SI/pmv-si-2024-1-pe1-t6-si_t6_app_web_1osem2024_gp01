@@ -283,8 +283,20 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 
 | Nº do Cenário | Descrição do cenário |
 |---------------|----------------------|
-| 1             | Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando. |
-| 2             | Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço. |
+| 1             | O usuário tenta realizar o login no sistema utilizando o formulário de login disponível na página inicial. |
+| 2             | O usuário tenta se cadastrar no sistema utilizando o formulário de cadastro disponível na página inicial. |
+| 3             | O usuário tenta recuperar sua senha utilizando o recurso de recuperação de senha disponível na página de login. |
+| 4             | O usuário navega pela página inicial (Home) e avalia a visibilidade e a facilidade de navegação entre as seções da página. |
+| 5             | O usuário acessa a página de histórico e verifica a facilidade de visualização e navegação entre os detalhes das despesas e receitas. |
+| 6             | O usuário acessa a página de metas e avalia a facilidade de gerenciamento das metas financeiras, incluindo a adição, edição e exclusão de metas. |
+| 7             | O usuário utiliza o modal de registro de receitas disponível na página inicial para adicionar uma nova receita, avaliando a facilidade de uso, clareza das instruções e eficiência do processo de registro. |
+| 8             | O usuário utiliza o modal de registro de despesas disponível na página inicial para adicionar uma nova despesa, avaliando a facilidade de uso, clareza das instruções e eficiência do processo de registro. |
+| 9             | O usuário utiliza o modal de registro de metas disponível na página inicial para adicionar uma nova meta financeira, avaliando a facilidade de uso, clareza das instruções e eficiência do processo de registro. |
+| 10             | O usuário utiliza o campo de busca na página Histórico para encontrar registros específicos de despesas e receitas, avaliando a facilidade de uso, precisão dos resultados e feedback visual. |
+| 11             | O usuário utiliza os filtros disponíveis na página Histórico para filtrar os registros por período (15, 30, 60, 90 dias) e tipo de lançamento, avaliando a facilidade de uso, clareza das opções e eficiência na aplicação dos filtros. |
+| 12             | O usuário acessa a página Metas e utiliza o campo de pesquisa para encontrar metas específicas, avaliando a facilidade de uso, precisão dos resultados e feedback visual. |
+| 13             | O usuário acessa a página Metas, visualiza uma meta e utiliza o modal de edição para modificar os detalhes da meta, avaliando a clareza das opções de edição, feedback ao realizar alterações e facilidade de navegação dentro do modal. |
+
 
 
 
