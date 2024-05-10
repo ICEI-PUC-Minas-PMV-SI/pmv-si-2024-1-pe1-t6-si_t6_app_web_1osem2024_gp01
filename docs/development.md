@@ -65,7 +65,7 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
 
    ![Página Meta:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/meta.png)
 
-   9. **Página Perfil - Visualização de perfil e edição:**
+9. **Página Perfil - Visualização de perfil e edição:**
 
    - Implementação de uma página (perfil.html) para exibir o nome, email e foto de perfil do usuário.
    - Inclusão de inputs para edição de senha.
@@ -113,8 +113,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | RF-015 | A aplicação valida se todos os campos obrigatórios estão preenchidos no modal de edição de lançamento.                                                                                            | Ingrid          | historico.html      |
 | RF-016 | A aplicação apresenta uma página para que o usuário possa pesquisar, analisar e editar suas metas financeiras.                                                                                    | Ingrid          | meta.html           |
 | RF-017 | A aplicação valida se todos os campos obrigatórios estão preenchidos no modal de edição de metas.                                                                                                 | Ingrid          | meta.html           |
-| RF-018 | A aplicação permite a edição de foto de perfil e alteração de senha.                                                                                                 | Vitor          | perfil.html           |
-
+| RF-018 | A aplicação permite a edição de foto de perfil e alteração de senha.                                                                                                                              | Vitor           | perfil.html         |
 
 ## Descrição das estruturas:
 
