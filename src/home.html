@@ -181,6 +181,7 @@
         </div>
         <div class="row row-cols-1 row-cols-md-5 text-center row-buttons">
             <div class="col mb-5">
+                <div id="periodoMensagem" class="text-primary mb-3">Selecione primeiro um período</div>
                 <div class="relatorio-buttons-container">
                     <select class="btn btn-dark custom-select" id="periodoRelatorio" onchange="relatorio()">
                         <option value="">Filtrar período</option>
@@ -193,7 +194,6 @@
                     <button class="btn btn-secondary" id="lancamento1">Saldo</button>
                     <div id="lancamentoEscolhido"></div>
                 </div>
-                <div id="periodoMensagem" class="text-primary mt-3">Selecione primeiro um período</div>
             </div>
         </div>
     </main>
@@ -216,7 +216,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="inputState" class="form-label text-muted">Valor R$</label>
+                            <label for="inputState" class="form-label text-muted"><span id="casoMeta">Valor R$</span></label>
                             <input type="text" class="form-control" id="valor" placeholder="500,00">
                             <div id="valorError" class="error-message text-danger"></div>
                         </div>

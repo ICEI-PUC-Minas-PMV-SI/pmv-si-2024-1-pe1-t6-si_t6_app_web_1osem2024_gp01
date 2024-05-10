@@ -97,12 +97,33 @@ let modalType;
 function saveModal(type) {
   modalType = type;
   var modalTitle = document.getElementById("modalTitle");
+  var casoMeta = document.getElementById("casoMeta");
+
   if (type === "Receitas") {
     modalTitle.innerHTML = "Adicionar Receita";
+    casoMeta.innerHTML = "Valor R$";
+    if (valorInput.parentNode.classList.contains("col-md-6")) {
+      valorInput.parentNode.classList.remove("col-md-6");
+    }
+    dataInput.parentNode.style.display = "none";
+    categoriaError.textContent = "";
   } else if (type === "Despesas") {
     modalTitle.innerHTML = "Adicionar Despesa";
+    casoMeta.innerHTML = "Valor R$";
+    if (valorInput.parentNode.classList.contains("col-md-6")) {
+      valorInput.parentNode.classList.remove("col-md-6");
+    }
+    dataInput.parentNode.style.display = "none";
+    categoriaError.textContent = "";
   } else if (type === "Metas") {
     modalTitle.innerHTML = "Adicionar Meta";
+    casoMeta.innerHTML = "Valor a reservar R$";
+    if (!valorInput.parentNode.classList.contains("col-md-6")) {
+      valorInput.parentNode.classList.add("col-md-6");
+    }
+    dataInput.parentNode.style.display = "block";
+    categoriaDiv.classList.add("col-md-6");
+    categoriaError.textContent = "";
   }
 }
 
@@ -213,7 +234,6 @@ window.addEventListener("load", function () {
   meta();
 });
 
-
 //script do relatorio
 document.querySelectorAll(".lancamento").forEach(function (button) {
   button.addEventListener("click", function () {
@@ -242,7 +262,6 @@ document.getElementById("lancamento1").addEventListener("click", function () {
   escolhaLancamento("Saldo");
 });
 
-
 function escolhaLancamento(lancamento) {
   document.getElementById("lancamentoEscolhido").innerHTML =
     "Resumo Financeiro: " + lancamento;
@@ -262,7 +281,7 @@ function relatorio() {
   let avisoPeriodo = document.getElementById("avisoPeriodo");
   let relatorioPeriodo = document.getElementById("relatorioPeriodo");
   let diaRelatorio = document.getElementById("diaRelatorio");
-  let saldoInicial = document.getElementById("saldoInicial");
+  let saldoInicialElemential = document.getElementById("saldoInicial");
   let saldoAtual = document.getElementById("saldoAtual");
   document.getElementById("receitaRelatorio").classList.remove("text-primary");
   document.getElementById("despesaRelatorio").classList.remove("text-primary");
@@ -444,29 +463,41 @@ function relatorio() {
       break;
     default:
   }
-  function calcularSaldoInicial(days) {
+  function calcularSaldoInicial() {
     let lancamentos = JSON.parse(localStorage.getItem("lançamentos")) || [];
     let saldoInicial = 0;
-    let today = new Date();
-    //dias atras
-    let startDate = new Date();
-    startDate.setDate(today.getDate() - days);
 
-    // filtra os lançamentos que estão dentro do período especificado
-    let lancamentosPeriodo = lancamentos.filter(function (lancamento) {
-      let lancamentoDate = new Date(lancamento.date);
-      return lancamentoDate >= startDate && lancamentoDate <= today;
-    });
-    // Calcular o saldo inicial somando todas as receitas e subtraindo todas as despesas
-    lancamentosPeriodo.forEach(function (lancamento) {
-      if (lancamento.tipo === "Receitas") {
-        saldoInicial += parseFloat(lancamento.valor);
-      } else if (lancamento.tipo === "Despesas") {
-        saldoInicial -= parseFloat(lancamento.valor);
-      } else if (lancamento.tipo === "Metas") {
-        saldoInicial -= parseFloat(lancamento.valor);
-      }
-    });
+    // Verifica se há lançamentos
+    if (lancamentos.length > 0) {
+      // Ordena os lançamentos por data
+      lancamentos.sort((a, b) => new Date(a.data) - new Date(b.data));
+
+      // Encontra o primeiro registro de receitas
+      const primeiroReceita = lancamentos.find(
+        (lancamento) => lancamento.tipo === "Receitas"
+      );
+      const valorReceita = primeiroReceita
+        ? parseFloat(primeiroReceita.valor)
+        : 0;
+
+      // Encontra o primeiro registro de despesas
+      const primeiroDespesa = lancamentos.find(
+        (lancamento) => lancamento.tipo === "Despesas"
+      );
+      const valorDespesa = primeiroDespesa
+        ? parseFloat(primeiroDespesa.valor)
+        : 0;
+
+      // Encontra o primeiro registro de metas
+      const primeiroMeta = lancamentos.find(
+        (lancamento) => lancamento.tipo === "Metas"
+      );
+      const valorMeta = primeiroMeta ? parseFloat(primeiroMeta.valor) : 0;
+
+      // Calcula o saldo inicial
+      saldoInicial = valorReceita - valorDespesa - valorMeta;
+    }
+
     return saldoInicial.toLocaleString("pt-BR", {
       style: "currency",
       currency: "BRL",
@@ -493,3 +524,5 @@ function relatorio() {
     return saldo;
   }
 }
+saldoInicialElemential = calcularSaldoInicial(periodoRelatorio); 
+saldoInicialElement.innerHTML = saldoInicial; 
