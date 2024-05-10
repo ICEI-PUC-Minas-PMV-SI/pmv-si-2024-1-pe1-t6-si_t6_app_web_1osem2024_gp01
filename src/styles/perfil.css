@@ -1,6 +1,25 @@
 body {
-    background-color: #f9f9fa
+    background-color: #f9f9fa !important;
 }
+nav.navbar {
+    background-color: #ffffff !important;
+    z-index: 2;
+    box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.151);
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+.active {
+    color: #007bff;
+}
+
 
 .padding {
     padding: 3rem !important
@@ -133,5 +152,56 @@ p {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+.edit {
+    border: 2px solid rgb(172, 172, 172);
+    background-color: #ffffff;
+    font-size: 13px;
+    width: 78px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#user_icon{
+    color: rgb(172, 172, 172);
+    font-size: 70px;
+}
+body {
+    margin-top: 120px;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-icon {
+    font-size: 100px;
+    color: #26be59;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.profile-name,
+.profile-email {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-edit-password {
+    margin-top: 20px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    border: 2px solid rgb(172, 172, 172);
+    border-radius: 50%;
+}
+
+
 
 
