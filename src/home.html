@@ -31,11 +31,11 @@
                 </div>
                 <div class="d-flex align-items-center">
                     <a href="perfil.html">
-                    <div class="ms-auto me-3 text-secondary">
-                        <i id="user" class="bi bi-person-circle mr-4">
-                        </i>
-                    </div>
-                </a>
+                        <div class="ms-auto me-3 text-secondary">
+                            <i id="user" class="bi bi-person-circle mr-4">
+                            </i>
+                        </div>
+                    </a>
                 </div>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
@@ -148,11 +148,19 @@
                 <div class="col ">
                     <h3 class="card-title info mt-3">Relatórios</h3>
                     <div class="card relatorio">
+                        <div class="block" id="relatorio_limpo">
+                            <h3 class="text-secondary mt-4 fw-normal">Crie registros para ter seus relatórios
+                                detalhados!</h3>
+                            <p class="text-secondary mt-5"> Os relatórios Gerency organizam todos os seus
+                                lançamentos,<br> permitindo que você tome decisões mais informadas sobre 
+                                <br>planos futuro e aproveite oportunidades financeiras.</p>
+                            <p class="text-secondary mt-5">Escolha um filtro no botão abaixo:</p>
+                        </div>
                         <div class="card-body hide text-start p-5" id="relatorio">
                             <h2 id="relatorioTitle">Relatório Financeiro:</h2>
                             <h3 id="relatorioPeriodo">Período:</h3>
                             <!--Resumo-->
-                            <h3 id="lancamentoEscolhido" class="mb-3">Resumo Financeiro:
+                            <h3 id="lancamentoEscolhido" class="mb-3">Resumo Financeiro: Saldo
                             </h3>
                             <p>Há <span id="diaRelatorio">7</span> dias, seu saldo
                                 era de <span class="text-primary" id="saldoInicial">R$ 100,00</span>. Neste momento
@@ -183,7 +191,6 @@
         </div>
         <div class="row row-cols-1 row-cols-md-5 text-center row-buttons">
             <div class="col mb-5">
-                <div id="periodoMensagem" class="text-primary mb-3">Selecione primeiro um período</div>
                 <div class="relatorio-buttons-container">
                     <select class="btn btn-dark custom-select" id="periodoRelatorio" onchange="relatorio()">
                         <option value="">Filtrar período</option>
@@ -193,7 +200,6 @@
                         <option value="4">Últimos 60 dias</option>
                         <option value="5">Últimos 90 dias</option>
                     </select>
-                    <button class="btn btn-secondary" id="lancamento1">Saldo</button>
                     <div id="lancamentoEscolhido"></div>
                 </div>
             </div>
@@ -218,7 +224,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="inputState" class="form-label text-muted"><span id="casoMeta">Valor R$</span></label>
+                            <label for="inputState" class="form-label text-muted"><span id="casoMeta">Valor
+                                    R$</span></label>
                             <input type="text" class="form-control" id="valor" placeholder="500,00">
                             <div id="valorError" class="error-message text-danger"></div>
                         </div>

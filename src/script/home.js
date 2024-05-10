@@ -250,22 +250,16 @@ function limparEstiloBotoes() {
   document.getElementById("lancamento1").classList.remove("text-primary");
 }
 function exibirDadosCardBody() {
-  if (document.getElementById("periodoRelatorio").value !== "") {
+  let periodoRelatorio = document.getElementById("periodoRelatorio").value;
+  if (periodoRelatorio !== "") {
     document.getElementById("relatorio").classList.remove("hide");
+    document.getElementById("relatorio_limpo").classList.add("hide");
   } else {
     document.getElementById("relatorio").classList.add("hide");
+    document.getElementById("relatorio_limpo").classList.remove("hide");
   }
 }
-document.getElementById("lancamento1").addEventListener("click", function () {
-  limparEstiloBotoes();
-  exibirDadosCardBody();
-  escolhaLancamento("Saldo");
-});
 
-function escolhaLancamento(lancamento) {
-  document.getElementById("lancamentoEscolhido").innerHTML =
-    "Resumo Financeiro: " + lancamento;
-}
 function escolhaLancamento(lancamento) {
   document.getElementById("lancamentoEscolhido").innerHTML =
     "Resumo Financeiro: " + lancamento;
@@ -275,6 +269,8 @@ function relatorio() {
   let despesaMovimentacao = despesa();
   let metaMovimentacao = meta();
 
+  // Chamada para exibir o estado inicial
+  exibirDadosCardBody();
   // Select de periodo
   let periodoRelatorio = document.getElementById("periodoRelatorio").value;
   let relatorioTitle = document.getElementById("relatorioTitle");
@@ -524,5 +520,5 @@ function relatorio() {
     return saldo;
   }
 }
-saldoInicialElemential = calcularSaldoInicial(periodoRelatorio); 
-saldoInicialElement.innerHTML = saldoInicial; 
+saldoInicialElemential = calcularSaldoInicial(periodoRelatorio);
+saldoInicialElement.innerHTML = saldoInicial;
