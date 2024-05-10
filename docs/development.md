@@ -117,22 +117,24 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 ## Descrição das estruturas:
 
-|       **Tela**       |                   **Nome do campo**                   | **Tipo**   | **Descrição**                                  | **Exemplo**                                 |
-| :------------------: | :---------------------------------------------------: | ---------- | ---------------------------------------------- | ------------------------------------------- |
-|     Novo Usuário     |                   Nome: (id: name)                    | Texto      | Nome                                           | João da Silva                               |
-|     Novo Usuário     |                  Email: (id: email)                   | Texto      | Endereço de email do usuário                   | joao.silva@example.com                      |
-|     Novo Usuário     |                 Senha: (id: password)                 | Texto      | Senha de acesso                                | senha@123                                   |
-|     Novo Usuário     | Confirmação de Senha do Usuario (id: confirmPassword) | Texto      | Confirmação da senha inserida.                 | senha@123                                   |
-|        Login         |                 Email (id: username)                  | Texto      | Usuário (email ou nome de usuário)             | joao.silva@example.com                      |
-|        Login         |                 Senha (id: password)                  | Texto      | Senha de acesso para login.                    | senha@123                                   |
-| Recuperação de Senha |                   Email (id: email)                   | Texto      | Endereço de email do usuário para recuperação. | joao.silva@example.com                      |
-|         Home         |                   Saldo (id: saldo)                   | Número     | Saldo financeiro do usuário.                   | R$ 1500,00                                  |
-|         Home         |             Receitas (id: totalReceitas)              | Número     | Total de receitas registradas pelo usuário.    | R$ 3000,00                                  |
-|         Home         |             Despesas (id: totalDespesas)              | Número     | Total de despesas registradas pelo usuário.    | R$ 2000,00                                  |
-|         Home         |           Histórico (id: historicoReceita)            | Botão      | Histórico filtrado apenas com as Receitas.     | Salário.                                    |
-|         Home         |           Histórico (id: historicoDespesa)            | Botão      | Histórico filtrado apenas com as Despesas.     | Compras.                                    |
-|         Home         |                Metas (id: totalMetas)                 | Número     | Total de metas registradas pelo usuário.       | R$ 2000,00                                  |
-|         Home         |              Relatórios (id: relatorio)               | Texto      | Descrição do relatório.                        | Relatório dos Últimos 7 dias                |
-|      Histórico       |      Select de lançamento (id: selectLancamento)      | Selecionar | Selecione um lançamento: Despesas/ Receitas.   | Visualização das Despesas em tabela.        |
-|      Histórico       |         Select de período (id: selectPeriodo)         | Selecionar | Selecione um período.                          | Visualização do período filtrado em tabela. |
-|         Meta         |            Corpo da tabela (id: tableBody)            | Table      | Todas as Metas registradas pelo usuário.       | Viagem                                      |
+|       **Tela**       |                      **Nome do campo**                       | **Tipo**   | **Descrição**                                  | **Exemplo**                                 |
+| :------------------: | :----------------------------------------------------------: | ---------- | ---------------------------------------------- | ------------------------------------------- |
+|     Novo Usuário     |                       Nome: (id: name)                       | Texto      | Nome                                           | João da Silva                               |
+|     Novo Usuário     |                      Email: (id: email)                      | Texto      | Endereço de email do usuário                   | joao.silva@example.com                      |
+|     Novo Usuário     |                    Senha: (id: password)                     | Texto      | Senha de acesso                                | senha@123                                   |
+|     Novo Usuário     |    Confirmação de Senha do Usuario (id: confirmPassword)     | Texto      | Confirmação da senha inserida.                 | senha@123                                   |
+|        Login         |                     Email (id: username)                     | Texto      | Usuário (email ou nome de usuário)             | joao.silva@example.com                      |
+|        Login         |                     Senha (id: password)                     | Texto      | Senha de acesso para login.                    | senha@123                                   |
+| Recuperação de Senha |                      Email (id: email)                       | Texto      | Endereço de email do usuário para recuperação. | joao.silva@example.com                      |
+|         Home         |                      Saldo (id: saldo)                       | Número     | Saldo financeiro do usuário.                   | R$ 1500,00                                  |
+|         Home         |                 Receitas (id: totalReceitas)                 | Número     | Total de receitas registradas pelo usuário.    | R$ 3000,00                                  |
+|         Home         |                 Despesas (id: totalDespesas)                 | Número     | Total de despesas registradas pelo usuário.    | R$ 2000,00                                  |
+|         Home         |               Histórico (id: historicoReceita)               | Botão      | Histórico filtrado apenas com as Receitas.     | Salário.                                    |
+|         Home         |               Histórico (id: historicoDespesa)               | Botão      | Histórico filtrado apenas com as Despesas.     | Compras.                                    |
+|         Home         |                    Metas (id: totalMetas)                    | Número     | Total de metas registradas pelo usuário.       | R$ 2000,00                                  |
+|         Home         |                  Relatórios (id: relatorio)                  | Texto      | Descrição do relatório.                        | Relatório dos Últimos 7 dias                |
+|      Histórico       |         Select de lançamento (id: selectLancamento)          | Selecionar | Selecione um lançamento: Despesas/ Receitas.   | Visualização das Despesas em tabela.        |
+|      Histórico       |            Select de período (id: selectPeriodo)             | Selecionar | Selecione um período.                          | Visualização do período filtrado em tabela. |
+|         Meta         |               Corpo da tabela (id: tableBody)                | Table      | Todas as Metas registradas pelo usuário.       | Viagem                                      |
+|        Perfil        |    Container de edição de imagem (id: editProfileButton)     | Div        | Imagem de perfil do usuário.                   | imagem.png                                  |
+|        Perfil        | Alteração de senha (id: newPassword e id:confirmNewPassword) | Input      | Nova senha e Confirmação de senha.             | 1234                                        |
