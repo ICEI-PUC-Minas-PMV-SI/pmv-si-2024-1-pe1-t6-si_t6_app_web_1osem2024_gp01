@@ -16,14 +16,13 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
 
    ![Login de Usuário:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/login.png)
 
-
 3. **Cadastro de Novo Usuário:**
 
    - Implementação de um formulário de cadastro (novousuario.html) que exige informações como nome, email, senha, e confirmação de senha.
    - Validação dos campos para garantir que os dados inseridos sejam válidos e atendam aos critérios estabelecidos (ex: email válido, senha com mínimo de caracteres).
    - Envio de um email de confirmação após o cadastro bem-sucedido, utilizando uma função de validação JavaScript.
-   
-    ![Cadastro de Novo Usuário:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/novouser.png)
+
+   ![Cadastro de Novo Usuário:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/novouser.png)
 
 4. **Recuperação de Senha:**
 
@@ -39,10 +38,9 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
    - Inclusão de um ícone de usuário logado no canto superior direito.
    - Exibição de três retângulos (Saldo, Receitas, Despesas). Logo abaixo, implementação de dois retângulos com acesso a página "Histórico" e acesso a página "Metas".
    - Como última linha da página "Home", existe um retângulo que apresenta os relatórios que podem ser filtrados por botões de lançamento.
-   
+
    ![Página Home:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/home.png)
 
-   
    ![Página Home:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/home2.png)
 
 6. **Página Home - Registro de Receitas, Despesas e Metas:**
@@ -60,11 +58,20 @@ A Programação de Funcionalidades para um sistema de controle financeiro abrang
    ![Página Histórico:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/historico.png)
 
 8. **Página Metas - Visualização de Metas:**
+
    - Implementação de uma página (meta.html) para exibir as metas financeiras do usuário, incluindo todas as metas registradas anteriormente.
    - Inclusão de um input para pesquisa de metas já lançadas.
    - Organização das metas dentro de uma tabela, com colunas de descrição, data e botão de visualizar meta que implementa um modal onde é possível analisar, editar e excluir a meta.
 
    ![Página Meta:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/meta.png)
+
+   9. **Página Perfil - Visualização de perfil e edição:**
+
+   - Implementação de uma página (perfil.html) para exibir o nome, email e foto de perfil do usuário.
+   - Inclusão de inputs para edição de senha.
+   - Inclusão de um pequeno container com evento de edição de imagem de perfil.
+
+   ![Página Perfil:](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t6-si_t6_app_web_1osem2024_gp01/main/docs/img/perfil.png)
 
 - Cadastro de Novo Usuário: [gerency.cadastro](https://8bdf608d-45a9-4071-96b7-c69e100d5936-00-14lantgg8vwge.janeway.replit.dev/novousuario.html)
 - Login de Usuário: [gerency.login](https://8bdf608d-45a9-4071-96b7-c69e100d5936-00-14lantgg8vwge.janeway.replit.dev/login.html)
@@ -89,7 +96,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 | ID     | Descrição do Requisito                                                                                                                                                                            | Responsável     | Artefato Criado     |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------- |
-| RF-001 | A aplicação permite que novos usuários conheçam a Gerency brevemente e acessem o sistema atráves do botão de "Login".                                                                | Vitor/Ingrid    | index.html          |
+| RF-001 | A aplicação permite que novos usuários conheçam a Gerency brevemente e acessem o sistema atráves do botão de "Login".                                                                             | Vitor/Ingrid    | index.html          |
 | RF-002 | A aplicação permite que novos usuários se cadastrem inserindo informações como nome, email, senha e confirmação de senha.                                                                         | Isabelle        | novousuario.html    |
 | RF-003 | A aplicação valida se todos os campos obrigatórios estão preenchidos no formulário de cadastro.                                                                                                   | Isabelle        | novousuario.html    |
 | RF-004 | A aplicação valida se o email inserido possui um formato válido.                                                                                                                                  | Isabelle        | novousuario.html    |
@@ -103,28 +110,30 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | RF-012 | A aplicação valida se todos os campos obrigatórios estão preenchidos no formulário de registro de lançamentos.                                                                                    | Ingrid          | home.html           |
 | RF-013 | A aplicação emiti um breve relatório com uma visão clara dos lançamentos e metas, atráves da filtragem por botões abaixo do card "Relatórios".                                                    | Ingrid          | home.html           |
 | RF-014 | A aplicação apresenta uma página que mostra de forma detalhada e organizada todas as despesas e receitas registradas, assim o usuário pode analisar e editar cada lançamento atráves de um modal. | Ingrid          | historico.html      |
-| RF-015 | A aplicação valida se todos os campos obrigatórios estão preenchidos no modal de edição de lançamento.                                                                                            | Ingrid          | historico.html           |
-| RF-016 | A aplicação apresenta uma página para que o usuário possa pesquisar, analisar e editar suas metas financeiras.                                                                                               | Ingrid          | meta.html           |
+| RF-015 | A aplicação valida se todos os campos obrigatórios estão preenchidos no modal de edição de lançamento.                                                                                            | Ingrid          | historico.html      |
+| RF-016 | A aplicação apresenta uma página para que o usuário possa pesquisar, analisar e editar suas metas financeiras.                                                                                    | Ingrid          | meta.html           |
 | RF-017 | A aplicação valida se todos os campos obrigatórios estão preenchidos no modal de edição de metas.                                                                                                 | Ingrid          | meta.html           |
+| RF-018 | A aplicação permite a edição de foto de perfil e alteração de senha.                                                                                                 | Vitor          | perfil.html           |
+
 
 ## Descrição das estruturas:
 
-|         **Tela**         |                **Nome do campo**                | **Tipo** | **Descrição**                                  | **Exemplo**            |
-| :----------------------: | :---------------------------------------------: | -------- | ---------------------------------------------- | ---------------------- |
-| Novo Usuário |            Nome: (id: name)             | Texto    | Nome                     | João da Silva          |
-| Novo Usuário |            Email: (id: email)           | Texto    | Endereço de email do usuário                 | joao.silva@example.com |
-| Novo Usuário |            Senha: (id: password)           | Texto    | Senha de acesso                              | senha@123              |
-| Novo Usuário | Confirmação de Senha do Usuario (id: confirmPassword) | Texto    | Confirmação da senha inserida.    | senha@123              |
-|     Login     |             Email (id: username)              | Texto    | Usuário (email ou nome de usuário)     | joao.silva@example.com |
-|     Login     |             Senha (id: password)              | Texto    | Senha de acesso para login.                  | senha@123              |
-|   Recuperação de Senha   |          Email (id: email)           | Texto    | Endereço de email do usuário para recuperação. | joao.silva@example.com |
-|           Home           |            Saldo (id: saldo)             | Número   | Saldo financeiro do usuário.                   | R$ 1500,00             |
-|           Home           |          Receitas (id: totalReceitas)           | Número   | Total de receitas registradas pelo usuário.    | R$ 3000,00             |
-|           Home           |          Despesas (id: totalDespesas)           | Número   | Total de despesas registradas pelo usuário.    | R$ 2000,00             |
-|           Home           |          Histórico (id: historicoReceita)           | Botão   | Histórico filtrado apenas com as Receitas.    | Salário.             |
-|           Home           |          Histórico (id: historicoDespesa)           | Botão   | Histórico filtrado apenas com as Despesas.    | Compras.             |
-|           Home           |          Metas (id: totalMetas)           | Número   | Total de metas registradas pelo usuário.    | R$ 2000,00             |
-|           Home          |        Relatórios (id: relatorio)         | Texto    | Descrição do relatório.                          | Relatório dos Últimos 7 dias  |
-| Histórico |            Select de lançamento (id: selectLancamento)             | Selecionar   | Selecione um lançamento: Despesas/ Receitas.                              | Visualização das Despesas em tabela.         |
-| Histórico |            Select de período (id: selectPeriodo)             | Selecionar   | Selecione um período.                              | Visualização do período filtrado em tabela.            |
-| Meta |            Corpo da tabela (id: tableBody)             | Table   | Todas as Metas registradas pelo usuário.                              | Viagem            |
+|       **Tela**       |                   **Nome do campo**                   | **Tipo**   | **Descrição**                                  | **Exemplo**                                 |
+| :------------------: | :---------------------------------------------------: | ---------- | ---------------------------------------------- | ------------------------------------------- |
+|     Novo Usuário     |                   Nome: (id: name)                    | Texto      | Nome                                           | João da Silva                               |
+|     Novo Usuário     |                  Email: (id: email)                   | Texto      | Endereço de email do usuário                   | joao.silva@example.com                      |
+|     Novo Usuário     |                 Senha: (id: password)                 | Texto      | Senha de acesso                                | senha@123                                   |
+|     Novo Usuário     | Confirmação de Senha do Usuario (id: confirmPassword) | Texto      | Confirmação da senha inserida.                 | senha@123                                   |
+|        Login         |                 Email (id: username)                  | Texto      | Usuário (email ou nome de usuário)             | joao.silva@example.com                      |
+|        Login         |                 Senha (id: password)                  | Texto      | Senha de acesso para login.                    | senha@123                                   |
+| Recuperação de Senha |                   Email (id: email)                   | Texto      | Endereço de email do usuário para recuperação. | joao.silva@example.com                      |
+|         Home         |                   Saldo (id: saldo)                   | Número     | Saldo financeiro do usuário.                   | R$ 1500,00                                  |
+|         Home         |             Receitas (id: totalReceitas)              | Número     | Total de receitas registradas pelo usuário.    | R$ 3000,00                                  |
+|         Home         |             Despesas (id: totalDespesas)              | Número     | Total de despesas registradas pelo usuário.    | R$ 2000,00                                  |
+|         Home         |           Histórico (id: historicoReceita)            | Botão      | Histórico filtrado apenas com as Receitas.     | Salário.                                    |
+|         Home         |           Histórico (id: historicoDespesa)            | Botão      | Histórico filtrado apenas com as Despesas.     | Compras.                                    |
+|         Home         |                Metas (id: totalMetas)                 | Número     | Total de metas registradas pelo usuário.       | R$ 2000,00                                  |
+|         Home         |              Relatórios (id: relatorio)               | Texto      | Descrição do relatório.                        | Relatório dos Últimos 7 dias                |
+|      Histórico       |      Select de lançamento (id: selectLancamento)      | Selecionar | Selecione um lançamento: Despesas/ Receitas.   | Visualização das Despesas em tabela.        |
+|      Histórico       |         Select de período (id: selectPeriodo)         | Selecionar | Selecione um período.                          | Visualização do período filtrado em tabela. |
+|         Meta         |            Corpo da tabela (id: tableBody)            | Table      | Todas as Metas registradas pelo usuário.       | Viagem                                      |
