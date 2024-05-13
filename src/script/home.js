@@ -1,18 +1,20 @@
 var iconUser = document.getElementById("iconUser");
 var foto = document.getElementById("userpic");
-let profileImage = JSON.parse(localStorage.getItem('currentUser')).profileImage;
-function mudarFoto(){
-    if(profileImage){
-        foto.src = profileImage;
-        foto.style.display = "inline";
-        iconUser.style.display = "none";
-    }else{
-        iconUser.style.display = "inline";
-        foto.style.display = "none";
-        return;
-    }
+if (iconUser && foto) {
+  let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+  if (currentUser && currentUser.profileImage) {
+    foto.src = currentUser.profileImage;
+    foto.style.display = "inline";
+    iconUser.style.display = "none";
+  } else {
+    iconUser.style.display = "inline";
+    foto.style.display = "none";
+  }
+} else {
+  console.error(
+    "Os elementos 'iconUser' e/ou 'userpic' não foram encontrados no HTML."
+  );
 }
-mudarFoto()
 document.getElementById("download-btn").addEventListener("click", function () {
   var relatorioContent = document.getElementById("relatorio").innerText;
 
@@ -222,7 +224,7 @@ function despesa() {
 }
 window.addEventListener("load", function () {
   despesa();
-  return totalDespesa;
+  return totalDespesas;
 });
 
 //card de meta
@@ -279,6 +281,47 @@ function escolhaLancamento(lancamento) {
   document.getElementById("lancamentoEscolhido").innerHTML =
     "Resumo Financeiro: " + lancamento;
 }
+function calcularSaldoInicial() {
+  let lancamentos = JSON.parse(localStorage.getItem("lançamentos")) || [];
+  let saldoInicial = 0;
+
+  // Verifica se há lançamentos
+  if (lancamentos.length > 0) {
+    // Ordena os lançamentos por data
+    lancamentos.sort((a, b) => new Date(a.data) - new Date(b.data));
+
+    // Encontra o primeiro registro de receitas
+    const primeiroReceita = lancamentos.find(
+      (lancamento) => lancamento.tipo === "Receitas"
+    );
+    const valorReceita = primeiroReceita
+      ? parseFloat(primeiroReceita.valor)
+      : 0;
+
+    // Encontra o primeiro registro de despesas
+    const primeiroDespesa = lancamentos.find(
+      (lancamento) => lancamento.tipo === "Despesas"
+    );
+    const valorDespesa = primeiroDespesa
+      ? parseFloat(primeiroDespesa.valor)
+      : 0;
+
+    // Encontra o primeiro registro de metas
+    const primeiroMeta = lancamentos.find(
+      (lancamento) => lancamento.tipo === "Metas"
+    );
+    const valorMeta = primeiroMeta ? parseFloat(primeiroMeta.valor) : 0;
+
+    // Calcula o saldo inicial
+    saldoInicial = valorReceita - valorDespesa - valorMeta;
+  }
+
+  return saldoInicial.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
+}
+
 function relatorio() {
   let receitaMovimentacao = receita();
   let despesaMovimentacao = despesa();
@@ -474,46 +517,6 @@ function relatorio() {
       break;
     default:
   }
-  function calcularSaldoInicial() {
-    let lancamentos = JSON.parse(localStorage.getItem("lançamentos")) || [];
-    let saldoInicial = 0;
-
-    // Verifica se há lançamentos
-    if (lancamentos.length > 0) {
-      // Ordena os lançamentos por data
-      lancamentos.sort((a, b) => new Date(a.data) - new Date(b.data));
-
-      // Encontra o primeiro registro de receitas
-      const primeiroReceita = lancamentos.find(
-        (lancamento) => lancamento.tipo === "Receitas"
-      );
-      const valorReceita = primeiroReceita
-        ? parseFloat(primeiroReceita.valor)
-        : 0;
-
-      // Encontra o primeiro registro de despesas
-      const primeiroDespesa = lancamentos.find(
-        (lancamento) => lancamento.tipo === "Despesas"
-      );
-      const valorDespesa = primeiroDespesa
-        ? parseFloat(primeiroDespesa.valor)
-        : 0;
-
-      // Encontra o primeiro registro de metas
-      const primeiroMeta = lancamentos.find(
-        (lancamento) => lancamento.tipo === "Metas"
-      );
-      const valorMeta = primeiroMeta ? parseFloat(primeiroMeta.valor) : 0;
-
-      // Calcula o saldo inicial
-      saldoInicial = valorReceita - valorDespesa - valorMeta;
-    }
-
-    return saldoInicial.toLocaleString("pt-BR", {
-      style: "currency",
-      currency: "BRL",
-    });
-  }
 
   function calcularSaldoAtual(days) {
     let lancamentos = JSON.parse(localStorage.getItem("lançamentos")) || [];
@@ -536,4 +539,5 @@ function relatorio() {
   }
 }
 saldoInicialElemential = calcularSaldoInicial(periodoRelatorio);
+let saldoInicialElement = document.getElementById("saldoInicial");
 saldoInicialElement.innerHTML = saldoInicial;
