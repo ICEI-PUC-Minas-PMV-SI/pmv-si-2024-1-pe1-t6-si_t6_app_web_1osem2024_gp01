@@ -1,3 +1,18 @@
+var iconUser = document.getElementById("iconUser");
+var foto = document.getElementById("userpic");
+let profileImage = JSON.parse(localStorage.getItem('currentUser')).profileImage;
+function mudarFoto(){
+    if(profileImage){
+        foto.src = profileImage;
+        foto.style.display = "inline";
+        iconUser.style.display = "none";
+    }else{
+        iconUser.style.display = "inline";
+        foto.style.display = "none";
+        return;
+    }
+}
+mudarFoto()
 document.getElementById("download-btn").addEventListener("click", function () {
   var relatorioContent = document.getElementById("relatorio").innerText;
 

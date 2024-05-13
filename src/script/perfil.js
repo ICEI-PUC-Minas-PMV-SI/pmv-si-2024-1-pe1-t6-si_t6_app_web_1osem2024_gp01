@@ -47,9 +47,7 @@
         // carrega as informações do usuário atualmente logado quando a página carrega
         window.onload = function () {
             loadCurrentUser();
-
             // event listener para o clique no ícone de perfil
-
             document.getElementById('editProfileButton').addEventListener('click', openFileSelector);
 
         };
