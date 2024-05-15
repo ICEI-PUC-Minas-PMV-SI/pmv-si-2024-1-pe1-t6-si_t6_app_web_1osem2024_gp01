@@ -32,10 +32,12 @@
 
                 // salva a imagem no currentUser do localStorage
                 let currentUserData = JSON.parse(localStorage.getItem('currentUser'));
-                if (currentUserData) {
-                    currentUserData.profileImage = reader.result;
-                    localStorage.setItem('currentUser', JSON.stringify(currentUserData));
+                if (!currentUserData) {
+                    //se não existe dado no local storage, cria para adicionar imagem
+                    currentUserData = {};
                 }
+                currentUserData.profileImage = reader.result;
+                localStorage.setItem('currentUser', JSON.stringify(currentUserData));
             };
             reader.readAsDataURL(event.target.files[0]);
         }

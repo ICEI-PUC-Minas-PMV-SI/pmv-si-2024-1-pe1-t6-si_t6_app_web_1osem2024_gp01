@@ -35,14 +35,15 @@ function validateAndSaveModal(type) {
   // validação dos campos do modal
   let descricao = document.getElementById("descricao").value;
   let valorString = document.getElementById("valor").value;
-  // Substituir vírgula por ponto
   let valor = parseFloat(valorString.replace(",", "."));
   let date = document.getElementById("date").value;
   let categoria = document.getElementById("categoria").value;
+
   let descricaoError = document.getElementById("descricaoError");
   let valorError = document.getElementById("valorError");
   let dataError = document.getElementById("dataError");
   let categoriaError = document.getElementById("categoriaError");
+
   descricaoError.innerHTML = "";
   valorError.innerHTML = "";
   dataError.innerHTML = "";
@@ -334,7 +335,6 @@ function relatorio() {
   let relatorioTitle = document.getElementById("relatorioTitle");
   let avisoPeriodo = document.getElementById("avisoPeriodo");
   let relatorioPeriodo = document.getElementById("relatorioPeriodo");
-  let diaRelatorio = document.getElementById("diaRelatorio");
   let saldoInicialElemential = document.getElementById("saldoInicial");
   let saldoAtual = document.getElementById("saldoAtual");
   document.getElementById("receitaRelatorio").classList.remove("text-primary");
@@ -396,7 +396,6 @@ function relatorio() {
       var dataInicio = formatDate(calculateDateBefore(7));
       var dataFim = formatDate(new Date());
       relatorioPeriodo.innerHTML = `Período: ${dataInicio} - ${dataFim}`;
-      diaRelatorio.innerHTML = "7";
       saldoInicial.innerHTML = calcularSaldoInicial(7);
       saldoAtual.innerHTML = calcularSaldoAtual(7).toLocaleString("pt-BR", {
         style: "currency",
@@ -421,7 +420,6 @@ function relatorio() {
       var dataInicio = formatDate(calculateDateBefore(15));
       var dataFim = formatDate(new Date());
       relatorioPeriodo.innerHTML = `Período: ${dataInicio} - ${dataFim}`;
-      diaRelatorio.innerHTML = "15";
       saldoInicial.innerHTML = calcularSaldoInicial(15);
       saldoAtual.innerHTML = calcularSaldoAtual(15).toLocaleString("pt-BR", {
         style: "currency",
@@ -445,7 +443,6 @@ function relatorio() {
       var dataInicio = formatDate(calculateDateBefore(30));
       var dataFim = formatDate(new Date());
       relatorioPeriodo.innerHTML = `Período: ${dataInicio} - ${dataFim}`;
-      diaRelatorio.innerHTML = "30";
       saldoInicial.innerHTML = calcularSaldoInicial(30);
       saldoAtual.innerHTML = calcularSaldoAtual(30).toLocaleString("pt-BR", {
         style: "currency",
@@ -469,7 +466,6 @@ function relatorio() {
       var dataInicio = formatDate(calculateDateBefore(60));
       var dataFim = formatDate(new Date());
       relatorioPeriodo.innerHTML = `Período: ${dataInicio} - ${dataFim}`;
-      diaRelatorio.innerHTML = "60";
       saldoInicial.innerHTML = calcularSaldoInicial(60);
       saldoAtual.innerHTML = calcularSaldoAtual(60).toLocaleString("pt-BR", {
         style: "currency",
@@ -493,7 +489,6 @@ function relatorio() {
       var dataInicio = formatDate(calculateDateBefore(90));
       var dataFim = formatDate(new Date());
       relatorioPeriodo.innerHTML = `Período: ${dataInicio} - ${dataFim}`;
-      diaRelatorio.innerHTML = "90";
       saldoInicial.innerHTML = calcularSaldoInicial(90).toLocaleString(
         "pt-BR",
         { style: "currency", currency: "BRL" }

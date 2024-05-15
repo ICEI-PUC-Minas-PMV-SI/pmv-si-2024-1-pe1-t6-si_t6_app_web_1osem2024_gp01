@@ -13,6 +13,7 @@ function mudarFoto(){
     }
 }
 mudarFoto()
+
 document.addEventListener("DOMContentLoaded", function () {
   // Chamar a função para atualizar a tabela ao carregar a página
   updateTable();
@@ -73,7 +74,7 @@ function updateTable() {
       html += `<td class="text-center text-success">${item.valor}</td>`;
       html += `<td class="text-center text-success">${item.date}</td>`;
       html += `<td class="text-center text-success">
-                <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal" data-bs-target="#modalHistorico">
                     <i class="bi bi-pencil-square"></i>
                 </button>
             </td>`;
@@ -82,7 +83,7 @@ function updateTable() {
       html += `<td class="text-center text-danger">${item.valor}</td>`;
       html += `<td class="text-center text-danger">${item.date}</td>`;
       html += `<td class="text-center text-danger">
-                <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal" data-bs-target="#modalHistorico">
                     <i class="bi bi-pencil-square"></i>
                 </button>
             </td>`;
