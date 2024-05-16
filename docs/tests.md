@@ -236,127 +236,112 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                 |*CT01 - Validar o conteúdo e a funcionalidade do botão de login na página inicial (index.html) da Gerency.*                                              |
 |---|---|
 |Requisito Associado | RF-007 / Página Index - Conheça a Gerency|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AjBXCqnyrJQCgbQAJ2IzpdBCv1u8bg?e=AX7rDN| 
 
 |*Caso de Teste*                                 |*CT02 - Validar o scroll automático ao clicar nas páginas do menu de navegação na Gerency.*                                                              |
 |---|---|
 |Requisito Associado | RF-007 / Página Index - Conheça a Gerency|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AjBXCqnyrJQCgbQJH9ZpKCEu27wRqQ?e=wRnztR| 
 
 |*Caso de Teste*                                 |*CT03 - Validar a funcionalidade do formulário de login (login.html) na Gerency.*                                                                        |
 |---|---|
 |Requisito Associado | RF-007 / Login de Usuário|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar                                                                      | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQNcRPJ-EuyX0rZfw?e=de1z29                                                                      | 
 
 |*Caso de Teste*                                 |*CT04 - Validar os campos obrigatórios (Usuário e Senha) e o redirecionamento para a página (home.html) após o login bem-sucedido no sistema "Gerency".* |
 |---|---|
 |Requisito Associado | RF-007 / Login de Usuário|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQOYkWD56X8YKDgUw?e=sfDOXx| 
 
 |*Caso de Teste*                                 |*CT05 - Validar o cadastro de novo usuário no sistema "Gerency".*      |
 |---|---|
 |Requisito Associado | RF-006 / Cadastro de Novo Usuário|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AjBXCqnyrJQCgbQP6IxNSqaRmXvEmg?e=nwCyqi | 
 
 |*Caso de Teste*                                 |*CT06 - Validar os campos no formulário de cadastro de novo usuário no sistema "Gerency".*                                        |
 |---|---|
 |Requisito Associado | RF-006 / Cadastro de Novo Usuário|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQQF_-rzxJ0fbq6bg?e=N0AhG5| 
 
-|*Caso de Teste*                                 |*CT07 - Validar o envio de email de confirmação após o cadastro de novo usuário no sistema "Gerency".*                                        |
-|---|---|
-|Requisito Associado | RF-006 / Cadastro de Novo Usuário|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
-
-|*Caso de Teste*                                 |*CT08 - Validar a recuperação de senha no sistema "Gerency".*                                        |
+|*Caso de Teste*                                 |*CT07 - Validar o campo de email e envio de email para recuperação de senha.*                                        |
 |---|---|
 |Requisito Associado | RF-006 / Recuperação de Senha|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQRcfUUbhLxupeM8g?e=XHALLB | 
 
-|*Caso de Teste*                                 |*CT09 - Validar o campo de email e envio de email para recuperação de senha.*                                        |
-|---|---|
-|Requisito Associado | RF-006 / Recuperação de Senha|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
-
-|*Caso de Teste*                                 |*CT10 - Validar o menu hamburguer na página Home.*                                        |
+|*Caso de Teste*                                 |*CT8 - Validar o menu hamburguer na página Home.*                                        |
 |---|---|
 |Requisito Associado | RF-001 / Página Home|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbN92RMfxxK0kEbwzQ?e=jPeqLC| 
 
-|*Caso de Teste*                                 |*CT11 - Validar a centralização do nome do sistema "Gerency" na página Home.*                                        |
+|*Caso de Teste*                                 |*CT9 - Validar o ícone de usuário logado no canto superior direito da página Home.*                                        |
 |---|---|
 |Requisito Associado | RF-001 / Página Home|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbN8bzIgaC7UzKSX8Q?e=bctCSM| 
 
-|*Caso de Teste*                                 |*CT12 - Validar o ícone de usuário logado no canto superior direito da página Home.*                                        |
+|*Caso de Teste*                                 |*CT10 - Validar a exibição dos retângulos (Saldo, Receitas, Despesas) e dos botões de acesso às páginas Histórico e Metas na página Home.*                                        |
 |---|---|
 |Requisito Associado | RF-001 / Página Home|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbN-AMQomq4YElucSQ?e=lgbwCp| 
 
-|*Caso de Teste*                                 |*CT13 - Validar a exibição dos retângulos (Saldo, Receitas, Despesas) e dos botões de acesso às páginas Histórico e Metas na página Home.*                                        |
+|*Caso de Teste*                                 |*CT11 - Validar a funcionalidade de filtragem dos relatórios por meio dos botões de lançamento na página Home.*                                        |
 |---|---|
 |Requisito Associado | RF-001 / Página Home|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbN_15ZdpI0u7kv4Dg?e=s8bLVv| 
 
-|*Caso de Teste*                                 |*CT14 - Validar a funcionalidade de filtragem dos relatórios por meio dos botões de lançamento na página Home.*                                        |
-|---|---|
-|Requisito Associado | RF-001 / Página Home|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
-
-|*Caso de Teste*                                 |*CT15 - Validar o funcionamento do modal para registro de receitas na página Home.*                                        |
+|*Caso de Teste*                                 |*CT12 - Validar o funcionamento do modal para registro de receitas na página Home.*                                        |
 |---|---|
 |Requisito Associado | RF-002 / Página Home - Registro de Receitas, Despesas e Metas|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQBmGEeGBVaYbVjsg?e=7p70bS| 
 
-|*Caso de Teste*                                 |*CT16 - Validar o funcionamento do modal para registro de despesas na página Home.*                                        |
+|*Caso de Teste*                                 |*CT13 - Validar o funcionamento do modal para registro de despesas na página Home.*                                        |
 |---|---|
 |Requisito Associado | RF-002 / Página Home - Registro de Receitas, Despesas e Metas|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQCPvksLhlhYIXpJA?e=jcfcAG| 
 
-|*Caso de Teste*                                 |*CT17 - Validar o funcionamento do modal para registro de metas na página Home.*                                        |
+|*Caso de Teste*                                 |*CT14 - Validar o funcionamento do modal para registro de metas na página Home.*                                        |
 |---|---|
 |Requisito Associado | RF-002 / Página Home - Registro de Receitas, Despesas e Metas|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQDAI1KlzdC0W8NjQ?e=7mjwBZ| 
 
-|*Caso de Teste*                                 |*CT18 - Validar a visualização detalhada de despesas na página Histórico.*                                        |
+|*Caso de Teste*                                 |*CT15 - Validar a visualização detalhada de despesas na página Histórico.*                                        |
 |---|---|
 |Requisito Associado | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
 
-|*Caso de Teste*                                 |*CT19 - Validar a visualização detalhada de receitas na página Histórico.*                                        |
+|*Caso de Teste*                                 |*CT16 - Validar a visualização detalhada de receitas na página Histórico.*                                        |
 |---|---|
 |Requisito Associado | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQFcohm3M9X8hNJ1A?e=dbfb18| 
 
-|*Caso de Teste*                                 |*CT20 - Validar os filtros de pesquisa na página Histórico.*                                        |
+|*Caso de Teste*                                 |*CT17 - Validar os filtros de pesquisa na página Histórico.*                                        |
 |---|---|
 |Requisito Associado | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQGRpWuyD1sUe7rOA?e=rkSdt4| 
 
-|*Caso de Teste*                                 |*CT21 - Validar os botões de navegação de página na página Histórico.*                                        |
+|*Caso de Teste*                                 |*CT18 - Validar os botões de navegação de página na página Histórico.*                                        |
 |---|---|
 |Requisito Associado | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQHIPZpUdt2bZP6Ew?e=xi1y4M| 
 
-|*Caso de Teste*                                 |*CT22 - Validar o campo de busca na página Histórico.*                                        |
+|*Caso de Teste*                                 |*CT19 - Validar o campo de busca na página Histórico.*                                        |
 |---|---|
 |Requisito Associado | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQIg0--QnStl8kn1A?e=cIdFFX| 
 
-|*Caso de Teste*                                 |*CT23 - Validar a visualização de metas na página Metas.*                                        |
+|*Caso de Teste*                                 |*CT20 - Validar a visualização de metas na página Metas.*                                        |
 |---|---|
 |Requisito Associado | RF-004 / Página Metas - Visualização de Metas|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQKxiNAI_8ZTlCl6w?e=IdC2Uz| 
 
-|*Caso de Teste*                                 |*CT24 - Validar a pesquisa de metas na página Metas.*                                        |
+|*Caso de Teste*                                 |*CT21 - Validar a pesquisa de metas na página Metas.*                                        |
 |---|---|
 |Requisito Associado | RF-004 / Página Metas - Visualização de Metas|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQL8JHK8XQiJ5UioA?e=rWmvSu| 
 
-|*Caso de Teste*                                 |*CT25 - Validar a organização das metas em uma tabela na página Metas.*                                        |
+|*Caso de Teste*                                 |*CT22 - Validar a organização das metas em uma tabela na página Metas.*                                        |
 |---|---|
 |Requisito Associado | RF-004 / Página Metas - Visualização de Metas|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQM5OZlG8QxjfYa1g?e=lzGtkQ| 
 
 ## Avaliação dos Testes de Software
 

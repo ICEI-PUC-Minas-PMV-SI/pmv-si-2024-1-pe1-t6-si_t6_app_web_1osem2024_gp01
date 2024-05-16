@@ -46,6 +46,7 @@
                 <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
                 <div id="passwordError" class="error-message text-danger"></div>
             </div>
+            <div id="usuarioError" class="error-message text-danger mb-3"></div>
             <button type="submit" class="btn btn-success btn-block">Conectar</button>
             <a href="novousuario.html" class="btn text-success btn-link btn-block">Cadastrar novo usuário</a>
             <a href="recuperarsenha.html" class="btn text-success btn-link btn-block">Recuperação de senha</a>
@@ -60,18 +61,24 @@
             let password = document.getElementById('password').value;
             let emailError = document.getElementById('emailError');
             let passwordError = document.getElementById('passwordError');
-            let isValid = true;
+            let usuarioError = document.getElementById("usuarioError");
             if (username.trim() === '') {
                 emailError.innerHTML = 'Por favor, digite seu email';
                 isValid = false;
             }
             if (password.trim() === '') {
                 passwordError.innerHTML = 'Por favor, digite sua senha';
-                isValid = false;
+                return false;
+            } else {
+                passwordError.innerHTML = '';
             }
-            if (isValid) {
-                window.location.replace('home.html'); // Redireciona para dashboard.html após a validação
+            let currentUser = JSON.parse(localStorage.getItem('currentUser'));
+            if (!currentUser || !currentUser.name || !currentUser.email) {
+                emailError.innerHTML = ""
+                usuarioError.innerHTML = "Não encontramos seu cadastro,<br> crie seu cadastro conosco.";
+                return false;
             }
+            window.location.replace('home.html');
             return false;
         }
     </script>
