@@ -306,12 +306,12 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                 |*CT15 - Validar a visualização detalhada de despesas na página Histórico.*                                        |
 |---|---|
 |Requisito Associado | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQBmGEeGBVaYbVjsg?e=uY24OQ| 
 
 |*Caso de Teste*                                 |*CT16 - Validar a visualização detalhada de receitas na página Histórico.*                                        |
 |---|---|
 |Requisito Associado | RF-008 / Página Histórico - Visualização Detalhada de Despesas e Receitas|
-|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQFcohm3M9X8hNJ1A?e=dbfb18| 
+|Link do vídeo do teste realizado: |https://1drv.ms/v/s!AjBXCqnyrJQCgbQCPvksLhlhYIXpJA?e=hllIVB| 
 
 |*Caso de Teste*                                 |*CT17 - Validar os filtros de pesquisa na página Histórico.*                                        |
 |---|---|
