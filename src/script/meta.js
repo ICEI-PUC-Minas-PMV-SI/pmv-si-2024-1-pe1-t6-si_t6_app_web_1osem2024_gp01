@@ -1,6 +1,7 @@
 var iconUser = document.getElementById("iconUser");
 var foto = document.getElementById("userpic");
-let profileImage = JSON.parse(localStorage.getItem("currentUser")).profileImage;
+let currentUser = JSON.parse(localStorage.getItem('currentUser'));
+let profileImage = currentUser ? currentUser.profileImage : null;
 function mudarFoto() {
   if (profileImage) {
     foto.src = profileImage;
@@ -9,7 +10,6 @@ function mudarFoto() {
   } else {
     iconUser.style.display = "inline";
     foto.style.display = "none";
-    return;
   }
 }
 mudarFoto();
