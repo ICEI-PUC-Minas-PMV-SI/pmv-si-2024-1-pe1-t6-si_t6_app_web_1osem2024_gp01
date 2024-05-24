@@ -178,10 +178,27 @@
                             </button>
                         </div>
                         <div class=" row col-md-4">
-                            <button type="button" class="btn btn-danger">
+                            <button type="button" class="btn btn-danger" data-bs-target="confirmDeleteModal">
                                 Excluir
                             </button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="confirmDeleteModalLabel">Confirmar Exclusão</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Você tem certeza que deseja excluir este lançamento?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="cancelDeleteButton" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-danger" id="confirmDeleteButton">Excluir</button>
                     </div>
                 </div>
             </div>

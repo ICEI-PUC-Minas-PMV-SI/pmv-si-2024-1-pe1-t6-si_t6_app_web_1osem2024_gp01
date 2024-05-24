@@ -75,7 +75,7 @@
             let currentUser = JSON.parse(localStorage.getItem('currentUser'));
             if (!currentUser || !currentUser.name || !currentUser.email) {
                 emailError.innerHTML = ""
-                usuarioError.innerHTML = "Não encontramos seu cadastro,<br> crie seu cadastro conosco.";
+                usuarioError.innerHTML = "Não encontramos seu cadastro,<br> crie seu usuário conosco.";
                 return false;
             }
             window.location.replace('home.html');
