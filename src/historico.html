@@ -111,98 +111,101 @@
             </table>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="modalHistorico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar lançamento</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label class="" for="">Descrição</label>
-                                <input type="text" class="form-control" id="descricaoEdit">
-                                <div id="descricaoEditError" class="error-message text-danger"></div>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="" for="">Categoria</label>
-                                <select type="text" class="form-control" id="categoriaEdit">
-                                    <option value="0">Selecione a categoria</option>
-                                    <option value="1">Salário</option>
-                                    <option value="2">Bônus</option>
-                                    <option value="3">Freelance/Consultoria:</option>
-                                    <option value="4">Rendimento de Investimentos:</option>
-                                    <option value="5">Aluguel/Arrendamento:</option>
-                                    <option value="6">Pensão/Previdência:</option>
-                                    <option value="7">Comissões/Vendas:</option>
-                                    <option value="8">Bolsa de Estudos/Bolsa de Pesquisa:</option>
-                                    <option value="9">Prêmios/Ganhos:</option>
-                                    <!--Despesas-->
-                                    <option value="10">Moradia</option>
-                                    <option value="11">Alimentação</option>
-                                    <option value="12">Transporte</option>
-                                    <option value="13">Saúde</option>
-                                    <option value="14">Educação</option>
-                                    <option value="15">Lazer e Entretenimento</option>
-                                    <option value="16">Vestuário e Acessórios</option>
-                                    <option value="17">Contas Domésticas</option>
-                                    <option value="18">Seguros</option>
-                                    <option value="19">Impostos e Taxas</option>
-                                    <option value="20">Doações e Caridade</option>
-                                    <option value="21">Dívidas e Empréstimos</option>
-                                    <option value="30">Outros</option>
-                                </select>
-                                <div id="categoriaEditError" class="error-message text-danger"></div>
-                            </div>
+    <div class="modal fade" id="modalHistorico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Editar lançamento</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="" for="">Descrição</label>
+                            <input type="text" class="form-control" id="modal-descricao">
+                            <div id="descricaoEditError" class="error-message text-danger"></div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <label for="inputState" class="form-label text-muted">Valor</label>
-                                <input type="text" class="form-control" id="valorEdit">
-                                <div id="valorEditError" class="error-message text-danger"></div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <label for="inputState" class="form-label text-muted">Data</label>
-                                <input type="dateEdit" class="form-control" id="dateEdit">
-                                <div id="dataEditError" class="error-message text-danger"></div>
-                            </div>
+                        <div class="col-md-6">
+                            <label class="" for="">Categoria</label>
+                            <select type="text" class="form-control" id="modal-categoria">
+                                <option value="0">Selecione a categoria</option>
+                                <option value="1">Salário</option>
+                                <option value="2">Bônus</option>
+                                <option value="3">Freelance/Consultoria:</option>
+                                <option value="4">Rendimento de Investimentos:</option>
+                                <option value="5">Aluguel/Arrendamento:</option>
+                                <option value="6">Pensão/Previdência:</option>
+                                <option value="7">Comissões/Vendas:</option>
+                                <option value="8">Bolsa de Estudos/Bolsa de Pesquisa:</option>
+                                <option value="9">Prêmios/Ganhos:</option>
+                                <!--Despesas-->
+                                <option value="10">Moradia</option>
+                                <option value="11">Alimentação</option>
+                                <option value="12">Transporte</option>
+                                <option value="13">Saúde</option>
+                                <option value="14">Educação</option>
+                                <option value="15">Lazer e Entretenimento</option>
+                                <option value="16">Vestuário e Acessórios</option>
+                                <option value="17">Contas Domésticas</option>
+                                <option value="18">Seguros</option>
+                                <option value="19">Impostos e Taxas</option>
+                                <option value="20">Doações e Caridade</option>
+                                <option value="21">Dívidas e Empréstimos</option>
+                                <option value="30">Outros</option>
+                            </select>
+                            <div id="categoriaEditError" class="error-message text-danger"></div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <div class=" row col-md-4">
-                            <button type="button" class="btn template-btn" id="template-btn" onclick="validateEdit()">
-                                Salvar
-                            </button>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="inputState" class="form-label text-muted">Valor</label>
+                            <input type="text" class="form-control" id="modal-valor">
+                            <div id="valorEditError" class="error-message text-danger"></div>
                         </div>
-                        <div class=" row col-md-4">
-                            <button type="button" class="btn btn-danger" data-bs-target="confirmDeleteModal">
-                                Excluir
-                            </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="inputState" class="form-label text-muted">Data</label>
+                            <input type="date" class="form-control" id="modal-date">
+                            <div id="dataEditError" class="error-message text-danger"></div>
                         </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class=" row col-md-4">
+                        <button type="button" class="btn template-btn" id="template-btn">
+                            Salvar
+                        </button>
+                    </div>
+                    <div class=" row col-md-4">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal">
+                            Excluir
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="confirmDeleteModalLabel">Confirmar Exclusão</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Você tem certeza que deseja excluir este lançamento?
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" id="cancelDeleteButton" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-danger" id="confirmDeleteButton">Excluir</button>
-                    </div>
+    </div>
+    
+    <!-- Modal de Confirmação de Exclusão -->
+    <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="confirmDeleteModalLabel">Confirmar Exclusão</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Você tem certeza que deseja excluir este lançamento?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="cancelDeleteButton" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger" id="confirmDeleteButton">Excluir</button>
                 </div>
             </div>
         </div>
+    </div>
+
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
