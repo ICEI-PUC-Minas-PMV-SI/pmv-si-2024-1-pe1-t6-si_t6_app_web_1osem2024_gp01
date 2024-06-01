@@ -401,7 +401,7 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 
 ## Registro de Testes de Usabilidade
 
-Cenário 1: Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando.
+Cenário 1: O usuário tenta realizar o login no sistema utilizando o formulário de login disponível na página inicial.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
@@ -413,11 +413,10 @@ Cenário 1: Você é uma pessoa que deseja comprar um iphone. Encontre no site u
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos |
 
 
-    Comentários dos usuários: Achei o site muito bom e intuitivo. 
-    Não tive dificuldades e acho que ficou bem intuitivo.
+    Comentários dos usuários: XXXXXXX
 
 
-Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço.
+Cenário 2: O usuário tenta se cadastrar no sistema utilizando o formulário de cadastro disponível na página inicial.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
@@ -429,9 +428,163 @@ Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,0
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
 
 
-    Comentários dos usuários: O site é fácil de acessar, mas algumas páginas poderiam 
-    redirecionar a gente automaticamente para outras. Senti a falta de mais opções de filtros, 
-    tanto na hora da pesquisa, quanto depois dela, nos resultados.
+    Comentários dos usuários: XXXXXXX
+
+    Cenário 3: O usuário tenta recuperar sua senha utilizando o recurso de recuperação de senha disponível na página de login.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 22.54 segundos                          |
+| 2       | SIM             | 5                    | 31.42 segundos                          |
+| 3       | SIM             | 4                    | 36.21 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+
+
+    Comentários dos usuários: XXXXXXX
+
+    Cenário 4: O usuário navega pela página inicial (Home) e avalia a visibilidade e a facilidade de navegação entre as seções da página.
+    
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 22.54 segundos                          |
+| 2       | SIM             | 5                    | 31.42 segundos                          |
+| 3       | SIM             | 4                    | 36.21 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+
+
+    Comentários dos usuários: XXXXXXX
+
+    Cenário 5: O usuário acessa a página de histórico e verifica a facilidade de visualização e navegação entre os detalhes das despesas e receitas.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 22.54 segundos                          |
+| 2       | SIM             | 5                    | 31.42 segundos                          |
+| 3       | SIM             | 4                    | 36.21 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+
+
+    Comentários dos usuários: XXXXXXX
+
+    Cenário 6: O usuário acessa a página de metas e avalia a facilidade de gerenciamento das metas financeiras, incluindo a adição, edição e exclusão de metas.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 22.54 segundos                          |
+| 2       | SIM             | 5                    | 31.42 segundos                          |
+| 3       | SIM             | 4                    | 36.21 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+
+
+    Comentários dos usuários: XXXXXXX
+
+    Cenário 7: O usuário utiliza o modal de registro de receitas disponível na página inicial para adicionar uma nova receita, avaliando a facilidade de uso, clareza das instruções e eficiência do processo de registro.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 22.54 segundos                          |
+| 2       | SIM             | 5                    | 31.42 segundos                          |
+| 3       | SIM             | 4                    | 36.21 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+
+
+    Comentários dos usuários: XXXXXXX
+
+    Cenário 8: O usuário utiliza o modal de registro de despesas disponível na página inicial para adicionar uma nova despesa, avaliando a facilidade de uso, clareza das instruções e eficiência do processo de registro.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 22.54 segundos                          |
+| 2       | SIM             | 5                    | 31.42 segundos                          |
+| 3       | SIM             | 4                    | 36.21 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+
+
+    Comentários dos usuários: XXXXXXX
+
+    Cenário 9: O usuário utiliza o modal de registro de metas disponível na página inicial para adicionar uma nova meta financeira, avaliando a facilidade de uso, clareza das instruções e eficiência do processo de registro.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 22.54 segundos                          |
+| 2       | SIM             | 5                    | 31.42 segundos                          |
+| 3       | SIM             | 4                    | 36.21 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+
+
+    Comentários dos usuários: XXXXXXX
+
+    Cenário 10: O usuário utiliza o campo de busca na página Histórico para encontrar registros específicos de despesas e receitas, avaliando a facilidade de uso, precisão dos resultados e feedback visual.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 22.54 segundos                          |
+| 2       | SIM             | 5                    | 31.42 segundos                          |
+| 3       | SIM             | 4                    | 36.21 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+
+
+    Comentários dos usuários: XXXXXXX
+
+    Cenário 11: O usuário utiliza os filtros disponíveis na página Histórico para filtrar os registros por período (15, 30, 60, 90 dias) e tipo de lançamento, avaliando a facilidade de uso, clareza das opções e eficiência na aplicação dos filtros.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 22.54 segundos                          |
+| 2       | SIM             | 5                    | 31.42 segundos                          |
+| 3       | SIM             | 4                    | 36.21 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+
+
+    Comentários dos usuários: XXXXXXX
+
+    Cenário 12: O usuário acessa a página Metas e utiliza o campo de pesquisa para encontrar metas específicas, avaliando a facilidade de uso, precisão dos resultados e feedback visual.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 22.54 segundos                          |
+| 2       | SIM             | 5                    | 31.42 segundos                          |
+| 3       | SIM             | 4                    | 36.21 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+
+
+    Comentários dos usuários: XXXXXXX
+
+    Cenário 13: O usuário acessa a página Metas, visualiza uma meta e utiliza o modal de edição para modificar os detalhes da meta, avaliando a clareza das opções de edição, feedback ao realizar alterações e facilidade de navegação dentro do modal.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 22.54 segundos                          |
+| 2       | SIM             | 5                    | 31.42 segundos                          |
+| 3       | SIM             | 4                    | 36.21 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+
+
+    Comentários dos usuários: XXXXXXX
+    
+    
 
 ## Avaliação dos Testes de Usabilidade
 
