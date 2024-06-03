@@ -421,7 +421,7 @@ Cenário 2: O usuário tenta se cadastrar no sistema utilizando o formulário de
 
     Comentários dos usuários: Bem funcional e de fácil usabilidade.
 
-    Cenário 3: O usuário tenta recuperar sua senha utilizando o recurso de recuperação de senha disponível na página de login.
+Cenário 3: O usuário tenta recuperar sua senha utilizando o recurso de recuperação de senha disponível na página de login.
 
 | Usuário                                    | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 | ------------------------------------------ | --------------- | -------------------- | ------------------------------- |
@@ -434,7 +434,7 @@ Cenário 2: O usuário tenta se cadastrar no sistema utilizando o formulário de
 
     Comentários dos usuários: Rápida e fácil de resolver o problema da recuperação de senha.
 
-    Cenário 4: O usuário navega pela página inicial (Home) e avalia a visibilidade e a facilidade de navegação entre as seções da página.
+Cenário 4: O usuário navega pela página inicial (Home) e avalia a visibilidade e a facilidade de navegação entre as seções da página.
 
 | Usuário                                    | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 | ------------------------------------------ | --------------- | -------------------- | ------------------------------- |
@@ -447,7 +447,7 @@ Cenário 2: O usuário tenta se cadastrar no sistema utilizando o formulário de
 
     Comentários dos usuários: Muito intuitiva. O design limpo deixa tudo mais simples de ser compreendido e acessado.
 
-    Cenário 5: O usuário acessa a página de histórico e verifica a facilidade de visualização e navegação entre os detalhes das despesas e receitas.
+Cenário 5: O usuário acessa a página de histórico e verifica a facilidade de visualização e navegação entre os detalhes das despesas e receitas.
 
 | Usuário                                    | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 | ------------------------------------------ | --------------- | -------------------- | ------------------------------- |
@@ -460,7 +460,7 @@ Cenário 2: O usuário tenta se cadastrar no sistema utilizando o formulário de
 
     Comentários dos usuários: Algumas funcionalidades precisam ser limpas para serem usadas novamente. Seria legal se isso fosse automatizado.
 
-    Cenário 6: O usuário acessa a página de metas e avalia a facilidade de gerenciamento das metas financeiras, incluindo a adição, edição e exclusão de metas.
+Cenário 6: O usuário acessa a página de metas e avalia a facilidade de gerenciamento das metas financeiras, incluindo a adição, edição e exclusão de metas.
 
 | Usuário                                    | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 | ------------------------------------------ | --------------- | -------------------- | ------------------------------- |
@@ -473,7 +473,7 @@ Cenário 2: O usuário tenta se cadastrar no sistema utilizando o formulário de
 
     Comentários dos usuários: Muito rápido e completo. Atende as necessidades.
 
-    Cenário 7: O usuário utiliza o modal de registro de receitas disponível na página inicial para adicionar uma nova receita, avaliando a facilidade de uso, clareza das instruções e eficiência do processo de registro.
+Cenário 7: O usuário utiliza o modal de registro de receitas disponível na página inicial para adicionar uma nova receita, avaliando a facilidade de uso, clareza das instruções e eficiência do processo de registro.
 
 | Usuário                                    | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 | ------------------------------------------ | --------------- | -------------------- | ------------------------------- |
@@ -486,7 +486,7 @@ Cenário 2: O usuário tenta se cadastrar no sistema utilizando o formulário de
 
     Comentários dos usuários: Atende as necessidades completamente.
 
-    Cenário 8: O usuário utiliza o modal de registro de despesas disponível na página inicial para adicionar uma nova despesa, avaliando a facilidade de uso, clareza das instruções e eficiência do processo de registro.
+Cenário 8: O usuário utiliza o modal de registro de despesas disponível na página inicial para adicionar uma nova despesa, avaliando a facilidade de uso, clareza das instruções e eficiência do processo de registro.
 
 | Usuário                                    | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 | ------------------------------------------ | --------------- | -------------------- | ------------------------------- |
@@ -499,7 +499,7 @@ Cenário 2: O usuário tenta se cadastrar no sistema utilizando o formulário de
 
     Comentários dos usuários: Fácil e completo.
 
-    Cenário 9: O usuário utiliza o modal de registro de metas disponível na página inicial para adicionar uma nova meta financeira, avaliando a facilidade de uso, clareza das instruções e eficiência do processo de registro.
+Cenário 9: O usuário utiliza o modal de registro de metas disponível na página inicial para adicionar uma nova meta financeira, avaliando a facilidade de uso, clareza das instruções e eficiência do processo de registro.
 
 | Usuário                                    | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 | ------------------------------------------ | --------------- | -------------------- | ------------------------------- |
@@ -512,7 +512,7 @@ Cenário 2: O usuário tenta se cadastrar no sistema utilizando o formulário de
 
     Comentários dos usuários: Muito fácil por funcionar igual o modal de receitas e despesas.
 
-    Cenário 10: O usuário utiliza o campo de busca na página Histórico para encontrar registros específicos de despesas e receitas, avaliando a facilidade de uso, precisão dos resultados e feedback visual.
+Cenário 10: O usuário utiliza o campo de busca na página Histórico para encontrar registros específicos de despesas e receitas, avaliando a facilidade de uso, precisão dos resultados e feedback visual.
 
 | Usuário                                    | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 | ------------------------------------------ | --------------- | -------------------- | ------------------------------- |
@@ -525,7 +525,7 @@ Cenário 2: O usuário tenta se cadastrar no sistema utilizando o formulário de
 
     Comentários dos usuários: Rápido e preciso.
 
-    Cenário 11: O usuário utiliza os filtros disponíveis na página Histórico para filtrar os registros por período (15, 30, 60, 90 dias) e tipo de lançamento, avaliando a facilidade de uso, clareza das opções e eficiência na aplicação dos filtros.
+Cenário 11: O usuário utiliza os filtros disponíveis na página Histórico para filtrar os registros por período (15, 30, 60, 90 dias) e tipo de lançamento, avaliando a facilidade de uso, clareza das opções e eficiência na aplicação dos filtros.
 
 | Usuário                                    | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 | ------------------------------------------ | --------------- | -------------------- | ------------------------------- |
@@ -538,7 +538,7 @@ Cenário 2: O usuário tenta se cadastrar no sistema utilizando o formulário de
 
     Comentários dos usuários: O filtro funciona atendendo as necessidades.
 
-    Cenário 12: O usuário acessa a página Metas e utiliza o campo de pesquisa para encontrar metas específicas, avaliando a facilidade de uso, precisão dos resultados e feedback visual.
+Cenário 12: O usuário acessa a página Metas e utiliza o campo de pesquisa para encontrar metas específicas, avaliando a facilidade de uso, precisão dos resultados e feedback visual.
 
 | Usuário                                    | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 | ------------------------------------------ | --------------- | -------------------- | ------------------------------- |
@@ -551,7 +551,7 @@ Cenário 2: O usuário tenta se cadastrar no sistema utilizando o formulário de
 
     Comentários dos usuários: Rápido e preciso.
 
-    Cenário 13: O usuário acessa a página Metas, visualiza uma meta e utiliza o modal de edição para modificar os detalhes da meta, avaliando a clareza das opções de edição, feedback ao realizar alterações e facilidade de navegação dentro do modal.
+Cenário 13: O usuário acessa a página Metas, visualiza uma meta e utiliza o modal de edição para modificar os detalhes da meta, avaliando a clareza das opções de edição, feedback ao realizar alterações e facilidade de navegação dentro do modal.
 
 | Usuário                                    | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 | ------------------------------------------ | --------------- | -------------------- | ------------------------------- |
