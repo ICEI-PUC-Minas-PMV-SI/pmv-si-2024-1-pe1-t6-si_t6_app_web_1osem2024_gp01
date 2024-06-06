@@ -26,12 +26,12 @@ function updateTable(type) {
   }
   // Construir o HTML da tabela
   let html = "";
-  filteredData.forEach((item) => {
+  filteredData.forEach((item, index) => {
     html += `<tr>`;
     html += `<td class="text-center">${item.descricao}</td>`;
     html += `<td class="text-center">${item.date}</td>`;
     html += `<td>
-            <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-sm template-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="fillModal(${index})">
                 <i class="bi bi-eye"></i>
                 Visualizar meta
             </button>
@@ -42,6 +42,23 @@ function updateTable(type) {
   tableBody.innerHTML = html;
 }
 updateTable("Metas");
+let currentIndex = -1;
+
+function fillModal(index) {
+    currentIndex = index;
+    let data = JSON.parse(localStorage.getItem("lançamentos")) || [];
+    let filteredData = data.filter((item) => item.tipo === "Metas");
+    let item = filteredData[index];
+
+    document.getElementById("descricaoMeta").value = item.descricao || '';
+    document.getElementById("categoriaEdit").value = item.categoria || '';
+    document.getElementById("dataCriacaoMeta").value = item.date || '';
+    document.getElementById("valorInicialMeta").value = item.valor || '';
+    document.getElementById("dataRealizacaoMeta").value = item.dataRealizacao || '';
+    document.getElementById("valorAtualMeta").value = item.valorAtual || '';
+    let categoriaSelect = document.getElementById("categoriaEdit");
+    categoriaSelect.value = item.categoria || '0';
+}
 
 function validateMeta() {
   let descricaoMeta = document.getElementById("descricaoMeta").value;
@@ -90,3 +107,51 @@ function validateMeta() {
   }
   return isValid;
 }
+
+function salvarMeta() {
+  if (!validateMeta()) return;
+
+  let data = JSON.parse(localStorage.getItem("lançamentos")) || [];
+  let filteredData = data.filter((item) => item.tipo === "Metas");
+
+  let item = filteredData[currentIndex];
+  item.descricao = document.getElementById("descricaoMeta").value;
+  item.categoria = document.getElementById("categoriaEdit").value;
+  item.date = document.getElementById("dataCriacaoMeta").value;
+  item.valor = document.getElementById("valorInicialMeta").value;
+  item.dataRealizacao = document.getElementById("dataRealizacaoMeta").value;
+  item.valorAtual = document.getElementById("valorAtualMeta").value;
+
+  // Update the original data array with the updated item
+  data = data.map(d => (d.tipo === "Metas" && d.descricao === item.descricao ? item : d));
+  localStorage.setItem("lançamentos", JSON.stringify(data));
+  updateTable("Metas");
+  document.getElementById("exampleModal").querySelector(".btn-close").click();
+}
+
+function confirmarExclusao(index) {
+  currentIndex = index;
+  var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'), {
+      keyboard: false
+  });
+  confirmModal.show();
+}
+
+document.getElementById('confirmDeleteButton').addEventListener('click', function() {
+  excluirMeta();
+  var confirmModal = bootstrap.Modal.getInstance(document.getElementById('confirmModal'));
+  confirmModal.hide();
+});
+
+function excluirMeta() {
+  let data = JSON.parse(localStorage.getItem("lançamentos")) || [];
+  let filteredData = data.filter((item) => item.tipo === "Metas");
+
+  filteredData.splice(currentIndex, 1);
+  data = data.filter(item => item.tipo !== "Metas").concat(filteredData);
+  localStorage.setItem("lançamentos", JSON.stringify(data));
+  updateTable("Metas");
+  document.getElementById("exampleModal").querySelector(".btn-close").click();
+}
+
+document.querySelector(".btn-success").addEventListener("click", salvarMeta);

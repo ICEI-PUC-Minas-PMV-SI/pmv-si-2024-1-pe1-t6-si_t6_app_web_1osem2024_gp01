@@ -114,18 +114,29 @@
                             </div>
                             <div class="col-md-6">
                                 <label class="" for="">Categoria</label>
-                                <label class="" for="">Categoria</label>
                                 <select type="text" class="form-control" id="categoriaEdit">
                                     <option value="0">Selecione a categoria</option>
-                                    <option value="22">Economias e Investimentos</option>
-                                    <option value="23">Viagem</option>
-                                    <option value="24">Fundo de Emergência</option>
-                                    <option value="25">Educação Continuada</option>
-                                    <option value="26">Aquisição de Bens</option>
-                                    <option value="27">Aposentadoria</option>
-                                    <option value="28">Fundo de Reserva</option>
-                                    <option value="29">Objetivos Financeiros Específicos</option>
-                                    <!--geral-->
+                                    <option value="1">Salário</option>
+                                    <option value="2">Bônus</option>
+                                    <option value="3">Freelance/Consultoria:</option>
+                                    <option value="4">Rendimento de Investimentos:</option>
+                                    <option value="5">Aluguel/Arrendamento:</option>
+                                    <option value="6">Pensão/Previdência:</option>
+                                    <option value="7">Comissões/Vendas:</option>
+                                    <option value="8">Bolsa de Estudos/Bolsa de Pesquisa:</option>
+                                    <option value="9">Prêmios/Ganhos:</option>
+                                    <option value="10">Moradia</option>
+                                    <option value="11">Alimentação</option>
+                                    <option value="12">Transporte</option>
+                                    <option value="13">Saúde</option>
+                                    <option value="14">Educação</option>
+                                    <option value="15">Lazer e Entretenimento</option>
+                                    <option value="16">Vestuário e Acessórios</option>
+                                    <option value="17">Contas Domésticas</option>
+                                    <option value="18">Seguros</option>
+                                    <option value="19">Impostos e Taxas</option>
+                                    <option value="20">Doações e Caridade</option>
+                                    <option value="21">Dívidas e Empréstimos</option>
                                     <option value="30">Outros</option>
                                 </select>
                             </div>
@@ -158,19 +169,32 @@
                     <div class="modal-footer">
                         <div class="row">
                             <div class="col-md-6">
-                                <button type="button" class="btn btn-primary btn-block" onclick="validateMeta()">
-                                    Editar
-                                </button>
+                                <button type="button" class="btn btn-success">Salvar</button>
                             </div>
 
                             <div class="col-md-6">
-                                <button type="button" class="btn btn-danger btn-block">
-                                    Excluir
-                                </button>
+                                <button type="button" class="btn btn-danger" onclick="confirmarExclusao()">Excluir</button>
                             </div>
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmModalLabel">Confirmar Exclusão</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Tem certeza de que deseja excluir esta meta?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-danger" id="confirmDeleteButton">Excluir</button>
+                    </div>
                 </div>
             </div>
         </div>
