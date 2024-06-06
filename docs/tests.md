@@ -484,7 +484,7 @@ Cenário 7: O usuário utiliza o modal de registro de receitas disponível na p�
 | **Média**                                  | 100%            | 4.67                 | 14.86 segundos                  |
 | **Tempo para conclusão pelo especialista** | SIM             | 5                    | 11.55 segundos                  |
 
-    Comentários dos usuários: Atende as necessidades completamente.
+    Comentários dos usuários: Atende as necessidades.
 
 Cenário 8: O usuário utiliza o modal de registro de despesas disponível na página inicial para adicionar uma nova despesa, avaliando a facilidade de uso, clareza das instruções e eficiência do processo de registro.
 
@@ -568,4 +568,4 @@ Cenário 13: O usuário acessa a página Metas, visualiza uma meta e utiliza o m
 
 Com base nos resultados obtidos, verificou-se que a aplicação web apresenta uma taxa de sucesso satisfatória na interação dos usuários, pois os cenários propostos foram concluídos com êxito. Além disso, os usuários demonstraram uma alta satisfação subjetiva durante a execução dos cenários propostos, refletida nas avaliações médias que variaram entre 4 (bom) e 5 (ótimo).
 
-No entanto, observou-se uma diferença significativa entre a média de tempo dos usuários e a do especialista/desenvolvedor em todos os cenários. Essa discrepância é esperada devido ao conhecimento prévio do desenvolvedor sobre a interface da aplicação, o posicionamento dos elementos e a lógica de organização das páginas. Contudo, a diferença relevante, por exemplo, 23.99 segundos para os usuários versus 18 segundos para o especialista no cenário três, aliada aos comentários de alguns usuários, indica oportunidades de melhoria na usabilidade da aplicação.
+No entanto, observou-se uma diferença significativa entre a média de tempo dos usuários e a do especialista/desenvolvedor em todos os cenários. Essa discrepância é esperada devido ao conhecimento prévio do desenvolvedor sobre a interface da aplicação, o posicionamento dos elementos e a lógica de organização das páginas. Contudo, a diferença relevante, por exemplo, 23.99 segundos para os usuários versus 18 segundos para o especialista no cenário cinco, aliada aos comentários de alguns usuários, indica oportunidades de melhoria na usabilidade da aplicação.
