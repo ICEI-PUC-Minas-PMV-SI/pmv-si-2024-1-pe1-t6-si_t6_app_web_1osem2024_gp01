@@ -12,8 +12,6 @@ O projeto em desenvolvimento é um sistema de gestão financeira pessoal, projet
 
 * Sebastião Felipe de Oliveira Barros
 * Vitor de Castro Coelho
-* Igor Fernando Costa Cecilio
-* Jean Andre VIeira Lima
 * Isabelle Alves de Lima
 * Ingrid Rebeca Silva
 
