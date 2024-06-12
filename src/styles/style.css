@@ -1,16 +1,78 @@
-@media screen and (max-width: 1366px) {
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@media screen and  (min-width: 600px) and (max-width: 1366px) {
     .custom-container {
         width: 90%;
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) and (max-width: 1999px) {
     .custom-container {
-        width: 1400px;
+        width: 1600px;
+        height: 500px;
+        max-width: none !important;
+    }
+}
+@media screen and (min-width: 2700px) {
+    .navbar{
+        height: 100px;
+    }
+    .custom-container {
+        width: 2500px !important; 
+        max-width: none !important;
+        height: 2000px;
+    }
+    a {
+        font-size: 50px;
+    }
+    #user {
+        font-size: 50px;
+    }
+    
+    .logo {
+        width: 50px;
+    }
+    
+    .navbar-brand {
+        font-size: 45px;
+    }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+    .card {
+        margin-top: 30px;
+        height: 250px !important;
+        margin-bottom: 20px;
+        font-size: 25px;
+        margin: 0 10px;
+    }
+    
+    .card-body h4 {
+        margin-top: 1vh;
+    }
+    
+    .card .connection {
+        margin-top: 1vh;
+        width: 150px;
+        height: 40px;
+    }
+    
+    .card .gerencie {
+        margin-left: 500px;
+    }
+    
+    .card-body button i {
+        font-size: 50px;
+    }
+    #home{
+        justify-content: center;
+        align-items: center;
     }
 }
 
 body {
+    font-family: "Nunito", sans-serif;
     background-color: #f8f9fa !important;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -30,7 +92,7 @@ nav.navbar {
     background-color: #ffffff !important;
     z-index: 2;
     position: relative;
-    box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.151);
+    border-bottom: 1px solid #c5c5c5;
 }
 
 .nav-link {
@@ -68,8 +130,24 @@ a:hover {
     margin-top: 30px;
     height: 180px;
     font-size: 25px;
+    
 }
 
+  #cardSaldo:hover, #cardHistorico:hover, #cardMeta:hover, .relatorio:hover, .table-responsive:hover{
+    border: 3px solid #cccccce8;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  #cardReceita:hover{
+    border: 3px solid #19875462;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  #cardDespesa:hover{
+    border: 3px solid rgba(224, 0, 0, 0.322);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  .navbar:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
 .card-body h4 {
     margin-top: 1vh;
 }
