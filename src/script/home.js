@@ -32,6 +32,16 @@ document.getElementById("download-btn").addEventListener("click", function () {
 });
 
 function validateAndSaveModal(type) {
+   // Selecionar o botão de salvar
+    const saveButton = document.querySelector('.modal-footer .btn-success');
+    
+    // Adicionar a classe de animação
+    saveButton.classList.add('pulsate');
+    
+    // Remover a classe de animação após a animação terminar
+    saveButton.addEventListener('animationend', () => {
+        saveButton.classList.remove('pulsate');
+    });
   // validação dos campos do modal
   let descricao = document.getElementById("descricao").value;
   let valorString = document.getElementById("valor").value;
