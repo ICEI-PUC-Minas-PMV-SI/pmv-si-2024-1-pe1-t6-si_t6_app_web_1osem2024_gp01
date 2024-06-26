@@ -6,7 +6,7 @@
 
 `SEMESTRE: 1º`
 
-O projeto em desenvolvimento é um sistema de gestão financeira pessoal, projetado para ajudar os usuários a administrarem suas finanças de maneira eficaz e inteligente. A aplicação busca resolver o problema da falta de controle adequado das finanças, entregando uma solução acessível e intuitiva que capacite os usuários a estabelecerem metas financeiras, registrar receitas e despesas, além de conduzir análises detalhadas para uma melhor tomada de decisão. Utilizando tecnologias modernas de desenvolvimento de software e seguindo as melhores práticas de design de interface e experiência do usuário, o projeto visa oferecer uma ferramenta completa e amigável para auxiliar na saúde financeira pessoal dos usuários.
+O projeto desenvolvido é um sistema de gestão financeira pessoal, projetado para ajudar os usuários a administrarem suas finanças de maneira eficaz e inteligente. A aplicação busca resolver o problema da falta de controle adequado das finanças, entregando uma solução acessível e intuitiva que capacite os usuários a estabelecerem metas financeiras, registrar receitas e despesas, além de conduzir análises detalhadas para uma melhor tomada de decisão. Utilizando tecnologias modernas de desenvolvimento de software e seguindo as melhores práticas de design de interface e experiência do usuário, o projeto visa oferecer uma ferramenta completa e amigável para auxiliar na saúde financeira pessoal dos usuários.
 
 ## Integrantes
 
